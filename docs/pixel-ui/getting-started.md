@@ -31,6 +31,11 @@ To install the library, the release archive must be extracted into the `garrysmo
 To ensure your addon does not reference PIXEL UI before it has been loaded, you are required to implement the `PIXEL.UI.FullyLoaded` hook. The following example demonstrates how this can be achieved:
 
 ```lua
+local function loadAddon()
+	print("Loading my addon")
+	PIXEL.LoadDirectoryRecursive("my_addon")
+end
+
 if PIXEL and PIXEL.UI then
 	loadAddon()
 	return
