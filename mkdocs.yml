@@ -4,6 +4,12 @@ site_author: Tom
 site_description: The documentation for Tom's projects.
 repo_url: https://github.com/TomDotBat/docs
 
+nav:
+  - Home: index.md
+  - PIXEL UI:
+    - Getting Started: pixel-ui/getting-started.md
+    - GitHub: https://github.com/TomDotBat/pixel-ui
+
 theme:
   name: null
   custom_dir: theme
