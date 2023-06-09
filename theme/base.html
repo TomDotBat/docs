@@ -59,26 +59,6 @@
         {% endblock %}
     </div>
 
-    {% if not config.theme.disable_footer %}
-      <footer class="col-md-12 text-center">
-          {% block footer %}
-          {% if not config.theme.disable_footer_except_revision %}
-            <hr>
-            <p>{% if config.copyright %}
-            <small>{{ config.copyright }}</small><br>
-            {% endif %}
-            <small>Documentation built with <a href="http://www.mkdocs.org/">MkDocs</a>.</small>
-            </p>
-          {% endif %}
-
-          {% if page and page.meta.revision_date %}
-          {% if config.theme.disable_footer_except_revision %}<hr>{% else %}<br>{% endif %}
-            <small>Revised on: {{ page.meta.revision_date }}</small>
-          {% endif %}
-          {% endblock %}
-      </footer>
-    {% endif %}
-
     {%- block scripts %}
     <script src="//ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <script src="{{ 'js/bootstrap-3.0.3.min.js'|url }}"></script>
