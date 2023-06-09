@@ -1,0 +1,12 @@
+site_name: Tom.docs
+site_url: https://docs.tomdotbat.dev
+site_author: Tom
+site_description: Documentation for 
+
+theme:
+  name: null
+  custom_dir: theme
+  highlightjs: true
+
+nav:
+  - Home: index.md
