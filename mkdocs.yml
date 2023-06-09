@@ -1,12 +1,14 @@
 site_name: Tom.docs
 site_url: https://docs.tomdotbat.dev
 site_author: Tom
-site_description: Documentation for 
+site_description: The documentation for Tom's projects.
+repo_url: https://github.com/TomDotBat/docs
 
 theme:
   name: null
   custom_dir: theme
   highlightjs: true
+  colorscheme: stackoverflow-dark
 
 markdown_extensions:
   - admonition
