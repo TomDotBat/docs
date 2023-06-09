@@ -1,17 +1,7 @@
-# Welcome to MkDocs
+# Welcome
+Documentation related to PIXEL UI can be found on this site using the navigation bar on the top.
 
-For full documentation visit [mkdocs.org](https://www.mkdocs.org).
-
-## Commands
-
-* `mkdocs new [dir-name]` - Create a new project.
-* `mkdocs serve` - Start the live-reloading docs server.
-* `mkdocs build` - Build the documentation site.
-* `mkdocs -h` - Print help message and exit.
-
-## Project layout
-
-    mkdocs.yml    # The configuration file.
-    docs/
-        index.md  # The documentation homepage.
-        ...       # Other markdown pages, images and other files.
+<div class="bs-callout bs-callout-danger">
+    <h4>Warning</h4>
+    The documentation is not complete, some artefacts may be missing, incomplete or inaccurate.
+</div>
