@@ -12,3 +12,6 @@ theme:
 
 markdown_extensions:
   - admonition
+
+watch:
+  - theme
