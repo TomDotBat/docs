@@ -3,10 +3,4 @@ const withNextra = require('nextra')({
 	themeConfig: "./theme.config.jsx"
 });
 
-module.exports = {
-	...withNextra(),
-	images: {
-		unoptimized: true
-	},
-	output: "export"
-};
+module.exports = withNextra();
