@@ -1,5 +1,3 @@
-import { useRouter } from "next/router";
-
 export default {
 	logo: <strong>Tom.docs</strong>,
 	project: {
@@ -14,8 +12,6 @@ export default {
 		labels: "feedback"
 	},
 	useNextSeoProps() {
-		const { path } = useRouter();
-
 		return {
 			titleTemplate: "%s – Tom.docs",
 			description: "The documentation for Tom's projects.",
