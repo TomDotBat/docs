@@ -4,10 +4,17 @@ on:
   workflow_dispatch:
     branches:
       - master
-permissions:
-  contents: write
+
 jobs:
   deploy:
+    permissions:
+      pages: write
+      id-token: write
+
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
@@ -20,3 +27,4 @@ jobs:
       - run: pnpm install
       - run: pnpm export
       - uses: actions/deploy-pages@v2
+        id: deployment
