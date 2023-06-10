@@ -16,10 +16,11 @@ export default {
 			titleTemplate: "%s – Tom.docs",
 			description: "The documentation for Tom's projects.",
 			openGraph: {
+				siteName: "Tom.docs",
 				type: "website",
 				locale: "en_GB",
 				url: "https://docs.tomdotbat.dev",
-				site_name: "Tom.docs"
+				description: "The documentation for Tom's projects."
 			}
 		};
 	},
