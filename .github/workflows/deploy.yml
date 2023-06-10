@@ -26,5 +26,7 @@ jobs:
           version: latest
       - run: pnpm install
       - run: pnpm export
+      - uses: actions/upload-pages-artifact@v1
+        path: out/
       - uses: actions/deploy-pages@v2
         id: deployment
