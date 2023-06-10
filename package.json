@@ -6,7 +6,8 @@
 	"scripts": {
 		"build": "next build",
 		"dev": "next",
-		"start": "next start"
+		"start": "next start",
+		"export": "next build && next export && touch out/.nojekyll"
 	},
 	"dependencies": {
 		"@vercel/og": "^0.5.7",

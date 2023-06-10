@@ -18,6 +18,5 @@ jobs:
         with:
           version: latest
       - run: pnpm install
-      - run: next build
-      - run: next export
+      - run: pnpm export
       - uses: actions/deploy-pages@v2
