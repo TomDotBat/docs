@@ -1,13 +1,18 @@
 {
-	"getting-started": "Getting Started",
-	"--more": {
-		"title": "More",
-		"type": "separator"
-	},
-	"example-projects": "Example Projects",
-	"github": {
-		"title": "GitHub Repository ↗",
-		"href": "https://github.com/TomDotBat/pixel-ui",
-		"newWindow": true
-	}
+  "getting-started": "Getting Started",
+  "--api-docs": {
+    "title": "API Docs",
+    "type": "separator"
+  },
+  "color": "Color Utils",
+  "--more": {
+    "title": "More",
+    "type": "separator"
+  },
+  "example-projects": "Example Projects",
+  "github": {
+    "title": "GitHub Repository ↗",
+    "href": "https://github.com/TomDotBat/pixel-ui",
+    "newWindow": true
+  }
 }

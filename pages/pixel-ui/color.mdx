@@ -1,0 +1,179 @@
+Defined in [`lua/pixelui/core/cl_color.lua`](https://github.com/TomDotBat/pixel-ui/blob/master/lua/pixelui/core/cl_color.lua)
+
+## DecToHex
+
+```lua
+PIXEL.DecToHex(dec, zeros?)
+```
+
+Converts a decimal value to a hexadecimal string representation.
+
+**Parameters:**
+
+1. **dec**: number - The decimal value to convert.
+2. **zeros**: _number_ - The number of leading zeros to add to the hexadecimal string. Defaults to 2.
+
+**Returns**
+
+1. **hex**: string - The hexadecimal string representation of the decimal value.
+
+## ColorToHex
+
+```lua
+PIXEL.ColorToHex(color)
+```
+
+Converts a color to its hexadecimal string representation.
+
+**Parameters:**
+
+1. **color**: `Color` - The color to convert.
+
+**Returns:**
+
+1. **hex**: string - The hexadecimal string representation of the color.
+
+## ColorToHSL
+
+```lua
+PIXEL.ColorToHSL(color)
+```
+
+Converts a color to its HSL (Hue, Saturation, Lightness) representation.
+
+**Parameters:**
+
+1. **color**: `Color` - The color to convert.
+
+**Returns:**
+
+1. **h**: number - The hue value of the color.
+2. **s**: number - The saturation value of the color.
+3. **l**: number - The lightness value of the color.
+
+## HSLToColor
+
+```lua
+PIXEL.HSLToColor(h, s, l, a)
+```
+
+Converts HSL (Hue, Saturation, Lightness) values to a color.
+
+**Parameters:**
+
+1. **h**: number - The hue value.
+2. **s**: number - The saturation value.
+3. **l**: number - The lightness value.
+4. **a**: _number_ - The alpha (opacity) value. Defaults to 1.
+
+**Returns:**
+
+1. **color**: `Color` - The color created from the HSL values.
+
+## CopyColor
+
+```lua
+PIXEL.CopyColor(color)
+```
+
+Creates a copy of a color.
+
+**Parameters:**
+
+1. **color**: `Color` - The color to copy.
+
+**Returns:**
+
+1. **copiedColor**: `Color` - A new color object with the same RGBA values as the original color.
+
+## OffsetColor
+
+```lua
+PIXEL.OffsetColor(color, offset)
+```
+
+Offsets the RGB values of a color by adding the specified offset.
+
+**Parameters:**
+
+1. **color**: `Color` - The color to offset.
+2. **offset**: number - The offset value to add to each RGB component of the color.
+
+**Returns:**
+
+1. **offsetColor**: `Color` - A new color object with the offset RGB values.
+
+## HexToColor
+
+```lua
+PIXEL.HexToColor(hex)
+```
+
+Converts a hexadecimal string to a color.
+
+**Parameters:**
+
+1. **hex**: string - The hexadecimal string representation of a color.
+
+**Returns:**
+
+1. **color**: `Color` - The color created from the hexadecimal string.
+
+## GetRainbowColor
+
+```lua
+PIXEL.GetRainbowColor()
+```
+
+Returns a color that changes over time to create a rainbow effect.
+
+## IsColorLight
+
+```lua
+PIXEL.IsColorLight(color)
+```
+
+Checks if a color is considered light (greater than 0.5 lightness)
+
+**Parameters:**
+
+1. **color**: `Color` - The color to check.
+
+**Returns:**
+
+1. **isLight**: boolean - true if the color is considered light, false otherwise.
+
+## LerpColor
+
+```lua
+PIXEL.LerpColor(t, from, to)
+```
+
+Linearly interpolates between two colors.
+
+**Parameters:**
+
+1. **t**: number - The interpolation value between 0 and 1.
+2. **from** `Color` - The starting color.
+3. **to**: `Color` - The ending color.
+
+**Returns:**
+
+1. **lerpedColor**: `Color` - The interpolated color between from and to.
+
+## IsColorEqualTo
+
+```lua
+PIXEL.IsColorEqualTo(from, to)
+```
+
+Checks if two colors are equal.
+
+**Parameters:**
+
+1. **from**: `Color` - The first color.
+2. **to**: `Color` - The second color.
+
+**Returns:**
+
+1. **isEqual**: boolean - true if the colors are equal, false otherwise.
