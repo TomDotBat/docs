@@ -1,5 +1,5 @@
 import { useRouter } from "next/router";
-import { useConfig } from "nextra-theme-docs/.";
+import { useConfig } from "nextra-theme-docs";
 
 export default {
 	logo: <strong>Tom.docs</strong>,
