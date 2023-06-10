@@ -1,5 +1,4 @@
 import { useRouter } from "next/router";
-import { useConfig } from "nextra-theme-docs";
 
 export default {
 	logo: <strong>Tom.docs</strong>,
@@ -14,6 +13,11 @@ export default {
 		content: "Create an issue →",
 		labels: "feedback"
 	},
+	banner: {
+		dismissible: true,
+		key: "indev",
+		text: "⚠️ This site is under development, some artefacts may be missing or incomplete."
+	},
 	useNextSeoProps() {
 		return {
 			titleTemplate: "%s – Tom.docs"
@@ -21,7 +25,6 @@ export default {
 	},
 	head() {
 		const { asPath, defaultLocale, locale } = useRouter();
-		const { frontMatter } = useConfig();
 
 		const url = "https://docs.tomdotbat.dev"
 			+ (defaultLocale === locale ? asPath : `/${locale}${asPath}`);
@@ -29,9 +32,8 @@ export default {
 		return (
 			<>
 				<meta property="og:url" content={url} />
-				<meta property="og:title" content={frontMatter.title || "Unknown"} />
-				<meta property="og:description" content={frontMatter.description || "The documentation for Tom's projects."} />
-				<meta property="og:locale" content={locale} />
+				<meta property="og:description" content="The documentation for Tom's projects." />
+				<meta property="og:locale" content={locale || "en_GB"} />
 				<meta property="og:type" content="website" />
 				<meta property="og:site_name" content="Tom.docs" />
 			</>
