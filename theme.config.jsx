@@ -1,3 +1,5 @@
+import { useRouter } from "next/router";
+
 export default {
 	logo: <strong>Tom.docs</strong>,
 	project: {
@@ -11,4 +13,31 @@ export default {
 		content: "Create an issue →",
 		labels: "feedback"
 	},
+	useNextSeoProps() {
+		const { path } = useRouter();
+
+		return {
+			titleTemplate: "%s – Tom.docs",
+			description: "The documentation for Tom's projects.",
+			openGraph: {
+				type: "website",
+				locale: "en_GB",
+				url: "https://docs.tomdotbat.dev",
+				site_name: "Tom.docs"
+			}
+		};
+	},
+	footer: {
+		text: (
+			<span>
+				<a href="https://mit-license.org/" target="_blank">
+					MIT License
+				</a>
+				{` – © ${new Date().getFullYear()} `}
+				<a href="https://tomdotbat.dev" target="_blank">
+					Tom O'Sullivan
+				</a>
+			</span>
+		)
+	}
 }
