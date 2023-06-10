@@ -1,0 +1,61 @@
+import { Callout } from "nextra/components";
+import { FileTree } from "nextra-theme-docs";
+
+# Getting Started
+Developing an addon which depends on PIXEL UI requires a few steps to be taken before you can start coding.
+
+## Installation
+PIXEL UI must be installed within the environment that your addon is being used, it can be downloaded from the GitHub releases page [here](https://github.com/TomDotBat/pixel-ui/releases/latest).
+To install the library, the release archive must be extracted into the `garrysmod/addons` folder. The folder structure should look similar to this:
+<FileTree>
+	<FileTree.Folder name="garrysmod" defaultOpen>
+		<FileTree.Folder name="addons" defaultOpen>
+			<FileTree.Folder name="pixel-ui" defaultOpen>
+				<FileTree.Folder name="lua" defaultOpen>
+					<FileTree.Folder name="autorun" defaultOpen>
+						<FileTree.File name="sh_pixelui_loader.lua" />
+					</FileTree.Folder>
+					<FileTree.Folder name="pixelui" defaultOpen>
+						<FileTree.Folder name="core">
+						</FileTree.Folder>
+						<FileTree.Folder name="drawing">
+						</FileTree.Folder>
+						<FileTree.Folder name="elements">
+						</FileTree.Folder>
+						<FileTree.Folder name="libraries">
+						</FileTree.Folder>
+						<FileTree.Folder name="menus">
+						</FileTree.Folder>
+						<FileTree.File name="sh_config.lua" />
+					</FileTree.Folder>
+				</FileTree.Folder>
+				<FileTree.File name="README.md" />
+			</FileTree.Folder>
+		</FileTree.Folder>
+	</FileTree.Folder>
+</FileTree>
+
+<Callout emoji="💡">
+	The addon folder name must not contain capital letters on **Windows** servers and will fail to load if it does.
+</Callout>
+
+## Loading after PIXEL UI
+To ensure your addon does not reference PIXEL UI before it has been loaded, you are required to implement the `PIXEL.UI.FullyLoaded` hook. The following example demonstrates how this can be achieved:
+
+```lua filename="lua/autorun/load_my_addon.lua"
+local function loadAddon()
+	print("Loading my addon")
+	PIXEL.LoadDirectoryRecursive("my_addon")
+end
+
+if PIXEL and PIXEL.UI then
+	loadAddon()
+	return
+end
+
+hook.Add("PIXEL.UI.FullyLoaded", "MyAddon.WaitForPIXELUI", loadAddon)
+```
+
+<Callout type="info" emoji="ℹ️">
+	Ensure that the identifier of your addon's loader hook is unique, conflicts are likely to occur otherwise.
+</Callout>
