@@ -1,0 +1,13 @@
+{
+	"getting-started": "Getting Started",
+	"--more": {
+		"title": "More",
+		"type": "separator"
+	},
+	"example-projects": "Example Projects",
+	"github": {
+		"title": "GitHub Repository ↗",
+		"href": "https://github.com/TomDotBat/pixel-ui",
+		"newWindow": true
+	}
+}
