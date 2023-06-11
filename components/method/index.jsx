@@ -31,24 +31,25 @@ function LinkButton({ href, icon, title, ...props }) {
 }
 
 export default function Method({ name, realm, args, returns, repositoryUrl, declaration, children}) {
-	const listValues = (values) => values.map((val, idx) => {
+	const listValues = (values, typesOnly) => values.map((val, idx) => {
 		const { type, name, defaultValue } = val.props;
 		return (
 			<>
 				<Link className="nx-text-primary-600 nx-decoration-from-font [text-underline-position:from-font]" href={`https://wiki.facepunch.com/gmod/${type}`}>
 					{type}
 				</Link>
-				{` ${name ?? ""}${defaultValue ? ` = ${defaultValue}` : ""}${idx === values.length - 1 ? "" : ", "}`}
+				{typesOnly ? "" : ` ${name ?? ""}${defaultValue ? ` = ${defaultValue}` : ""}`}
+				{`${idx === values.length - 1 ? "" : ", "}`}
 			</>
 		);
-	})
+	});
 
 	return (
 		<>
 			<div className="mt-6 nx-bg-primary-700/5 nx-overflow-x-auto nx-rounded-xl dark:nx-bg-primary-300/10 contrast-more:nx-border contrast-more:nx-border-primary-900/20 contrast-more:nx-contrast-150 contrast-more:dark:nx-border-primary-100/40 px-4 py-3 flex">
 				<Realm type={realm} size="h-5" />
 				<code className="ml-3 text-[.8em] min-h-5 align-middle">
-					{(returns && returns.length > 0) && listValues(returns)}
+					{(returns && returns.length > 0) && listValues(returns, true)}
 					{` ${name}(`}
 					{
 						(args && args.length > 0) && (
