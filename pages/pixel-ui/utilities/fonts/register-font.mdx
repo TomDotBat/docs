@@ -1,0 +1,24 @@
+import { Callout } from "nextra/components";
+
+import Method from "/components/method";
+import Argument from "/components/method/argument";
+import ReturnValue from "/components/method/return_value";
+
+# RegisterFont
+<Method
+	name="PIXEL.RegisterFont"
+	realm="client"
+	args={[
+		<Argument type="string" name="name">The identifier of the font.</Argument>,
+		<Argument type="string" name="font">The font family to use.</Argument>,
+		<Argument type="number" name="size">The size of the font.</Argument>,
+		<Argument type="number" name="weight" defaultValue="500">The font weight.</Argument>
+	]}
+	repositoryUrl="https://github.com/TomDotBat/pixel-ui"
+	declaration="lua/pixelui/core/cl_fonts.lua#L50-L58"
+>
+	<Callout type="info" emoji="ℹ️">
+		Ensure that the identifier of your font is unique to avoid conflicts with other addons.
+	</Callout>
+	Registers a font with PIXEL UI that automatically scales with the screen's resolution.
+</Method>
