@@ -1,7 +1,7 @@
 {
   "getting-started": "Getting Started",
   "--api": {
-    "title": "API",
+    "title": "API Reference",
     "type": "separator"
   },
   "utilities": "Utilities",
