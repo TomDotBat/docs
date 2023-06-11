@@ -1,0 +1,20 @@
+import Method from "/components/method";
+import Argument from "/components/method/argument";
+import ReturnValue from "/components/method/return_value";
+
+# OffsetColor
+<Method
+	name="PIXEL.OffsetColor"
+	realm="client"
+	args={[
+		<Argument type="Color" name="color">The color to offset the values of.</Argument>,
+		<Argument type="number" name="offset">The amount to offset by.</Argument>
+	]}
+	returns={[
+		<ReturnValue type="Color">A new color instance with the offset RGB values.</ReturnValue>
+	]}
+	repositoryUrl="https://github.com/TomDotBat/pixel-ui"
+	declaration="lua/pixelui/core/cl_color.lua#L99-L101"
+>
+	Offsets the RGB components of the colour by the given amount.
+</Method>

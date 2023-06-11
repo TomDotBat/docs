@@ -1,0 +1,19 @@
+import Method from "/components/method";
+import Argument from "/components/method/argument";
+import ReturnValue from "/components/method/return_value";
+
+# CopyColor
+<Method
+	name="PIXEL.CopyColor"
+	realm="client"
+	args={[
+		<Argument type="Color" name="color">The color to copy.</Argument>
+	]}
+	returns={[
+		<ReturnValue type="Color">A new color instance with the same values as the original color.</ReturnValue>
+	]}
+	repositoryUrl="https://github.com/TomDotBat/pixel-ui"
+	declaration="lua/pixelui/core/cl_color.lua#L95-L97"
+>
+	Creates a copy of the given color.
+</Method>

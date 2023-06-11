@@ -1,0 +1,19 @@
+import Method from "/components/method";
+import Argument from "/components/method/argument";
+import ReturnValue from "/components/method/return_value";
+
+# IsColorLight
+<Method
+	name="PIXEL.IsColorLight"
+	realm="client"
+	args={[
+		<Argument type="Color" name="color">The color to check.</Argument>
+	]}
+	returns={[
+		<ReturnValue type="boolean">true if the color is considered light.</ReturnValue>
+	]}
+	repositoryUrl="https://github.com/TomDotBat/pixel-ui"
+	declaration="lua/pixelui/core/cl_color.lua#L138-L141"
+>
+	Determines whether a color is considered light (greater than 0.5 lightness).
+</Method>

@@ -1,0 +1,13 @@
+{
+	"color-to-hex": "ColorToHex",
+	"color-to-hsl": "ColorToHSL",
+	"copy-color": "CopyColor",
+	"dec-to-hex": "DecToHex",
+	"get-rainbow-color": "GetRainbowColor",
+	"hex-to-color": "HexToColor",
+	"hsl-to-color": "HSLToColor",
+	"is-color-equal-to": "IsColorEqualTo",
+	"is-color-light": "IsColorLight",
+	"lerp-color": "LerpColor",
+	"offset-color": "OffsetColor"
+}

@@ -1,0 +1,20 @@
+import Method from "/components/method";
+import Argument from "/components/method/argument";
+import ReturnValue from "/components/method/return_value";
+
+# DecToHex
+<Method
+	name="PIXEL.DecToHex"
+	realm="client"
+	args={[
+		<Argument type="number" name="dec">The number to convert.</Argument>,
+		<Argument type="number" name="zeros" defaultValue="2">The amount of leading zeros to add to the hexadecimal string.</Argument>
+	]}
+	returns={[
+		<ReturnValue type="string">The decimal value represented as a hexadecimal string.</ReturnValue>
+	]}
+	repositoryUrl="https://github.com/TomDotBat/pixel-ui"
+	declaration="lua/pixelui/core/cl_color.lua#L20-L22"
+>
+	Converts a decimal number into a hexadecimal string.
+</Method>

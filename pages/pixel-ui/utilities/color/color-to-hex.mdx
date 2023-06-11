@@ -1,0 +1,19 @@
+import Method from "/components/method";
+import Argument from "/components/method/argument";
+import ReturnValue from "/components/method/return_value";
+
+# ColorToHex
+<Method
+	name="PIXEL.ColorToHex"
+	realm="client"
+	args={[
+		<Argument type="Color" name="color">The color to convert.</Argument>
+	]}
+	returns={[
+		<ReturnValue type="string">A hexadecimal string which represents the given color.</ReturnValue>
+	]}
+	repositoryUrl="https://github.com/TomDotBat/pixel-ui"
+	declaration="lua/pixelui/core/cl_color.lua#L26-L32"
+>
+	Converts a color into a hexadecimal string.
+</Method>

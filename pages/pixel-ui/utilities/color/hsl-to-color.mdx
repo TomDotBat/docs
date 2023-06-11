@@ -1,0 +1,22 @@
+import Method from "/components/method";
+import Argument from "/components/method/argument";
+import ReturnValue from "/components/method/return_value";
+
+# HSLToColor
+<Method
+	name="PIXEL.DecToHex"
+	realm="client"
+	args={[
+		<Argument type="number" name="h">The hue value.</Argument>,
+		<Argument type="number" name="s">The saturation value.</Argument>,
+		<Argument type="number" name="l">The lightness value.</Argument>,
+		<Argument type="number" name="a" defaultValue="1">The alpha (opacity) value.</Argument>
+	]}
+	returns={[
+		<ReturnValue type="Color">The color which the HSL values represent.</ReturnValue>
+	]}
+	repositoryUrl="https://github.com/TomDotBat/pixel-ui"
+	declaration="lua/pixelui/core/cl_color.lua#L71-L92"
+>
+	Converts [HSL](https://en.wikipedia.org/wiki/HSL_and_HSV) (Hue, Saturation, Lightness) values to a color.
+</Method>
