@@ -114,7 +114,7 @@ export default function Method({ name, realm, args, returns, repositoryUrl, decl
 						<h2 class="nx-font-semibold nx-tracking-tight nx-text-slate-900 dark:nx-text-slate-100 nx-mt-10 nx-border-b nx-pb-1 nx-text-3xl nx-border-neutral-200/70 contrast-more:nx-border-neutral-400 dark:nx-border-primary-100/10 contrast-more:dark:nx-border-neutral-400">
 							Arguments
 						</h2>
-						<div class="nextra-steps nx-ml-4 nx-mb-12 nx-pl-6 [counter-reset:step]">
+						<div class={`${args.length > 1 ? "nextra-steps " : ""}nx-ml-4 nx-mb-12 nx-pl-6 [counter-reset:step]`}>
 							{args}
 						</div>
 					</>
@@ -126,7 +126,7 @@ export default function Method({ name, realm, args, returns, repositoryUrl, decl
 						<h2 class="nx-font-semibold nx-tracking-tight nx-text-slate-900 dark:nx-text-slate-100 nx-mt-10 nx-border-b nx-pb-1 nx-text-3xl nx-border-neutral-200/70 contrast-more:nx-border-neutral-400 dark:nx-border-primary-100/10 contrast-more:dark:nx-border-neutral-400">
 							Returns
 						</h2>
-						<div class="nextra-steps nx-ml-4 nx-mb-12 nx-pl-6 [counter-reset:step]">
+						<div class={`${returns.length > 1 ? "nextra-steps " : ""}nx-ml-4 nx-mb-12 nx-pl-6 [counter-reset:step]`}>
 							{returns}
 						</div>
 					</>
