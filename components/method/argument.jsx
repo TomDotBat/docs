@@ -3,7 +3,7 @@ import Link from "next/link";
 export default function Argument({ type, name, defaultValue, children }) {
 	return (
 		<>
-			<h3 class="nx-font-semibold nx-tracking-tight nx-text-slate-900 dark:nx-text-slate-100 nx-mt-6 nx-text-lg">
+			<h3 class="nx-font-semibold nx-tracking-tight nx-text-slate-900 dark:nx-text-slate-100 nx-mt-6">
 				<Link className="nx-text-primary-600 nx-decoration-from-font [text-underline-position:from-font]" href={`https://wiki.facepunch.com/gmod/${type}`}>
 					{type}
 				</Link>
