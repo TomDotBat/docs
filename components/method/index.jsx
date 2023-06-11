@@ -48,10 +48,18 @@ export default function Method({ name, realm, args, returns, repositoryUrl, decl
 			<div className="mt-6 nx-bg-primary-700/5 nx-overflow-x-auto nx-rounded-xl dark:nx-bg-primary-300/10 contrast-more:nx-border contrast-more:nx-border-primary-900/20 contrast-more:nx-contrast-150 contrast-more:dark:nx-border-primary-100/40 px-4 py-3 flex">
 				<Realm type={realm} size="h-5" />
 				<code className="ml-3 text-[.8em] min-h-5 align-middle">
-					{listValues(returns)}
-					{` ${name}( `}
-					{listValues(args)}
-					{" )"}
+					{(returns && returns.length > 0) && listValues(returns)}
+					{` ${name}(`}
+					{
+						(args && args.length > 0) && (
+							<>
+								{" "}
+								{listValues(args)}
+								{" "}
+							</>
+						)
+					}
+					{")"}
 				</code>
 			</div>
 			{
@@ -101,7 +109,7 @@ export default function Method({ name, realm, args, returns, repositoryUrl, decl
 				)
 			}
 			{
-				args.length > 0 && (
+				(args && args.length > 0) && (
 					<>
 						<h2 class="nx-font-semibold nx-tracking-tight nx-text-slate-900 dark:nx-text-slate-100 nx-mt-10 nx-border-b nx-pb-1 nx-text-3xl nx-border-neutral-200/70 contrast-more:nx-border-neutral-400 dark:nx-border-primary-100/10 contrast-more:dark:nx-border-neutral-400">
 							Arguments
@@ -113,7 +121,7 @@ export default function Method({ name, realm, args, returns, repositoryUrl, decl
 				)
 			}
 			{
-				returns.length > 0 && (
+				(returns && returns.length > 0) > 0 && (
 					<>
 						<h2 class="nx-font-semibold nx-tracking-tight nx-text-slate-900 dark:nx-text-slate-100 nx-mt-10 nx-border-b nx-pb-1 nx-text-3xl nx-border-neutral-200/70 contrast-more:nx-border-neutral-400 dark:nx-border-primary-100/10 contrast-more:dark:nx-border-neutral-400">
 							Returns
