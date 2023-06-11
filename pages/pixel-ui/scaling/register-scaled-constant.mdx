@@ -1,0 +1,17 @@
+import Method from "/components/method";
+import Argument from "/components/method/argument";
+import ReturnValue from "/components/method/return_value";
+
+# RegisterScaledConstant
+<Method
+	name="PIXEL.RegisterScaledConstant"
+	realm="client"
+	args={[
+		<Argument type="string" name="identifier">The identifier of the constant.</Argument>,
+		<Argument type="number" name="value">The value of the constant.</Argument>
+	]}
+	repositoryUrl="https://github.com/TomDotBat/pixel-ui"
+	declaration="lua/pixelui/core/cl_scaling.lua#L26-L29"
+>
+	Registers a numerical constant that automatically scales with the screen's resolution.
+</Method>

@@ -1,0 +1,19 @@
+import Method from "/components/method";
+import Argument from "/components/method/argument";
+import ReturnValue from "/components/method/return_value";
+
+# Scale
+<Method
+	name="PIXEL.Scale"
+	realm="client"
+	args={[
+		<Argument type="number" name="value">The value to scale.</Argument>
+	]}
+	returns={[
+		<ReturnValue type="number">The scaled value.</ReturnValue>
+	]}
+	repositoryUrl="https://github.com/TomDotBat/pixel-ui"
+	declaration="lua/pixelui/core/cl_scaling.lua#L20-L22"
+>
+	Scales the given value with the screen's resolution.
+</Method>

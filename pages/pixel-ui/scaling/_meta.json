@@ -1,0 +1,5 @@
+{
+	"get-scaled-constant": "GetScaledConstant",
+	"register-scaled-constant": "RegisterScaledConstant",
+	"scale": "Scale"
+}
