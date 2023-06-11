@@ -4,7 +4,8 @@
     "title": "API Reference",
     "type": "separator"
   },
-  "utilities": "Utilities",
+  "color": "Color",
+  "fonts": "Fonts",
   "--more": {
     "title": "More",
     "type": "separator"
