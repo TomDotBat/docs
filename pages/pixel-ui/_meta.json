@@ -6,6 +6,7 @@
   },
   "color": "Color",
   "fonts": "Fonts",
+  "formatting": "Formatting",
   "loader": "Loader",
   "scaling": "Scaling",
   "--more": {

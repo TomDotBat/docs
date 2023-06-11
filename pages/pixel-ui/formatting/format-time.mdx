@@ -1,0 +1,19 @@
+import Method from "/components/method";
+import Argument from "/components/method/argument";
+import ReturnValue from "/components/method/return_value";
+
+# FormatTime
+<Method
+	name="PIXEL.FormatTime"
+	realm="shared"
+	args={[
+		<Argument type="number" name="value">The number to convert.</Argument>,
+	]}
+	returns={[
+		<ReturnValue type="string">The value as a formatted time string.</ReturnValue>
+	]}
+	repositoryUrl="https://github.com/TomDotBat/pixel-ui"
+	declaration="lua/pixelui/core/sh_formatting.lua#L67-L91"
+>
+	Converts an amount of seconds into a formatted time string.
+</Method>
