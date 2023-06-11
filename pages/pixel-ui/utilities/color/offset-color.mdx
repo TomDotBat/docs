@@ -18,3 +18,21 @@ import ReturnValue from "/components/method/return_value";
 >
 	Offsets the RGB components of the colour by the given amount.
 </Method>
+
+<br/>
+
+# Color:Offset
+<Method
+	name="Color:Offset"
+	realm="client"
+	args={[
+		<Argument type="number" name="offset">The amount to offset by.</Argument>
+	]}
+	returns={[
+		<ReturnValue type="boolean">The color the method was called on.</ReturnValue>
+	]}
+	repositoryUrl="https://github.com/TomDotBat/pixel-ui"
+	declaration="lua/pixelui/core/cl_color.lua#L157-L162"
+>
+	Offsets the RGB components of the color the method was called on by the given amount.
+</Method>

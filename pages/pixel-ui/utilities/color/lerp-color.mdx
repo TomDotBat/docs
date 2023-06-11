@@ -7,7 +7,7 @@ import ReturnValue from "/components/method/return_value";
 	name="PIXEL.LerpColor"
 	realm="client"
 	args={[
-		<Argument type="number" name="t">The fraction representing the progress between the from and to values.</Argument>,
+		<Argument type="number" name="t">The fraction representing the progress of the interpolation.</Argument>,
 		<Argument type="Color" name="from">The color to start from.</Argument>,
 		<Argument type="Color" name="to">The color to end with.</Argument>
 	]}
@@ -18,4 +18,23 @@ import ReturnValue from "/components/method/return_value";
 	declaration="lua/pixelui/core/cl_color.lua#L144-L146"
 >
 	Performs [linear interpolation](https://en.wikipedia.org/wiki/Linear_interpolation) between two colors.
+</Method>
+
+<br/>
+
+# Color:Lerp
+<Method
+	name="Color:Lerp"
+	realm="client"
+	args={[
+		<Argument type="number" name="t">The fraction representing the progress of the interpolation.</Argument>,
+		<Argument type="Color" name="to">The color to end with.</Argument>
+	]}
+	returns={[
+		<ReturnValue type="boolean">The color the method was called on.</ReturnValue>
+	]}
+	repositoryUrl="https://github.com/TomDotBat/pixel-ui"
+	declaration="lua/pixelui/core/cl_color.lua#L165-L171"
+>
+	Performs [linear interpolation](https://en.wikipedia.org/wiki/Linear_interpolation) starting from the color the method was called on.
 </Method>

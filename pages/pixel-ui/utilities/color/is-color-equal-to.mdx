@@ -11,10 +11,28 @@ import ReturnValue from "/components/method/return_value";
 		<Argument type="Color" name="b">The second color to compare.</Argument>,
 	]}
 	returns={[
-		<ReturnValue type="boolean">true if both colors are equal</ReturnValue>
+		<ReturnValue type="boolean">true if both colors are equal.</ReturnValue>
 	]}
 	repositoryUrl="https://github.com/TomDotBat/pixel-ui"
 	declaration="lua/pixelui/core/cl_color.lua#L148-L150C4"
 >
 	Determines whether two colors are equal to one another.
+</Method>
+
+<br/>
+
+# Color:EqualTo
+<Method
+	name="Color:EqualTo"
+	realm="client"
+	args={[
+		<Argument type="Color" name="other">The color to compare against.</Argument>,
+	]}
+	returns={[
+		<ReturnValue type="boolean">true if both colors are equal.</ReturnValue>
+	]}
+	repositoryUrl="https://github.com/TomDotBat/pixel-ui"
+	declaration="lua/pixelui/core/cl_color.lua#L155"
+>
+	Determines whether the color the method was called on is equal to the one provided.
 </Method>
