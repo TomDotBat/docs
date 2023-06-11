@@ -1,0 +1,4 @@
+{
+	"load-directory": "LoadDirectory",
+	"load-directory-recursive": "LoadDirectoryRecursive"
+}

@@ -1,0 +1,16 @@
+import Method from "/components/method";
+import Argument from "/components/method/argument";
+import ReturnValue from "/components/method/return_value";
+
+# LoadDirectoryRecursive
+<Method
+	name="PIXEL.LoadDirectoryRecursive"
+	realm="shared"
+	args={[
+		<Argument type="string" name="basePath">The path to the directory to load from.</Argument>
+	]}
+	repositoryUrl="https://github.com/TomDotBat/pixel-ui"
+	declaration="lua/autorun/sh_pixelui_loader.lua#L45-L50"
+>
+	Recursively includes every Lua file from the given folder.
+</Method>

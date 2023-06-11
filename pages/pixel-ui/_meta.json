@@ -6,6 +6,7 @@
   },
   "color": "Color",
   "fonts": "Fonts",
+  "loader": "Loader",
   "--more": {
     "title": "More",
     "type": "separator"
