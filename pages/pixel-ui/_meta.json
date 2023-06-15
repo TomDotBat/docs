@@ -8,7 +8,7 @@
 	"drawing": "Drawing",
 	"fonts": "Fonts",
 	"formatting": "Formatting",
-	"loader": "Loader",
+	"loaders": "Loaders",
 	"scaling": "Scaling",
 	"--more": {
 		"title": "More",

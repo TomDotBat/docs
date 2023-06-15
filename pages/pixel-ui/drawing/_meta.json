@@ -1,8 +1,9 @@
 {
 	"text": "Text",
-	"rounded-box": "Rounded Box",
-	"image": "Image",
-	"circle": "Circle",
+	"rounded-boxes": "Rounded Boxes",
+	"images": "Images",
 	"overheads": "Overheads",
+	"circles": "Circles",
+	"outlined-boxes": "Outlined Boxes",
 	"miscellaneous": "Miscellaneous"
 }
