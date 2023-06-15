@@ -18,6 +18,9 @@ export default {
 		key: "indev",
 		text: "⚠️ This site is under development, some artefacts may be missing or incomplete."
 	},
+	sidebar: {
+		defaultMenuCollapseLevel: 1
+	},
 	useNextSeoProps() {
 		return {
 			titleTemplate: "%s – Tom.docs"
