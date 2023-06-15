@@ -1,0 +1,24 @@
+import { Callout } from "nextra/components";
+
+import Method from "/components/method";
+import Argument from "/components/method/argument";
+
+# DrawBlur
+<Method
+	name="PIXEL.DrawBlur"
+	realm="client"
+	args={[
+		<Argument type="Panel" name="panel">The panel to draw the blur on.</Argument>,
+		<Argument type="number" name="localX">The X coordinate to draw at.</Argument>,
+		<Argument type="number" name="localY">The Y coordinate to draw at.</Argument>,
+		<Argument type="number" name="width">The width of the blur.</Argument>,
+		<Argument type="number" name="height">The height of the blur.</Argument>
+	]}
+	repositoryUrl="https://github.com/TomDotBat/pixel-ui"
+	declaration="lua/pixelui/drawing/cl_misc.lua#L58-L72"
+>
+	<Callout type="info" emoji="ℹ️">
+		The amount of passes used to draw the blur can be changed on the client with the `pixel_ui_blur_passes` convar.
+	</Callout>
+	Draws a blur over a specific area of a VGUI panel.
+</Method>
