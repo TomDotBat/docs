@@ -1,11 +1,8 @@
 {
-	"circle": "Circle",
-	"image": "Image",
-	"overheads": "Overheads",
-	"rounded-box": "Rounded Box",
 	"text": "Text",
-
-	"draw-blur": "DrawBlur",
-	"draw-fixed-rounded-text-box": "DrawFixedRoundedTextBox",
-	"draw-rounded-text-box": "DrawRoundedTextBox"
+	"rounded-box": "Rounded Box",
+	"image": "Image",
+	"circle": "Circle",
+	"overheads": "Overheads",
+	"miscellaneous": "Miscellaneous"
 }
