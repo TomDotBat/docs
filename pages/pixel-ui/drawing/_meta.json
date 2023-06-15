@@ -7,6 +7,5 @@
 
 	"draw-blur": "DrawBlur",
 	"draw-fixed-rounded-text-box": "DrawFixedRoundedTextBox",
-	"draw-outlined-box": "DrawOutlinedBox",
 	"draw-rounded-text-box": "DrawRoundedTextBox"
 }

@@ -1,7 +1,6 @@
 {
-	"draw-outlined-rounded-box": "DrawOutlinedRoundedBox",
-	"draw-rounded-box-ex": "DrawRoundedBoxEx",
 	"draw-rounded-box": "DrawRoundedBox",
-	"draw-full-rounded-box-ex": "DrawFullRoundedBoxEx",
-	"draw-full-rounded-box": "DrawFullRoundedBox"
+	"draw-rounded-box-ex": "DrawRoundedBoxEx",
+	"draw-full-rounded-box": "DrawFullRoundedBox",
+	"draw-full-rounded-box-ex": "DrawFullRoundedBoxEx"
 }
