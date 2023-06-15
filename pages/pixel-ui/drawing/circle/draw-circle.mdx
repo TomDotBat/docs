@@ -1,0 +1,19 @@
+import Method from "/components/method";
+import Argument from "/components/method/argument";
+
+# DrawCircle
+<Method
+	name="PIXEL.DrawCircle"
+	realm="client"
+	args={[
+		<Argument type="number" name="x">The X coordinate to draw at.</Argument>,
+		<Argument type="number" name="y">The Y coordinate to draw at.</Argument>,
+		<Argument type="number" name="width">The width of the circle.</Argument>,
+		<Argument type="number" name="height">The height of the circle.</Argument>,
+		<Argument type="Color" name="color">The color of the circle</Argument>
+	]}
+	repositoryUrl="https://github.com/TomDotBat/pixel-ui"
+	declaration="lua/pixelui/drawing/cl_circle.lua#L32-L44"
+>
+	Draws a solid circle on the screen with the given position, size and color.
+</Method>

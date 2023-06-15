@@ -1,0 +1,31 @@
+import { Callout } from "nextra/components";
+
+import Method from "/components/method";
+import Argument from "/components/method/argument";
+import ReturnValue from "/components/method/return_value";
+
+# CreateCircle
+<Method
+	name="PIXEL.CreateCircle"
+	realm="client"
+	args={[
+		<Argument type="number" name="x">The X coordinate of the circle's center.</Argument>,
+		<Argument type="number" name="y">The Y coordinate of the circle's center.</Argument>,
+		<Argument type="number" name="ang">The angle to start drawing from.</Argument>,
+		<Argument type="number" name="seg">The amount of polygon segments to produce.</Argument>,
+		<Argument type="number" name="pct">The angle to end drawing at.<i> - needs validation.</i></Argument>,
+		<Argument type="number" name="radius">The radius of the circle.</Argument>
+	]}
+	returns={[
+		<ReturnValue type="table">The [vertices](https://wiki.facepunch.com/gmod/Structures/PolygonVertex) which make up the circle.</ReturnValue>
+	]}
+	repositoryUrl="https://github.com/TomDotBat/pixel-ui"
+	declaration="lua/pixelui/drawing/cl_circle.lua#L51-L62"
+>
+	<Callout type="warning" emoji="⚠️">
+		Use of this method is recommended against and may be removed in a later version.
+		The same functionality can be achieved by using the Arc library.
+	</Callout>
+	Creates a circle polygon with the given attributes.
+	The output of this method can be drawn with [surface.DrawPoly](https://wiki.facepunch.com/gmod/surface.DrawPoly).
+</Method>
