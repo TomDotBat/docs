@@ -1,0 +1,12 @@
+{
+	"circle": "Circle",
+	"image": "Image",
+	"overhead": "Overhead",
+	"rounded-box": "Rounded Box",
+	"text": "Text",
+
+	"draw-blur": "DrawBlur",
+	"draw-fixed-rounded-text-box": "DrawFixedRoundedTextBox",
+	"draw-outlined-box": "DrawOutlinedBox",
+	"draw-rounded-text-box": "DrawRoundedTextBox"
+}

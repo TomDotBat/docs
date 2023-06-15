@@ -1,0 +1,5 @@
+{
+	"draw-circle": "DrawCircle",
+	"create-circle": "CreateCircle",
+	"draw-circle-uncached": "DrawCircleUncached"
+}

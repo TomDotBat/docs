@@ -1,0 +1,5 @@
+{
+	"draw-ent-overhead": "DrawEntOverhead",
+	"draw-npc-overhead": "DrawNPCOverhead",
+	"enable-icon-overheads": "EnableIconOverheads"
+}
