@@ -31,7 +31,7 @@ export default function Realm({ type, size = 4 }) {
 	return (
 		<Link
 			className={`${size} aspect-square block`}
-			href="https://wiki.facepunch.com/gmod/States"
+			href="https://wiki.facepunch.com/gmod/States" target="_blank"
 			title={name}
 		>
 			<div
