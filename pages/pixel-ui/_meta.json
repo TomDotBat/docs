@@ -1,5 +1,6 @@
 {
 	"getting-started": "Getting Started",
+	"configuration": "Configuration",
 	"--api": {
 		"title": "API Reference",
 		"type": "separator"
