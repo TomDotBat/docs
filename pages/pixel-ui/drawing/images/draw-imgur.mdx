@@ -1,0 +1,24 @@
+import { Callout } from "nextra/components";
+
+import Method from "/components/method";
+import Argument from "/components/method/argument";
+
+# DrawImgur
+<Method
+	name="PIXEL.DrawImgur"
+	realm="client"
+	args={[
+		<Argument type="number" name="x">The X coordinate to draw at.</Argument>,
+		<Argument type="number" name="y">The Y coordinate to draw at.</Argument>,
+		<Argument type="number" name="width">The width of the image.</Argument>,
+		<Argument type="number" name="height">The height of the image.</Argument>,
+		<Argument type="string" name="id">The ID of the image on Imgur.</Argument>,
+		<Argument type="Color" name="color">The color to tint the image..</Argument>
+	]}
+	repositoryUrl="https://github.com/TomDotBat/pixel-ui"
+	declaration="lua/pixelui/drawing/cl_imgur.lua#L47-L65"
+>
+	Draws an image downloaded from Imgur.
+	Images are automatically downloaded if they are not present in the cache.
+	A progress wheel will be shown in place while the image is being downloaded.
+</Method>

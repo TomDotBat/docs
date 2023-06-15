@@ -1,5 +1,5 @@
 {
-	"draw-progress-wheel": "DrawProgressWheel",
 	"draw-imgur": "DrawImgur",
-	"draw-imgur-rotated": "DrawImgurRotated"
+	"draw-imgur-rotated": "DrawImgurRotated",
+	"draw-progress-wheel": "DrawProgressWheel"
 }
