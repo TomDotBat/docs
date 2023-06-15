@@ -1,0 +1,71 @@
+import Image from "next/image";
+import { FileTree } from "nextra-theme-docs";
+
+import ColorPalette from "/components/color_palette";
+
+import progressWheelImage from "/public/assets/pixel-ui/configuration/progress-wheel.png";
+
+# Configuration
+The configuration file for PIXEL UI can be found at the following location:
+<FileTree>
+	<FileTree.Folder name="pixel-ui" defaultOpen>
+		<FileTree.Folder name="lua" defaultOpen>
+			<FileTree.Folder name="pixelui" defaultOpen>
+				<FileTree.File name="sh_config.lua" />
+			</FileTree.Folder>
+		</FileTree.Folder>
+	</FileTree.Folder>
+</FileTree>
+
+## Derma Menus
+The default derma menus (message, query and string request popups) can be overridden by PIXEL UI with the `OverrideDermaMenus` option.
+This option is disabled out of the box to avoid compatability issues, however the server owner can enable it if preferred.
+There are four possible options for this setting:
+1. Players are forced to use the default derma menus. *(Default)*
+2. The default menus are used, however players can opt in to the PIXEL UI overrides.
+3. The PIXEL UI overrides are used, however players can opt out.
+4. Players are forced to use the PIXEL UI overrides.
+
+When `OverrideDermaMenus` is set to option 2 or 3, the `pixel_ui_override_popups` convar will take effect.
+This convar can be set to 0 or 1, which enables or disables the overrides respectively.
+
+## Progress Wheel
+The progress wheel which PIXEL UI presents during asset downloads can be changed to the server owner's preference with the `ProgressImageID` setting.
+By default the value is set to [`635PPvg`](https://i.imgur.com/635PPvg.png), which is the image seen below:
+
+<Image
+	src={progressWheelImage} alt="Progress Wheel"
+	className="p-2 mt-4 bg-neutral-900 dark:bg-transparent rounded-lg border dark:border-zinc-800"
+/>
+
+## Color Scheme
+The color scheme of PIXEL UI can be modified under the `Colors` setting. By default, the values are set to the following:
+
+<ColorPalette colors={{
+	"Background": "#161616",
+	"Header": "#1C1C1C",
+	"Scroller": "#3D3D3D",
+}} />
+
+<ColorPalette colors={{
+	"Primary Text": "#FFFFFF",
+	"Secondary Text": "#DCDCDC",
+	"Disabled Text": "#282828"
+}} />
+
+<ColorPalette colors={{
+	"Primary": "#2F80C8",
+	"Disabled": "#B4B4B4",
+	"Positive": "#428632",
+	"Negative": "#A43232"
+}} />
+
+<ColorPalette colors={{
+	"Gold": "#D6AE22",
+	"Silver": "#C0C0C0",
+	"Bronze": "#915E31"
+}} />
+
+The color scheme can be modified with no limitation.
+However, some elements and third party addons may not be compatible.
+Addon developers are encouraged to use the color palette when developing with PIXEL UI in order to reflect the server owner's preferences.

@@ -1,0 +1,5 @@
+{
+	"draw-blur": "DrawBlur",
+	"draw-fixed-rounded-text-box": "DrawFixedRoundedTextBox",
+	"draw-rounded-text-box": "DrawRoundedTextBox"
+}

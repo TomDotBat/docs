@@ -1,4 +1,4 @@
-import cn from "clsx"
+import cn from "clsx";
 import Link from "next/link";
 
 import Realm from "../realm";
@@ -6,7 +6,7 @@ import Realm from "../realm";
 function LinkButton({ href, icon, title, ...props }) {
 	return (
 		<Link
-			href={href}
+			href={href} target="_blank"
 			className={cn(
 				"nextra-card nx-group nx-flex nx-flex-col nx-justify-start nx-overflow-hidden nx-rounded-lg nx-border nx-border-gray-200",
 				"nx-no-underline dark:nx-shadow-none",
@@ -35,7 +35,7 @@ export default function Method({ name, realm, args, returns, repositoryUrl, decl
 		const { type, name, defaultValue } = val.props;
 		return (
 			<>
-				<Link className="nx-text-primary-600 nx-decoration-from-font [text-underline-position:from-font]" href={`https://wiki.facepunch.com/gmod/${type}`}>
+				<Link className="nx-text-primary-600 nx-decoration-from-font [text-underline-position:from-font]" href={`https://wiki.facepunch.com/gmod/${type}`} target="_blank">
 					{type}
 				</Link>
 				{typesOnly ? "" : ` ${name ?? ""}${defaultValue ? ` = ${defaultValue}` : ""}`}

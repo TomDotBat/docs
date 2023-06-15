@@ -1,0 +1,29 @@
+import { Callout } from "nextra/components";
+
+import Method from "/components/method";
+import Argument from "/components/method/argument";
+
+# DrawShadowText
+<Method
+	name="PIXEL.DrawShadowText"
+	realm="client"
+	args={[
+		<Argument type="string" name="text">The text to draw.</Argument>,
+		<Argument type="string" name="font">The identifier of the font to use.</Argument>,
+		<Argument type="number" name="x">The X coordinate to draw at.</Argument>,
+		<Argument type="number" name="y">The Y coordinate to draw at.</Argument>,
+		<Argument type="color" name="color">The color of the text.</Argument>,
+		<Argument type="number" name="xAlign" defaultValue="TEXT_ALIGN_LEFT">The horizontal alignment.</Argument>,
+		<Argument type="number" name="yAlign" defaultValue="TEXT_ALIGN_TOP">The vertical alignment.</Argument>,
+		<Argument type="number" name="depth">The size of the shadow.</Argument>,
+		<Argument type="number" name="alpha" defaultValue="50">The transparency of the shadow.</Argument>
+	]}
+	repositoryUrl="https://github.com/TomDotBat/pixel-ui"
+	declaration="lua/pixelui/drawing/cl_text.lua#L83-L91"
+>
+	<Callout type="info" emoji="ℹ️">
+		This method will resolve fonts registered with PIXEL UI.
+		See [PIXEL.RegisterFont](../../fonts/register-font) or [PIXEL.RegisterFontUnscaled](../../fonts/register-font-unscaled) for more information.
+	</Callout>
+	Draws text with the specified attributes and applies a shadow effect.
+</Method>

@@ -1,0 +1,19 @@
+import Method from "/components/method";
+import Argument from "/components/method/argument";
+
+# DrawEntOverhead
+<Method
+	name="PIXEL.DrawEntOverhead"
+	realm="client"
+	args={[
+		<Argument type="Entity" name="ent">The entity to draw over.</Argument>,
+		<Argument type="string" name="text">The text to draw.</Argument>,
+		<Argument type="Angle" name="angle" defaultValue="Angle(0, 0, 0)">Where the bubble should face relative to the entity.</Argument>,
+		<Argument type="Vector" name="position" defaultValue="Vector(0, 0, ent:OBBMaxs().z)">The relative position of the bubble.</Argument>,
+		<Argument type="number" name="scale" defaultValue="0.05">The scale of the bubble.</Argument>
+	]}
+	repositoryUrl="https://github.com/TomDotBat/pixel-ui"
+	declaration="lua/pixelui/drawing/cl_overheads.lua#L64-L76"
+>
+	Draws a text bubble above the given entity.
+</Method>

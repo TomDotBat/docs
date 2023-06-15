@@ -1,3 +1,4 @@
+import Link from "next/link";
 import { useRouter } from "next/router";
 
 export default {
@@ -17,6 +18,9 @@ export default {
 		dismissible: true,
 		key: "indev",
 		text: "⚠️ This site is under development, some artefacts may be missing or incomplete."
+	},
+	sidebar: {
+		defaultMenuCollapseLevel: 1
 	},
 	useNextSeoProps() {
 		return {
@@ -42,13 +46,13 @@ export default {
 	footer: {
 		text: (
 			<span>
-				<a href="https://mit-license.org/" target="_blank">
+				<Link href="https://mit-license.org/" target="_blank">
 					MIT License
-				</a>
+				</Link>
 				{` – © ${new Date().getFullYear()} `}
-				<a href="https://tomdotbat.dev" target="_blank">
+				<Link href="https://tomdotbat.dev" target="_blank">
 					Tom O'Sullivan
-				</a>
+				</Link>
 			</span>
 		)
 	}

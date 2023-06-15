@@ -1,3 +1,5 @@
+import { Callout } from "nextra/components";
+
 import Method from "/components/method";
 import Argument from "/components/method/argument";
 import ReturnValue from "/components/method/return_value";
@@ -10,10 +12,13 @@ import ReturnValue from "/components/method/return_value";
 		<Argument type="string" name="font">The identifier of the PIXEL font.</Argument>
 	]}
 	returns={[
-		<ReturnValue type="string">The engine identifier of the PIXEL font.</ReturnValue>,
+		<ReturnValue type="string">The engine identifier of the PIXEL font.</ReturnValue>
 	]}
 	repositoryUrl="https://github.com/TomDotBat/pixel-ui"
 	declaration="lua/pixelui/core/cl_fonts.lua#L87-L89"
 >
+	<Callout emoji="💡">
+		All PIXEL UI methods resolve PIXEL fonts automatically, therefore this should only be used when calling engine methods directly.
+	</Callout>
 	Retrieves the engine identifier of a PIXEL font.
 </Method>

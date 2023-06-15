@@ -1,0 +1,30 @@
+import { Callout } from "nextra/components";
+
+import Method from "/components/method";
+import Argument from "/components/method/argument";
+import ReturnValue from "/components/method/return_value";
+
+# DrawCircleUncached
+<Method
+	name="PIXEL.DrawCircleUncached"
+	realm="client"
+	args={[
+		<Argument type="number" name="x">The X coordinate of the circle's center.</Argument>,
+		<Argument type="number" name="y">The Y coordinate of the circle's center.</Argument>,
+		<Argument type="number" name="ang">The angle to start drawing from.</Argument>,
+		<Argument type="number" name="seg">The amount of polygon segments to produce.</Argument>,
+		<Argument type="number" name="pct">The angle to end drawing at.<i> - needs validation.</i></Argument>,
+		<Argument type="number" name="radius">The radius of the circle.</Argument>
+	]}
+	repositoryUrl="https://github.com/TomDotBat/pixel-ui"
+	declaration="lua/pixelui/drawing/cl_circle.lua#L67-L69"
+>
+	<Callout type="warning" emoji="⚠️">
+		Use of this method is recommended against and may be removed in a later version.
+		The same functionality can be achieved by using the Arc library.
+	</Callout>
+	<Callout type="info" emoji="ℹ️">
+		Only use this method where absolutely necessary, polygon construction is an expensive operation.
+	</Callout>
+	Creates a circle polygon with [PIXEL.CreateCircle](create-circle) then immediately draws it.
+</Method>

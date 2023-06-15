@@ -1,0 +1,6 @@
+{
+	"draw-rounded-box": "DrawRoundedBox",
+	"draw-rounded-box-ex": "DrawRoundedBoxEx",
+	"draw-full-rounded-box": "DrawFullRoundedBox",
+	"draw-full-rounded-box-ex": "DrawFullRoundedBoxEx"
+}

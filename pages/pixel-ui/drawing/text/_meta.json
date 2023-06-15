@@ -1,0 +1,6 @@
+{
+	"draw-simple-text": "DrawSimpleText",
+	"draw-text": "DrawText",
+	"draw-shadow-text": "DrawShadowText",
+	"draw-dual-text": "DrawDualText"
+}
