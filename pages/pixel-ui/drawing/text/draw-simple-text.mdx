@@ -2,6 +2,7 @@ import { Callout } from "nextra/components";
 
 import Method from "/components/method";
 import Argument from "/components/method/argument";
+import ReturnValue from "/components/method/return_value";
 
 # DrawText
 <Method
@@ -15,6 +16,10 @@ import Argument from "/components/method/argument";
 		<Argument type="color" name="color">The color of the text.</Argument>,
 		<Argument type="number" name="xAlign" defaultValue="TEXT_ALIGN_LEFT">The horizontal alignment.</Argument>,
 		<Argument type="number" name="yAlign" defaultValue="TEXT_ALIGN_TOP">The vertical alignment.</Argument>
+	]}
+	returns={[
+		<ReturnValue type="number" name="width">The width of the text.</ReturnValue>,
+		<ReturnValue type="number" name="height">The height of the text.</ReturnValue>
 	]}
 	repositoryUrl="https://github.com/TomDotBat/pixel-ui"
 	declaration="lua/pixelui/drawing/cl_text.lua#L25-L46"
