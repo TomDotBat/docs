@@ -1,5 +1,7 @@
 {
 	"dec-to-hex": "DecToHex",
 	"format-money": "FormatMoney",
-	"format-time": "FormatTime"
+	"format-time": "FormatTime",
+	"wrap-text": "WrapText",
+	"ellipses-text": "EllipsesText"
 }
