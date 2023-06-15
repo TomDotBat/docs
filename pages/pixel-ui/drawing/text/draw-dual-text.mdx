@@ -1,0 +1,33 @@
+import { Callout } from "nextra/components";
+
+import Method from "/components/method";
+import Argument from "/components/method/argument";
+
+# DrawDualText
+<Method
+	name="PIXEL.DrawDualText"
+	realm="client"
+	args={[
+		<Argument type="table" name="title">The title text attributes.</Argument>,
+		<Argument type="table" name="subtitle">The subtitle text attributes.</Argument>,
+		<Argument type="number" name="x" defaultValue="0">The X coordinate to draw at.</Argument>,
+		<Argument type="number" name="y" defaultValue="0">The Y coordinate to draw at.</Argument>
+	]}
+	repositoryUrl="https://github.com/TomDotBat/pixel-ui"
+	declaration="lua/pixelui/drawing/cl_text.lua#L95-L107"
+>
+	<Callout type="info" emoji="ℹ️">
+		This method will resolve fonts registered with PIXEL UI.
+		See [PIXEL.RegisterFont](../../fonts/register-font) or [PIXEL.RegisterFontUnscaled](../../fonts/register-font-unscaled) for more information.
+	</Callout>
+	Draws two lines of shadow text with unique attributes.
+	The title and subtitle arguments must be a table with the following format:
+	| Index | Type                                             | Purpose                         |
+	| :---- | :----------------------------------------------: | ------------------------------: |
+	| 1     | [string](https://wiki.facepunch.com/gmod/string) | The text to draw.               |
+	| 2     | [string](https://wiki.facepunch.com/gmod/string) | The font to use.                |
+	| 3     | [Color](https://wiki.facepunch.com/gmod/Color)   | The color of the text.          |
+	| 4     | [number](https://wiki.facepunch.com/gmod/number) | The horizontal alignment.       |
+	| 5     | [number](https://wiki.facepunch.com/gmod/number) | The size of the shadow.         |
+	| 6     | [number](https://wiki.facepunch.com/gmod/number) | The transparency of the shadow. |
+</Method>
