@@ -1,6 +1,6 @@
 //https://github.com/shuding/nextra/blob/5eef7d7ad5aa2ac8a13bcc83ec6f01c5ab73a019/docs/components/screenshot/index.jsx
-import cn from "clsx"
-import Image from "next/image"
+import cn from "clsx";
+import Image from "next/image";
 
 export default function Screenshot({ src, alt, full }) {
 	return (
@@ -14,7 +14,7 @@ export default function Screenshot({ src, alt, full }) {
 			src={src}
 			alt={alt}
 			className={cn(
-				"w-auto select-none bg-white",
+				"w-auto select-none bg-black",
 				full ? "" : "ring-1 ring-gray-200"
 			)}
 	    />

@@ -1,4 +1,4 @@
-import cn from "clsx"
+import cn from "clsx";
 import Link from "next/link";
 
 import Realm from "../realm";
