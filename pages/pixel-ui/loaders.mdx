@@ -1,0 +1,22 @@
+import MethodList from "/components/method_list";
+
+# Loaders
+## Methods
+The following loader methods are accessible via the `PIXEL` global table:
+<MethodList methods={[
+	{
+		name: "LoadDirectory",
+		parent: "PIXEL.",
+		description: "Includes every Lua file from the given folder.",
+		args: ["string"],
+		returns: ["table", "table"],
+		href: "loaders/load-directory"
+	},
+	{
+		name: "LoadDirectoryRecursive",
+		parent: "PIXEL.",
+		description: "Recursively includes every Lua file from the given folder.",
+		args: ["string"],
+		href: "loaders/load-directory-recursive"
+	}
+]} />

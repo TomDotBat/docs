@@ -1,0 +1,29 @@
+import MethodList from "/components/method_list";
+
+# Overheads
+## Methods
+The following overhead drawing methods are accessible via the `PIXEL` global table:
+<MethodList methods={[
+	{
+		name: "DrawEntOverhead",
+		parent: "PIXEL.",
+		description: "Draws a text bubble above the given entity.",
+		args: ["Entity", "string", "Angle", "Vector", "number"],
+		href: "overheads/draw-ent-overhead"
+	},
+	{
+		name: "DrawNPCOverhead",
+		parent: "PIXEL.",
+		description: "Draws a text bubble above the given NPC.",
+		args: ["Entity", "string", "Angle", "Vector", "number"],
+		href: "overheads/draw-npc-overhead"
+	},
+	{
+		name: "EnableIconOverheads",
+		parent: "PIXEL.",
+		description: "Sets the icon to be drawn on overheads.",
+		args: ["string"],
+		returns: ["string"],
+		href: "overheads/enable-icon-overheads"
+	}
+]} />

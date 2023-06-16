@@ -1,0 +1,37 @@
+import MethodList from "/components/method_list";
+
+# Fonts
+## Methods
+The following font management methods are accessible via the `PIXEL` global table:
+<MethodList methods={[
+	{
+		name: "RegisterFont",
+		parent: "PIXEL.",
+		description: "Registers a font with PIXEL UI that automatically scales with the screen's resolution.",
+		args: ["string", "string", "number", "number"],
+		href: "fonts/register-font"
+	},
+	{
+		name: "RegisterFontUnscaled",
+		parent: "PIXEL.",
+		description: "Registers a font with PIXEL UI.",
+		args: ["string", "string", "number", "number"],
+		href: "fonts/register-font-unscaled"
+	},
+	{
+		name: "GetRealFont",
+		parent: "PIXEL.",
+		description: "Retrieves the engine identifier of a PIXEL font.",
+		args: ["string"],
+		returns: ["string"],
+		href: "fonts/get-real-font"
+	},
+	{
+		name: "GetTextSize",
+		parent: "PIXEL.",
+		description: "Calculates the size of the given text with the specified font.",
+		args: ["string", "string"],
+		returns: ["number", "number"],
+		href: "fonts/get-text-size"
+	}
+]} />

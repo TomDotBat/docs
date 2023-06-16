@@ -1,0 +1,28 @@
+import MethodList from "/components/method_list";
+
+# Miscellaneous
+## Methods
+The following miscellaneous drawing methods are accessible via the `PIXEL` global table:
+<MethodList methods={[
+	{
+		name: "DrawBlur",
+		parent: "PIXEL.",
+		description: "Draws a blur over a specific area of a VGUI panel.",
+		args: ["Panel", "number", "number", "number", "number"],
+		href: "miscellaneous/draw-blur"
+	},
+	{
+		name: "DrawRoundedTextBox",
+		parent: "PIXEL.",
+		description: "Draws a rounded box which expands to fit the provided text.",
+		args: ["string", "string", "number", "number", "number", "color", "number", "number", "Color"],
+		href: "miscellaneous/draw-rounded-text-box"
+	},
+	{
+		name: "DrawFixedRoundedTextBox",
+		parent: "PIXEL.",
+		description: "Draws a rounded box which contains the given text.",
+		args: ["string", "string", "number", "number", "number", "color" , "number", "number", "number", "number", "Color"],
+		href: "miscellaneous/draw-fixed-rounded-text-box"
+	}
+]} />

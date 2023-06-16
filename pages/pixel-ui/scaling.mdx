@@ -1,0 +1,30 @@
+import MethodList from "/components/method_list";
+
+# Scaling
+## Methods
+The following scaling methods are accessible via the `PIXEL` global table:
+<MethodList methods={[
+	{
+		name: "Scale",
+		parent: "PIXEL.",
+		description: "Scales the given value with the screen's resolution.",
+		args: ["number"],
+		returns: ["number"],
+		href: "scaling/scale"
+	},
+	{
+		name: "GetScaledConstant",
+		parent: "PIXEL.",
+		description: "Retreives the value of a scaled constant.",
+		args: ["string"],
+		returns: ["number"],
+		href: "scaling/get-scaled-constant"
+	},
+	{
+		name: "RegisterScaledConstant",
+		parent: "PIXEL.",
+		description: "Registers a numerical constant that automatically scales with the screen's resolution.",
+		args: ["string", "number"],
+		href: "scaling/register-scaled-constant"
+	}
+]} />

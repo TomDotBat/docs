@@ -1,0 +1,35 @@
+import MethodList from "/components/method_list";
+
+# Rounded Boxes
+## Methods
+The following rounded box drawing methods are accessible via the `PIXEL` global table:
+<MethodList methods={[
+	{
+		name: "DrawRoundedBox",
+		parent: "PIXEL.",
+		description: "Draws a box with rounded corners.",
+		args: ["number", "number", "number", "number", "number", "Color"],
+		href: "rounded-boxes/draw-rounded-box"
+	},
+	{
+		name: "DrawRoundedBoxEx",
+		parent: "PIXEL.",
+		description: "Draws a box with specific corners rounded.",
+		args: ["number", "number", "number", "number", "number", "Color", "boolean", "boolean", "boolean", "boolean"],
+		href: "rounded-boxes/draw-rounded-box-ex"
+	},
+	{
+		name: "DrawFullRoundedBox",
+		parent: "PIXEL.",
+		description: "Draws a box with rounded corners that can be used for masking.",
+		args: ["number", "number", "number", "number", "number", "Color"],
+		href: "rounded-boxes/draw-full-rounded-box"
+	},
+	{
+		name: "DrawFullRoundedBoxEx",
+		parent: "PIXEL.",
+		description: "Draws a box with specific corners rounded and can be used for masking.",
+		args: ["number", "number", "number", "number", "number", "Color", "boolean", "boolean", "boolean", "boolean"],
+		href: "rounded-boxes/draw-full-rounded-box-ex"
+	}
+]} />
