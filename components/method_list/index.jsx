@@ -24,7 +24,7 @@ export default function MethodList({ methods }) {
 							{
 								method.href ? (
 									<>
-										<Link className="nx-text-primary-600 nx-decoration-from-font [text-underline-position:from-font]" href={method.href} target="_blank">
+										<Link className="nx-text-primary-600 nx-decoration-from-font [text-underline-position:from-font]" href={method.href}>
 											{method.name}
 										</Link>
 										{"("}
