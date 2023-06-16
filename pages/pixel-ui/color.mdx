@@ -10,7 +10,7 @@ The following color methods are accessible via the PIXEL global table:
 		description: "Creates a copy of the given color.",
 		args: ["Color"],
 		returns: ["Color"],
-		href: "/color/copy-color"
+		href: "color/copy-color"
 	},
 	{
 		name: "OffsetColor",
@@ -18,7 +18,7 @@ The following color methods are accessible via the PIXEL global table:
 		description: "Offsets the RGB components of the colour by the given amount.",
 		args: ["Color", "number"],
 		returns: ["Color"],
-		href: "/color/offset-color"
+		href: "color/offset-color"
 	},
 	{
 		name: "LerpColor",
@@ -26,14 +26,14 @@ The following color methods are accessible via the PIXEL global table:
 		description: "Performs linear interpolation between two colors.",
 		args: ["number", "Color", "Color"],
 		returns: ["Color"],
-		href: "/color/lerp-color"
+		href: "color/lerp-color"
 	},
 	{
 		name: "GetRainbowColor",
 		parent: "PIXEL.",
 		description: "Provides a colour which cycles through the rainbow.",
 		returns: ["Color"],
-		href: "/color/get-rainbow-color"
+		href: "color/get-rainbow-color"
 	},
 	{
 		name: "IsColorEqualTo",
@@ -41,7 +41,7 @@ The following color methods are accessible via the PIXEL global table:
 		description: "Determines whether two colors are equal to one another.",
 		args: ["Color", "Color"],
 		returns: ["boolean"],
-		href: "/color/is-color-equal-to"
+		href: "color/is-color-equal-to"
 	},
 	{
 		name: "IsColorLight",
@@ -49,7 +49,7 @@ The following color methods are accessible via the PIXEL global table:
 		description: "Determines whether a color is considered light (greater than 0.5 lightness).",
 		args: ["Color"],
 		returns: ["boolean"],
-		href: "/color/is-color-light"
+		href: "color/is-color-light"
 	},
 	{
 		name: "ColorToHex",
@@ -57,7 +57,7 @@ The following color methods are accessible via the PIXEL global table:
 		description: "Converts a color into a hexadecimal string.",
 		args: ["Color"],
 		returns: ["string"],
-		href: "/color/color-to-hex"
+		href: "color/color-to-hex"
 	},
 	{
 		name: "ColorToHSL",
@@ -65,7 +65,7 @@ The following color methods are accessible via the PIXEL global table:
 		description: "Converts a color to its HSL (Hue, Saturation, Lightness) representation.",
 		args: ["Color"],
 		returns: ["number", "number", "number"],
-		href: "/color/color-to-hsl"
+		href: "color/color-to-hsl"
 	},
 	{
 		name: "HexToColor",
@@ -73,7 +73,7 @@ The following color methods are accessible via the PIXEL global table:
 		description: "Converts a hexadecimal string to a color.",
 		args: ["string"],
 		returns: ["Color"],
-		href: "/color/hex-to-color"
+		href: "color/hex-to-color"
 	},
 	{
 		name: "HSLToColor",
@@ -81,7 +81,7 @@ The following color methods are accessible via the PIXEL global table:
 		description: "Converts HSL (Hue, Saturation, Lightness) values to a color.",
 		args: ["number", "number", "number", "number"],
 		returns: ["Color"],
-		href: "/color/hsl-to-color"
+		href: "color/hsl-to-color"
 	}
 ]} />
 
@@ -93,7 +93,7 @@ The [Color](https://wiki.facepunch.com/gmod/Color) metatable is extended by PIXE
 		parent: "Color:",
 		description: "A new color instance with the same values as the original color.",
 		returns: ["Color"],
-		href: "/color/copy-color"
+		href: "color/copy-color"
 	},
 	{
 		name: "Offset",
@@ -101,7 +101,7 @@ The [Color](https://wiki.facepunch.com/gmod/Color) metatable is extended by PIXE
 		description: "Offsets the RGB components of the color the method was called on by the given amount.",
 		args: ["number"],
 		returns: ["Color"],
-		href: "/color/offset-color"
+		href: "color/offset-color"
 	},
 	{
 		name: "Lerp",
@@ -109,7 +109,7 @@ The [Color](https://wiki.facepunch.com/gmod/Color) metatable is extended by PIXE
 		description: "Performs linear interpolation starting from the color the method was called on.",
 		args: ["number", "number"],
 		returns: ["Color"],
-		href: "/color/lerp-color"
+		href: "color/lerp-color"
 	},
 	{
 		name: "EqualTo",
@@ -117,13 +117,13 @@ The [Color](https://wiki.facepunch.com/gmod/Color) metatable is extended by PIXE
 		description: "Determines whether the color the method was called on is equal to the one provided.",
 		args: ["Color"],
 		returns: ["boolean"],
-		href: "/color/is-color-equal-to"
+		href: "color/is-color-equal-to"
 	},
 	{
 		name: "IsLight",
 		parent: "Color:",
 		description: "Determines whether the color the method was called on is considered light (greater than 0.5 lightness).",
 		returns: ["boolean"],
-		href: "/color/is-color-light"
+		href: "color/is-color-light"
 	}
 ]} />
