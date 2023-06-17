@@ -1,0 +1,18 @@
+import { Callout } from "nextra/components";
+
+import Method from "/components/method";
+import Argument from "/components/method/argument";
+import ReturnValue from "/components/method/return_value";
+
+# IsPressed
+<Method
+	name="ui3d2d.isPressed"
+	realm="client"
+	returns={[
+		<ReturnValue type="boolean">True if the player just starting pressing the UI.</ReturnValue>
+	]}
+	repositoryUrl="https://github.com/TomDotBat/ui3d2d"
+	declaration="cl_ui3d2d.lua#L40-L42"
+>
+	Returns true if the player started pressing the UI on this frame.
+</Method>

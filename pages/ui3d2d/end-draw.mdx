@@ -1,0 +1,16 @@
+import { Callout } from "nextra/components";
+
+import Method from "/components/method";
+
+# EndDraw
+<Method
+	name="ui3d2d.endDraw"
+	realm="client"
+	repositoryUrl="https://github.com/TomDotBat/ui3d2d"
+	declaration="cl_ui3d2d.lua#L124-L128"
+>
+	<Callout emoji="⚠️">
+		This method should only be called after [StartDraw](start-draw)() has returned true.
+	</Callout>
+	Ends the UI3D2D rendering context.
+</Method>

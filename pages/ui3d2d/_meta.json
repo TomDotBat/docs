@@ -1,0 +1,23 @@
+{
+	"getting-started": "Getting Started",
+	"--api": {
+		"title": "API Reference",
+		"type": "separator"
+	},
+	"start-draw": "StartDraw",
+	"end-draw": "EndDraw",
+	"get-cursor-pos": "GetCursorPos",
+	"is-hovering": "IsHovering",
+	"is-pressing": "IsPressing",
+	"is-pressed": "IsPressed",
+	"draw-vgui": "DrawVGUI",
+	"--more": {
+		"title": "More",
+		"type": "separator"
+	},
+	"github": {
+		"title": "GitHub Repository ↗",
+		"href": "https://github.com/TomDotBat/pixel-ui",
+		"newWindow": true
+	}
+}
