@@ -1,0 +1,47 @@
+import MethodList from "/components/method_list";
+
+# Formatting
+## Methods
+The following formatting methods are accessible via the `PIXEL` global table:
+<MethodList methods={[
+	{
+		name: "WrapText",
+		parent: "PIXEL.",
+		description: "Wraps the given text to fit within the specified width.",
+		args: ["string", "number", "string"],
+		returns: ["string"],
+		href: "formatting/wrap-text"
+	},
+	{
+		name: "EllipsesText",
+		parent: "PIXEL.",
+		description: "Trims the given text to fit within the specified width and postfix it with ellipses.",
+		args: ["string", "number", "string"],
+		returns: ["string"],
+		href: "formatting/ellipses-text"
+	},
+	{
+		name: "FormatMoney",
+		parent: "PIXEL.",
+		description: "Converts the given value into a formatted money string according to the current gamemode settings.",
+		args: ["number"],
+		returns: ["string"],
+		href: "formatting/format-money"
+	},
+	{
+		name: "FormatTime",
+		parent: "PIXEL.",
+		description: "Converts an amount of seconds into a formatted time string.",
+		args: ["number"],
+		returns: ["string"],
+		href: "formatting/format-time"
+	},
+	{
+		name: "DecToHex",
+		parent: "PIXEL.",
+		description: "Converts a decimal number into a hexadecimal string.",
+		args: ["number", "number"],
+		returns: ["string"],
+		href: "formatting/dec-to-hex"
+	},
+]} />

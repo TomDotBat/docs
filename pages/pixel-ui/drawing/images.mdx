@@ -1,0 +1,28 @@
+import MethodList from "/components/method_list";
+
+# Images
+## Methods
+The following image drawing methods are accessible via the `PIXEL` global table:
+<MethodList methods={[
+	{
+		name: "DrawImgur",
+		parent: "PIXEL.",
+		description: "Draws an image downloaded from Imgur.",
+		args: ["number", "number", "number", "number", "string", "Color"],
+		href: "images/draw-imgur"
+	},
+	{
+		name: "DrawImgurRotated",
+		parent: "PIXEL.",
+		description: "Draws an image downloaded from Imgur with rotation.",
+		args: ["number", "number", "number", "number", "number", "string", "Color"],
+		href: "images/draw-imgur-rotated"
+	},
+	{
+		name: "DrawProgressWheel",
+		parent: "PIXEL.",
+		description: "Draws a rotating sprite which is defined by the ProgressImageID configuration settings.",
+		args: ["number", "number", "number", "number", "Color"],
+		href: "images/draw-progress-wheel"
+	}
+]} />

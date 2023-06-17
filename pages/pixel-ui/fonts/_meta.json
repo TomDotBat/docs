@@ -1,6 +1,6 @@
 {
-	"get-real-font": "GetRealFont",
-	"get-text-size": "GetTextSize",
 	"register-font": "RegisterFont",
-	"register-font-unscaled": "RegisterFontUnscaled"
+	"register-font-unscaled": "RegisterFontUnscaled",
+	"get-real-font": "GetRealFont",
+	"get-text-size": "GetTextSize"
 }

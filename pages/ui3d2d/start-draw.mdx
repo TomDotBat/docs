@@ -1,0 +1,28 @@
+import { Callout } from "nextra/components";
+
+import Method from "/components/method";
+import Argument from "/components/method/argument";
+import ReturnValue from "/components/method/return_value";
+
+# StartDraw
+<Method
+	name="ui3d2d.startDraw"
+	realm="client"
+	args={[
+		<Argument type="Vector" name="position">The position to draw the UI at.</Argument>,
+		<Argument type="Angle" name="angles">The angle which the UI should face.</Argument>,
+		<Argument type="number" name="scale">The UI scale factor.</Argument>,
+		<Argument type="Entity" name="ignoredEntity" defaultValue="nil">The entity to ignore when calculating the cursor's position.</Argument>
+	]}
+	returns={[
+		<ReturnValue type="boolean">True when the UI should be rendered.</ReturnValue>
+	]}
+	repositoryUrl="https://github.com/TomDotBat/ui3d2d"
+	declaration="cl_ui3d2d.lua#L78-L120"
+>
+	<Callout type="warning" emoji="⚠️">
+		[EndDraw](end-draw)() **must** be called after the UI has been drawn.
+	</Callout>
+	Starts a UI3D2D rendering context in immediate mode.
+	Calling this will also determine the user's input status for the current frame.
+</Method>

@@ -1,0 +1,29 @@
+import MethodList from "/components/method_list";
+
+# Circles
+## Methods
+The following circle drawing methods are accessible via the `PIXEL` global table:
+<MethodList methods={[
+	{
+		name: "DrawCircle",
+		parent: "PIXEL.",
+		description: "Draws a solid circle on the screen with the given position, size and color.",
+		args: ["number", "number", "number", "number", "Color"],
+		href: "circles/draw-circle"
+	},
+	{
+		name: "CreateCircle",
+		parent: "PIXEL.",
+		description: "Creates a circle polygon with the given attributes.",
+		args: ["number", "number", "number", "number", "number", "number"],
+		returns: ["table"],
+		href: "circles/create-circle"
+	},
+	{
+		name: "DrawCircleUncached",
+		parent: "PIXEL.",
+		description: "Creates a circle polygon with PIXEL.CreateCircle then immediately draws it.",
+		args: ["number", "number", "number", "number", "number", "number"],
+		href: "circles/draw-circle-uncached"
+	}
+]} />

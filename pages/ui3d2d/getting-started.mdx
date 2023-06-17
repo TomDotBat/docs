@@ -1,0 +1,68 @@
+import { Callout } from "nextra/components";
+
+import MethodList from "/components/method_list";
+
+# Getting Started
+## Installation
+Including UI3D2D in your project is a simple process, it can be downloaded form the GitHub releases page [here](https://github.com/TomDotBat/ui3d2d/releases/latest).
+Once downloaded, the source files can be copied into your project and included using the [include](https://wiki.facepunch.com/gmod/Global.include) method.
+
+<Callout type="info" emoji="ℹ️">
+	The UI3D2D extras are not required for the main library to function and can be removed from your project if not necessary.
+</Callout>
+
+## Methods
+UI3D2D includes the following methods which are accessible via the `ui3d2d` global table:
+<MethodList methods={[
+	{
+		name: "startDraw",
+		parent: "ui3d2d.",
+		description: "Starts a UI3D2D rendering context in immediate mode. Calling this will also determine the user's input status for the current frame.",
+		args: ["Vector", "Angle", "number", "Entity"],
+		returns: ["boolean"],
+		href: "start-draw"
+	},
+	{
+		name: "endDraw",
+		parent: "ui3d2d.",
+		description: "Ends the UI3D2D rendering context.",
+		href: "end-draw"
+	},
+	{
+		name: "getCursorPos",
+		parent: "ui3d2d.",
+		description: "Returns the current position of the cursor. This will be nil when the player is not looking at the UI.",
+		returns: ["number", "number"],
+		href: "start-draw"
+	},
+	{
+		name: "isHovering",
+		parent: "ui3d2d.",
+		description: "Determines whether or not the cursor is within the specified bounds.",
+		args: ["number", "number", "number", "number"],
+		returns: ["boolean"],
+		href: "is-hovering"
+	},
+	{
+		name: "isPressing",
+		parent: "ui3d2d.",
+		description: "Returns true when the player holds down the use or attack key.",
+		returns: ["boolean"],
+		href: "is-pressing"
+	},
+	{
+		name: "isPressed",
+		parent: "ui3d2d.",
+		description: "Returns true if the player started pressing the UI on this frame.",
+		returns: ["boolean"],
+		href: "is-pressed"
+	},
+	{
+		name: "drawVgui",
+		parent: "ui3d2d.",
+		description: "Draws the given VGUI panel in 3D space and allows the player to interact with it.",
+		args: ["Panel", "Vector", "Angle", "number", "Entity"],
+		returns: ["boolean"],
+		href: "draw-vgui"
+	},
+]} />

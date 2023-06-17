@@ -1,0 +1,36 @@
+import MethodList from "/components/method_list";
+
+# Text
+## Methods
+The following text drawing methods are accessible via the `PIXEL` global table:
+<MethodList methods={[
+	{
+		name: "DrawSimpleText",
+		parent: "PIXEL.",
+		description: "Draws text with the specified attributes.",
+		args: ["string", "string", "number", "number", "color", "number", "number"],
+		returns: ["number", "number"],
+		href: "text/draw-simple-text"
+	},
+	{
+		name: "DrawText",
+		parent: "PIXEL.",
+		description: "Draws multi-line text with the specified attributes.",
+		args: ["string", "string", "number", "number", "color", "number"],
+		href: "text/draw-text"
+	},
+	{
+		name: "DrawShadowText",
+		parent: "PIXEL.",
+		description: "Draws text with the specified attributes and applies a shadow effect.",
+		args: ["string", "string", "number", "number", "color", "number", "number", "number", "number"],
+		href: "text/draw-shadow-text"
+	},
+	{
+		name: "DrawDualText",
+		parent: "PIXEL.",
+		description: "Draws two lines of shadow text with unique attributes.",
+		args: ["table", "table", "number", "number"],
+		href: "text/draw-dual-text"
+	}
+]} />

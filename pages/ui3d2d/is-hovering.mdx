@@ -1,0 +1,22 @@
+import Method from "/components/method";
+import Argument from "/components/method/argument";
+import ReturnValue from "/components/method/return_value";
+
+# IsHovering
+<Method
+	name="ui3d2d.isHovering"
+	realm="client"
+	args={[
+		<Argument type="number" name="x">The X position of the area.</Argument>,
+		<Argument type="number" name="y">The Y position of the area.</Argument>,
+		<Argument type="number" name="width">The width of the area.</Argument>,
+		<Argument type="number" name="height">The height of the area.</Argument>
+	]}
+	returns={[
+		<ReturnValue type="boolean">True when the cursor is hovering the area.</ReturnValue>
+	]}
+	repositoryUrl="https://github.com/TomDotBat/ui3d2d"
+	declaration="cl_ui3d2d.lua#L135-L138"
+>
+	Determines whether or not the cursor is within the specified bounds.
+</Method>

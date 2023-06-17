@@ -1,0 +1,21 @@
+import MethodList from "/components/method_list";
+
+# Outlined Boxes
+## Methods
+The following outlined box drawing methods are accessible via the `PIXEL` global table:
+<MethodList methods={[
+	{
+		name: "DrawOutlinedBox",
+		parent: "PIXEL.",
+		description: "Draws the outline of a box with the given position, size, thickness and color.",
+		args: ["number", "number", "number", "number", "number", "Color"],
+		href: "outlined-boxes/draw-outlined-box"
+	},
+	{
+		name: "DrawOutlinedRoundedBox",
+		parent: "PIXEL.",
+		description: "Draws the outline of a rounded box with the given attributes.",
+		args: ["number", "number", "number", "number", "number", "Color", "number"],
+		href: "miscellaneous/draw-outlined-rounded-box"
+	}
+]} />

@@ -1,0 +1,28 @@
+import { Callout } from "nextra/components";
+
+import Method from "/components/method";
+import Argument from "/components/method/argument";
+import ReturnValue from "/components/method/return_value";
+
+# DrawVGUI
+<Method
+	name="ui3d2d.drawVgui"
+	realm="client"
+	args={[
+		<Argument type="Panel" name="panel">The VGUI panel to draw.</Argument>,
+		<Argument type="Vector" name="position">The position to draw the UI at.</Argument>,
+		<Argument type="Angle" name="angles">The angle which the UI should face.</Argument>,
+		<Argument type="number" name="scale">The UI scale factor.</Argument>,
+		<Argument type="Entity" name="ignoredEntity" defaultValue="nil">The entity to ignore when calculating the cursor's position.</Argument>
+	]}
+	repositoryUrl="https://github.com/TomDotBat/ui3d2d"
+	declaration="cl_ui3d2d_extras.lua#L96-L119"
+>
+	<Callout emoji="⚠️">
+		This method is only available when the [UI3D2D extras](https://github.com/TomDotBat/ui3d2d/blob/master/cl_ui3d2d_extras.lua) are included.
+	</Callout>
+	<Callout type="info" emoji="ℹ️">
+		Do **not** call [EndDraw](end-draw)() when using this method, it is done automatically.
+	</Callout>
+	Draws the given VGUI panel in 3D space and allows the player to interact with it.
+</Method>
