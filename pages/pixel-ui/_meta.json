@@ -11,6 +11,12 @@
 	"formatting": "Formatting",
 	"loaders": "Loaders",
 	"scaling": "Scaling",
+	"--vgui": {
+		"title": "VGUI Reference",
+		"type": "separator"
+	},
+	"avatar": "Avatar",
+	"button": "Button",
 	"--more": {
 		"title": "More",
 		"type": "separator"

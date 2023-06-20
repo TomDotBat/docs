@@ -1,0 +1,127 @@
+import MethodList from "/components/method_list";
+
+# Avatar
+## Methods
+The following vgui methods are accessible via the `PANEL` table:
+<MethodList methods={[
+	{
+		name: "SetSteamID",
+		parent: "Avatar:",
+		description: "Loads avatar by its 64-bit Steam ID (community ID).",
+		args: ["string", "number"],
+		href: "avatar/set-steamid"
+	},
+	{
+		name: "SetPlayer",
+		parent: "Avatar:",
+		description: "Loads avatar for a given player.",
+		args: ["Player", "number"],
+		href: "avatar/set-player"
+	},
+	{
+		name: "LerpColor",
+		parent: "PIXEL.",
+		description: "Performs linear interpolation between two colors.",
+		args: ["number", "Color", "Color"],
+		returns: ["Color"],
+		href: "color/lerp-color"
+	},
+	{
+		name: "GetRainbowColor",
+		parent: "PIXEL.",
+		description: "Provides a colour which cycles through the rainbow.",
+		returns: ["Color"],
+		href: "color/get-rainbow-color"
+	},
+	{
+		name: "IsColorEqualTo",
+		parent: "PIXEL.",
+		description: "Determines whether two colors are equal to one another.",
+		args: ["Color", "Color"],
+		returns: ["boolean"],
+		href: "color/is-color-equal-to"
+	},
+	{
+		name: "IsColorLight",
+		parent: "PIXEL.",
+		description: "Determines whether a color is considered light (greater than 0.5 lightness).",
+		args: ["Color"],
+		returns: ["boolean"],
+		href: "color/is-color-light"
+	},
+	{
+		name: "ColorToHex",
+		parent: "PIXEL.",
+		description: "Converts a color into a hexadecimal string.",
+		args: ["Color"],
+		returns: ["string"],
+		href: "color/color-to-hex"
+	},
+	{
+		name: "ColorToHSL",
+		parent: "PIXEL.",
+		description: "Converts a color to its HSL (Hue, Saturation, Lightness) representation.",
+		args: ["Color"],
+		returns: ["number", "number", "number"],
+		href: "color/color-to-hsl"
+	},
+	{
+		name: "HexToColor",
+		parent: "PIXEL.",
+		description: "Converts a hexadecimal string to a color.",
+		args: ["string"],
+		returns: ["Color"],
+		href: "color/hex-to-color"
+	},
+	{
+		name: "HSLToColor",
+		parent: "PIXEL.",
+		description: "Converts HSL (Hue, Saturation, Lightness) values to a color.",
+		args: ["number", "number", "number", "number"],
+		returns: ["Color"],
+		href: "color/hsl-to-color"
+	}
+]} />
+
+## Color Extension Methods
+The [Color](https://wiki.facepunch.com/gmod/Color) metatable is extended by PIXEL UI to include the following methods:
+<MethodList methods={[
+	{
+		name: "Copy",
+		parent: "Color:",
+		description: "A new color instance with the same values as the original color.",
+		returns: ["Color"],
+		href: "color/copy-color"
+	},
+	{
+		name: "Offset",
+		parent: "Color:",
+		description: "Offsets the RGB components of the color the method was called on by the given amount.",
+		args: ["number"],
+		returns: ["Color"],
+		href: "color/offset-color"
+	},
+	{
+		name: "Lerp",
+		parent: "Color:",
+		description: "Performs linear interpolation starting from the color the method was called on.",
+		args: ["number", "number"],
+		returns: ["Color"],
+		href: "color/lerp-color"
+	},
+	{
+		name: "EqualTo",
+		parent: "Color:",
+		description: "Determines whether the color the method was called on is equal to the one provided.",
+		args: ["Color"],
+		returns: ["boolean"],
+		href: "color/is-color-equal-to"
+	},
+	{
+		name: "IsLight",
+		parent: "Color:",
+		description: "Determines whether the color the method was called on is considered light (greater than 0.5 lightness).",
+		returns: ["boolean"],
+		href: "color/is-color-light"
+	}
+]} />

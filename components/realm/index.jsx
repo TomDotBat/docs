@@ -20,6 +20,10 @@ export default function Realm({ type, size = 4 }) {
 			background = "linear-gradient(45deg, #dea909 53%, #03a9f4 53.001%)";
 			name = "Client & Server";
 			break;
+		case "shared-menu":
+			background = "linear-gradient(45deg, #dea909 53%, #4caf50 53.001%)";
+			name = "Client & Menu";
+			break;
 		case "all":
 			background = "linear-gradient(45deg, #4caf50 35.99%, #dea909 36%, #dea909 63%, #03a9f4 63.01%)";
 			name = "All Realms";
