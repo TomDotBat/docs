@@ -16,7 +16,6 @@
 		"type": "separator"
 	},
 	"avatar": "Avatar",
-	"button": "Button",
 	"--more": {
 		"title": "More",
 		"type": "separator"
