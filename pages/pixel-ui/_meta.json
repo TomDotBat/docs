@@ -1,29 +1,25 @@
 {
-	"getting-started": "Getting Started",
-	"configuration": "Configuration",
-	"--api": {
-		"title": "API Reference",
-		"type": "separator"
-	},
-	"color": "Color",
-	"drawing": "Drawing",
-	"fonts": "Fonts",
-	"formatting": "Formatting",
-	"loaders": "Loaders",
-	"scaling": "Scaling",
-	"--vgui": {
-		"title": "VGUI Reference",
-		"type": "separator"
-	},
-	"avatar": "Avatar",
-	"--more": {
-		"title": "More",
-		"type": "separator"
-	},
-	"example-projects": "Example Projects",
-	"github": {
-		"title": "GitHub Repository ↗",
-		"href": "https://github.com/TomDotBat/pixel-ui",
-		"newWindow": true
-	}
+  "getting-started": "Getting Started",
+  "configuration": "Configuration",
+  "--api": {
+    "title": "API Reference",
+    "type": "separator"
+  },
+  "color": "Color",
+  "drawing": "Drawing",
+  "fonts": "Fonts",
+  "formatting": "Formatting",
+  "loaders": "Loaders",
+  "scaling": "Scaling",
+  "elements": "Elements",
+  "--more": {
+    "title": "More",
+    "type": "separator"
+  },
+  "example-projects": "Example Projects",
+  "github": {
+    "title": "GitHub Repository ↗",
+    "href": "https://github.com/TomDotBat/pixel-ui",
+    "newWindow": true
+  }
 }
