@@ -1,0 +1,30 @@
+import MethodList from "/components/method_list";
+
+# Avatar
+
+## Parent
+
+Derives methods, etc not listed on this page from [AvatarImage](https://wiki.facepunch.com/gmod/AvatarImage) and [Panel](/elements/panel).
+
+## Methods
+
+The following methods are accessible through the `Avatar` element table:
+
+<MethodList
+  methods={[
+    {
+      name: "SetSteamID",
+      parent: "Avatar:",
+      description: "Loads avatar by its 64-bit Steam ID (community ID).",
+      args: ["string", "number"],
+      href: "/elements/avatar/set-steamid",
+    },
+    {
+      name: "SetPlayer",
+      parent: "Avatar:",
+      description: "Loads avatar for a given player.",
+      args: ["Player", "number"],
+      href: "/elements/avatar/set-player",
+    },
+  ]}
+/>

@@ -1,0 +1,21 @@
+import Method from "/components/method";
+import Argument from "/components/method/argument";
+
+# SetSteamID
+
+<Method
+  name="Avatar:SetSteamID"
+  realm="shared-menu"
+  args={[
+    <Argument type="string" name="id">
+      The 64-bit SteamID of the player to load avatar of
+    </Argument>,
+    <Argument type="number" name="size">
+      The size of the avatar, must be 32, 64 or 184.
+    </Argument>,
+  ]}
+  repositoryUrl="https://github.com/TomDotBat/pixel-ui"
+  declaration="lua/pixelui/elements/cl_avatar.lua#L47-L49"
+>
+  Loads avatar by its 64-bit Steam ID (community ID).
+</Method>
