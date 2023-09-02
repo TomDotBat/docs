@@ -1,4 +1,6 @@
 {
+	"draw-image": "DrawImage",
+	"draw-image-rotated": "DrawImageRotated",
 	"draw-imgur": "DrawImgur",
 	"draw-imgur-rotated": "DrawImgurRotated",
 	"draw-progress-wheel": "DrawProgressWheel"
