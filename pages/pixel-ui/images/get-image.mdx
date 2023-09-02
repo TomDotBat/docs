@@ -1,0 +1,19 @@
+import { Callout } from "nextra/components";
+
+import Method from "/components/method";
+import Argument from "/components/method/argument";
+
+# GetImage
+<Method
+	name="PIXEL.GetImage"
+	realm="client"
+	args={[
+		<Argument type="string" name="url">The URL of the image to download.</Argument>,
+		<Argument type="function" name="callback">The callback to pass the downloaded image material to.</Argument>,
+		<Argument type="string" name="materialSettings">The material flags to use.</Argument>
+	]}
+	repositoryUrl="https://github.com/TomDotBat/pixel-ui"
+	declaration="lua/pixelui/core/cl_images.lua#L68-L115"
+>
+	Downloads an image from the given URL and passes a material with the provided [flags](https://wiki.facepunch.com/gmod/Material_Flags) to the callback function.
+</Method>

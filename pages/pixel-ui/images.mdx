@@ -1,0 +1,23 @@
+import MethodList from "/components/method_list";
+
+# Images
+## Methods
+The following image download methods are accessible via the `PIXEL` global table:
+<MethodList methods={[
+	{
+		name: "GetImage",
+		parent: "PIXEL.",
+		description: "Downloads an image from the given URL.",
+		args: ["string", "function", "string"],
+		href: "images/get-image"
+	},
+	{
+		name: "GetImgur",
+		parent: "PIXEL.",
+		description: "Downloads an image from Imgur with the given ID.",
+		args: ["string", "function", "nil", "string"],
+		href: "images/get-imgur"
+	}
+]} />
+
+For methods relating to image drawing, [click here](drawing/images).
