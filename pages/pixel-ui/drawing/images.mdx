@@ -5,6 +5,20 @@ import MethodList from "/components/method_list";
 The following image drawing methods are accessible via the `PIXEL` global table:
 <MethodList methods={[
 	{
+		name: "DrawImage",
+		parent: "PIXEL.",
+		description: "Draws an image downloaded from the given URL.",
+		args: ["number", "number", "number", "number", "string", "Color"],
+		href: "images/draw-imgur"
+	},
+	{
+		name: "DrawImageRotated",
+		parent: "PIXEL.",
+		description: "Draws an image downloaded from the given URL with rotation.",
+		args: ["number", "number", "number", "number", "string", "Color"],
+		href: "images/draw-imgur"
+	},
+	{
 		name: "DrawImgur",
 		parent: "PIXEL.",
 		description: "Draws an image downloaded from Imgur.",
