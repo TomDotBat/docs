@@ -1,0 +1,16 @@
+{
+	"getting-started": "Getting Started",
+	"--api": {
+		"title": "API Reference",
+		"type": "separator"
+	},
+	"--more": {
+		"title": "More",
+		"type": "separator"
+	},
+	"github": {
+		"title": "GitHub Repository ↗",
+		"href": "https://github.com/TomDotBat/gmod-i18n",
+		"newWindow": true
+	}
+}
