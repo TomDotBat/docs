@@ -5,6 +5,7 @@
 		"title": "API Reference",
 		"type": "separator"
 	},
+	"elements": "Elements",
 	"color": "Color",
 	"drawing": "Drawing",
 	"fonts": "Fonts",
