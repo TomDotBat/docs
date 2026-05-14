@@ -12,6 +12,7 @@
 "title": "More",
 "type": "separator"
 },
+"examples": "Examples",
 "github": {
 "title": "GitHub Repository ↗",
 "href": "https://github.com/TomDotBat/gmod-i18n",
