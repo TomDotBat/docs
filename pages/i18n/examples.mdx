@@ -47,8 +47,8 @@ Keep the translation reference (`en`) when you want to group phrases per languag
 Addon instances are callable via `Addon:GetString`, so you can keep a local alias and use the string-call shorthand. This assumes translations were registered in an autoloaded file like the one above.
 
 ```lua
-local addon = i18n.RegisterAddon("MyAddon", "Your Name", "en")
-local L = addon
+-- Assumes addon registration happened in your autoloaded i18n file.
+local L = i18n.GetAddon("MyAddon")
 
 print(L"ui.title")
 print(L("ui.title", { name = "Alex" }))
