@@ -1,0 +1,7 @@
+{
+"new": "New",
+"get-identifier": "GetIdentifier",
+"get-template": "GetTemplate",
+"get-fallbacks": "GetFallbacks",
+"get-string": "GetString"
+}

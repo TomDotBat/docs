@@ -1,0 +1,8 @@
+{
+"new": "New",
+"get-language": "GetLanguage",
+"get-author": "GetAuthor",
+"get-phrases": "GetPhrases",
+"get-string": "GetString",
+"add-phrase": "AddPhrase"
+}

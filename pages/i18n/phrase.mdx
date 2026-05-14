@@ -1,0 +1,49 @@
+import MethodList from "/components/method_list";
+
+# Phrase
+Phrase objects render templates with replacement tokens. Create them with `Translation:AddPhrase` or `Phrase.New`.
+
+## Constructors
+<MethodList methods={[
+{
+name: "New",
+parent: "Phrase.",
+description: "Creates a new phrase.",
+args: ["string", "string", "table"],
+returns: ["table"],
+href: "phrase/new"
+}
+]} />
+
+## Instance Methods
+<MethodList methods={[
+{
+name: "GetIdentifier",
+parent: "Phrase:",
+description: "Gets the phrase identifier.",
+returns: ["string"],
+href: "phrase/get-identifier"
+},
+{
+name: "GetTemplate",
+parent: "Phrase:",
+description: "Gets the phrase template.",
+returns: ["string"],
+href: "phrase/get-template"
+},
+{
+name: "GetFallbacks",
+parent: "Phrase:",
+description: "Gets the fallback replacements for template keys.",
+returns: ["table"],
+href: "phrase/get-fallbacks"
+},
+{
+name: "GetString",
+parent: "Phrase:",
+description: "Builds the phrase string with replacements.",
+args: ["table"],
+returns: ["string"],
+href: "phrase/get-string"
+}
+]} />

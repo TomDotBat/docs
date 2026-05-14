@@ -1,0 +1,37 @@
+import MethodList from "/components/method_list";
+
+# Core
+The following methods are accessible via the `i18n` global table:
+<MethodList methods={[
+{
+name: "GetLanguage",
+parent: "i18n.",
+description: "Gets the override language configured for translations.",
+returns: ["string"],
+href: "core/get-language"
+},
+{
+name: "GetAddon",
+parent: "i18n.",
+description: "Gets a registered addon by name.",
+args: ["string"],
+returns: ["table"],
+href: "core/get-addon"
+},
+{
+name: "RegisterAddon",
+parent: "i18n.",
+description: "Registers or updates an addon.",
+args: ["string", "string", "string"],
+returns: ["table"],
+href: "core/register-addon"
+},
+{
+name: "RegisterTranslation",
+parent: "i18n.",
+description: "Registers a translation for an addon.",
+args: ["string", "string", "string"],
+returns: ["table"],
+href: "core/register-translation"
+}
+]} />
