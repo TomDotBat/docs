@@ -1,0 +1,57 @@
+import { Callout } from "nextra/components";
+import { FileTree } from "nextra-theme-docs";
+
+# Examples
+These examples show recommended patterns for registering phrases and using shorthand helpers.
+
+## Autoloaded registration
+Register your addon and phrases from an autoloaded file so translations are available before gameplay code needs them.
+
+<FileTree>
+	<FileTree.Folder name="garrysmod" defaultOpen>
+		<FileTree.Folder name="addons" defaultOpen>
+			<FileTree.Folder name="my-addon" defaultOpen>
+				<FileTree.Folder name="lua" defaultOpen>
+					<FileTree.Folder name="autorun" defaultOpen>
+						<FileTree.File name="sh_myaddon_i18n.lua" />
+					</FileTree.Folder>
+				</FileTree.Folder>
+			</FileTree.Folder>
+		</FileTree.Folder>
+	</FileTree.Folder>
+</FileTree>
+
+```lua filename="lua/autorun/sh_myaddon_i18n.lua"
+local function registerTranslations()
+	local addon = i18n.RegisterAddon("MyAddon", "Your Name", "en")
+	local en = i18n.RegisterTranslation("MyAddon", "en", "Your Name")
+
+	en:AddPhrase("ui.title", "Welcome, #name", { name = "friend" })
+end
+
+if i18n then
+	registerTranslations()
+	return
+end
+
+hook.Add("i18n.FullyLoaded", "MyAddon.RegisterTranslations", registerTranslations)
+```
+
+Keep the translation reference (`en`) when you want to group phrases per language file or batch-add phrases later; otherwise you can discard it after registration.
+
+<Callout type="info" emoji="ℹ️">
+	Using a shared (`sh_`) autorun file ensures translations are registered on both server and client.
+</Callout>
+
+## L shorthand
+Addon instances are callable via `Addon:GetString`, so you can keep a local alias and use the string-call shorthand. This assumes translations were registered in an autoloaded file like the one above.
+
+```lua
+-- Assumes addon registration happened in your autoloaded i18n file.
+local L = i18n.GetAddon("MyAddon")
+
+print(L"ui.title")
+print(L("ui.title", { name = "Alex" }))
+```
+
+Use the shorthand form `L"phrase_id"` when you only need a phrase identifier, and use parentheses when you pass replacements.

@@ -1,0 +1,11 @@
+{
+"new": "New",
+"get-name": "GetName",
+"get-author": "GetAuthor",
+"set-author": "SetAuthor",
+"get-fallback-language": "GetFallbackLanguage",
+"set-fallback-language": "SetFallbackLanguage",
+"get-translations": "GetTranslations",
+"get-string": "GetString",
+"add-translation": "AddTranslation"
+}

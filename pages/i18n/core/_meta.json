@@ -1,0 +1,6 @@
+{
+"get-language": "GetLanguage",
+"get-addon": "GetAddon",
+"register-addon": "RegisterAddon",
+"register-translation": "RegisterTranslation"
+}

@@ -1,0 +1,21 @@
+import Method from "/components/method";
+import Argument from "/components/method/argument";
+import ReturnValue from "/components/method/return_value";
+
+# AddPhrase
+<Method
+name="Translation:AddPhrase"
+realm="shared"
+args={[
+<Argument type="string" name="phraseOrId">A phrase identifier, or an existing Phrase instance.</Argument>,
+<Argument type="string" name="template" defaultValue="nil">The phrase template when providing an identifier.</Argument>,
+<Argument type="table" name="fallbacks" defaultValue="nil">Fallback replacements when providing an identifier.</Argument>
+]}
+returns={[
+<ReturnValue type="table">The added phrase.</ReturnValue>
+]}
+repositoryUrl="https://github.com/TomDotBat/gmod-i18n"
+declaration="sh_gmod_i18n.lua#L153-L169"
+>
+Adds a phrase to the translation.
+</Method>

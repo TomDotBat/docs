@@ -1,0 +1,21 @@
+import Method from "/components/method";
+import Argument from "/components/method/argument";
+import ReturnValue from "/components/method/return_value";
+
+# RegisterTranslation
+<Method
+name="i18n.RegisterTranslation"
+realm="shared"
+args={[
+<Argument type="string" name="addonName">The addon name.</Argument>,
+<Argument type="string" name="language">The language code.</Argument>,
+<Argument type="string" name="author" defaultValue="nil">The translation author.</Argument>
+]}
+returns={[
+<ReturnValue type="table">The registered translation.</ReturnValue>
+]}
+repositoryUrl="https://github.com/TomDotBat/gmod-i18n"
+declaration="sh_gmod_i18n.lua#L307-L319"
+>
+Registers a translation for an addon.
+</Method>

@@ -1,0 +1,25 @@
+import { Callout } from "nextra/components";
+
+# Getting Started
+GMod i18n is a small library for managing addon translations using phrase identifiers and replacements.
+
+## Installation
+Download `sh_gmod_i18n.lua` from the GitHub repository and place it in a shared location (for example `lua/autorun/sh_gmod_i18n.lua`) or include it from your addon loader.
+
+## Loading order
+The library fires the `i18n.FullyLoaded` hook once it is ready. Use this hook if your addon needs to wait before registering phrases.
+
+<Callout type="info" emoji="ℹ️">
+The `i18n_language` ConVar overrides translation selection. When it is empty, the library uses `gmod_language` and the addon's fallback language.
+</Callout>
+
+## Quick Example
+```lua filename="lua/autorun/my_addon_i18n.lua"
+local addon = i18n.RegisterAddon("MyAddon", "Your Name", "en")
+local translation = i18n.RegisterTranslation("MyAddon", "en", "Your Name")
+
+translation:AddPhrase("greeting", "Hello #name", { name = "there" })
+
+print(addon:GetString("greeting", { name = "Alex" }))
+print(addon("greeting", { name = "Alex" }))
+```

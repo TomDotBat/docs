@@ -1,0 +1,78 @@
+import MethodList from "/components/method_list";
+
+# Addon
+Addon objects store translations for a single addon. Retrieve one with `i18n.RegisterAddon` or `i18n.GetAddon`.
+
+## Constructors
+<MethodList methods={[
+{
+name: "New",
+parent: "Addon.",
+description: "Creates a new addon container.",
+args: ["string", "string", "string"],
+returns: ["table"],
+href: "addon/new"
+}
+]} />
+
+## Instance Methods
+<MethodList methods={[
+{
+name: "GetName",
+parent: "Addon:",
+description: "Gets the addon name.",
+returns: ["string"],
+href: "addon/get-name"
+},
+{
+name: "GetAuthor",
+parent: "Addon:",
+description: "Gets the addon author.",
+returns: ["string"],
+href: "addon/get-author"
+},
+{
+name: "SetAuthor",
+parent: "Addon:",
+description: "Sets the addon author.",
+args: ["string"],
+href: "addon/set-author"
+},
+{
+name: "GetFallbackLanguage",
+parent: "Addon:",
+description: "Gets the fallback language code.",
+returns: ["string"],
+href: "addon/get-fallback-language"
+},
+{
+name: "SetFallbackLanguage",
+parent: "Addon:",
+description: "Sets the fallback language code.",
+args: ["string"],
+href: "addon/set-fallback-language"
+},
+{
+name: "GetTranslations",
+parent: "Addon:",
+description: "Gets the translations for this addon.",
+returns: ["table"],
+href: "addon/get-translations"
+},
+{
+name: "GetString",
+parent: "Addon:",
+description: "Gets a translated string by phrase identifier.",
+args: ["string", "table"],
+returns: ["string"],
+href: "addon/get-string"
+},
+{
+name: "AddTranslation",
+parent: "Addon:",
+description: "Adds a translation to the addon.",
+args: ["string", "string"],
+returns: ["table"],
+href: "addon/add-translation"
+}
+]} />

@@ -1,0 +1,57 @@
+import MethodList from "/components/method_list";
+
+# Translation
+Translation objects represent a single language for an addon. Create them with `i18n.RegisterTranslation` or `Addon:AddTranslation`.
+
+## Constructors
+<MethodList methods={[
+{
+name: "New",
+parent: "Translation.",
+description: "Creates a new translation.",
+args: ["string", "string"],
+returns: ["table"],
+href: "translation/new"
+}
+]} />
+
+## Instance Methods
+<MethodList methods={[
+{
+name: "GetLanguage",
+parent: "Translation:",
+description: "Gets the translation language.",
+returns: ["string"],
+href: "translation/get-language"
+},
+{
+name: "GetAuthor",
+parent: "Translation:",
+description: "Gets the translation author.",
+returns: ["string"],
+href: "translation/get-author"
+},
+{
+name: "GetPhrases",
+parent: "Translation:",
+description: "Gets the phrases for this translation.",
+returns: ["table"],
+href: "translation/get-phrases"
+},
+{
+name: "GetString",
+parent: "Translation:",
+description: "Gets a translated string by phrase identifier.",
+args: ["string", "table"],
+returns: ["string"],
+href: "translation/get-string"
+},
+{
+name: "AddPhrase",
+parent: "Translation:",
+description: "Adds a phrase to the translation.",
+args: ["string", "string", "table"],
+returns: ["table"],
+href: "translation/add-phrase"
+}
+]} />

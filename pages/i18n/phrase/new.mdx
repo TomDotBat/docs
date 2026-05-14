@@ -1,0 +1,21 @@
+import Method from "/components/method";
+import Argument from "/components/method/argument";
+import ReturnValue from "/components/method/return_value";
+
+# New
+<Method
+name="Phrase.New"
+realm="shared"
+args={[
+<Argument type="string" name="id">The phrase identifier.</Argument>,
+<Argument type="string" name="template">The phrase template.</Argument>,
+<Argument type="table" name="fallbacks" defaultValue="nil">Fallback replacements for template keys.</Argument>
+]}
+returns={[
+<ReturnValue type="table">The created phrase.</ReturnValue>
+]}
+repositoryUrl="https://github.com/TomDotBat/gmod-i18n"
+declaration="sh_gmod_i18n.lua#L54-L69"
+>
+Creates a new phrase.
+</Method>

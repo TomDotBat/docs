@@ -1,0 +1,19 @@
+import Method from "/components/method";
+import Argument from "/components/method/argument";
+import ReturnValue from "/components/method/return_value";
+
+# GetString
+<Method
+name="Phrase:GetString"
+realm="shared"
+args={[
+<Argument type="table" name="replacements" defaultValue="nil">Replacement values keyed by token.</Argument>
+]}
+returns={[
+<ReturnValue type="string">The rendered phrase.</ReturnValue>
+]}
+repositoryUrl="https://github.com/TomDotBat/gmod-i18n"
+declaration="sh_gmod_i18n.lua#L90-L101"
+>
+Builds the phrase string with replacements.
+</Method>

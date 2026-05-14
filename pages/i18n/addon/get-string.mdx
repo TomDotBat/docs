@@ -1,0 +1,20 @@
+import Method from "/components/method";
+import Argument from "/components/method/argument";
+import ReturnValue from "/components/method/return_value";
+
+# GetString
+<Method
+name="Addon:GetString"
+realm="shared"
+args={[
+<Argument type="string" name="id">The phrase identifier.</Argument>,
+<Argument type="table" name="replacements" defaultValue="nil">Replacement values keyed by token.</Argument>
+]}
+returns={[
+<ReturnValue type="string">The translated string, or "#" .. id if not found in any language.</ReturnValue>
+]}
+repositoryUrl="https://github.com/TomDotBat/gmod-i18n"
+declaration="sh_gmod_i18n.lua#L233-L264"
+>
+Gets a translated string by phrase identifier. Addon instances are callable and delegate to this method.
+</Method>
