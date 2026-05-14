@@ -1,5 +1,6 @@
 {
 "getting-started": "Getting Started",
+"examples": "Examples",
 "--api": {
 "title": "API Reference",
 "type": "separator"
@@ -12,7 +13,6 @@
 "title": "More",
 "type": "separator"
 },
-"examples": "Examples",
 "github": {
 "title": "GitHub Repository ↗",
 "href": "https://github.com/TomDotBat/gmod-i18n",
