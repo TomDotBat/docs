@@ -23,11 +23,10 @@ Register your addon and phrases from an autoloaded file so translations are avai
 
 ```lua filename="lua/autorun/sh_myaddon_i18n.lua"
 local function registerTranslations()
-local addon = i18n.RegisterAddon("MyAddon", "Your Name", "en")
-local en = i18n.RegisterTranslation("MyAddon", "en", "Your Name")
+	local addon = i18n.RegisterAddon("MyAddon", "Your Name", "en")
+	local en = i18n.RegisterTranslation("MyAddon", "en", "Your Name")
 
-en:AddPhrase("ui.title", "Welcome, #name", { name = "friend" })
-return addon
+	en:AddPhrase("ui.title", "Welcome, #name", { name = "friend" })
 end
 
 if i18n then
@@ -38,14 +37,14 @@ end
 hook.Add("i18n.FullyLoaded", "MyAddon.RegisterTranslations", registerTranslations)
 ```
 
-Keep the translation reference (`en`) when you want to group phrases per language file or batch-add phrases.
+Keep the translation reference (`en`) when you want to group phrases per language file or batch-add phrases later; otherwise you can discard it after registration.
 
 <Callout type="info" emoji="ℹ️">
 	Using a shared (`sh_`) autorun file ensures translations are registered on both server and client.
 </Callout>
 
 ## L shorthand
-Addon instances are callable via `Addon:GetString`, so you can keep a local alias and use the string-call shorthand.
+Addon instances are callable via `Addon:GetString`, so you can keep a local alias and use the string-call shorthand. This assumes translations were registered in an autoloaded file like the one above.
 
 ```lua
 local addon = i18n.RegisterAddon("MyAddon", "Your Name", "en")
