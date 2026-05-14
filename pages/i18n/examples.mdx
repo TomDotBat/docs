@@ -30,8 +30,8 @@ local function registerTranslations()
 end
 
 if i18n then
-registerTranslations()
-return
+	registerTranslations()
+	return
 end
 
 hook.Add("i18n.FullyLoaded", "MyAddon.RegisterTranslations", registerTranslations)
