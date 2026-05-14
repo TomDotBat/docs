@@ -8,17 +8,17 @@ These examples show recommended patterns for registering phrases and using short
 Register your addon and phrases from an autoloaded file so translations are available before gameplay code needs them.
 
 <FileTree>
-<FileTree.Folder name="garrysmod" defaultOpen>
-<FileTree.Folder name="addons" defaultOpen>
-<FileTree.Folder name="my-addon" defaultOpen>
-<FileTree.Folder name="lua" defaultOpen>
-<FileTree.Folder name="autorun" defaultOpen>
-<FileTree.File name="sh_myaddon_i18n.lua" />
-</FileTree.Folder>
-</FileTree.Folder>
-</FileTree.Folder>
-</FileTree.Folder>
-</FileTree.Folder>
+	<FileTree.Folder name="garrysmod" defaultOpen>
+		<FileTree.Folder name="addons" defaultOpen>
+			<FileTree.Folder name="my-addon" defaultOpen>
+				<FileTree.Folder name="lua" defaultOpen>
+					<FileTree.Folder name="autorun" defaultOpen>
+						<FileTree.File name="sh_myaddon_i18n.lua" />
+					</FileTree.Folder>
+				</FileTree.Folder>
+			</FileTree.Folder>
+		</FileTree.Folder>
+	</FileTree.Folder>
 </FileTree>
 
 ```lua filename="lua/autorun/sh_myaddon_i18n.lua"
@@ -38,8 +38,10 @@ end
 hook.Add("i18n.FullyLoaded", "MyAddon.RegisterTranslations", registerTranslations)
 ```
 
+Keep the translation reference (`en`) when you want to group phrases per language file or batch-add phrases.
+
 <Callout type="info" emoji="ℹ️">
-Using a shared (`sh_`) autorun file ensures translations are registered on both server and client.
+	Using a shared (`sh_`) autorun file ensures translations are registered on both server and client.
 </Callout>
 
 ## L shorthand
@@ -53,4 +55,4 @@ print(L"ui.title")
 print(L("ui.title", { name = "Alex" }))
 ```
 
-Use the shorthand form (`L"phrase_id"`) when you only need a phrase identifier. When you pass replacements, use parentheses.
+Use the shorthand form `L"phrase_id"` when you only need a phrase identifier, and use parentheses when you pass replacements.
