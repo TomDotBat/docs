@@ -1,3 +1,5 @@
+import MethodList from "/components/method_list";
+
 # PIXEL.MenuOptionCVar
 
 - **Base panel:** `PIXEL.MenuOption`
@@ -5,11 +7,13 @@
 - **Description:** PIXEL menu option bound to a console variable.
 
 ## Methods
-
-### `PIXEL.MenuOptionCVar:OnChecked(checked)`
-
-Updates the bound convar when checked state changes.
-
-**Parameters**
-
-- `checked` (`boolean`) — New checked state.
+The following methods are available on the `PIXEL.MenuOptionCVar` panel:
+<MethodList methods={[
+	{
+		name: "OnChecked",
+		parent: "PIXEL.MenuOptionCVar:",
+		description: "Updates the bound convar when checked state changes.",
+		args: ["boolean"],
+		href: "/pixel-ui/elements/menu-option-cvar/on-checked"
+	}
+]} />

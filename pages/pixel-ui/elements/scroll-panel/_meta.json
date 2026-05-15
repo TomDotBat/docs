@@ -1,0 +1,13 @@
+{
+  "add-item": "AddItem",
+  "on-child-added": "OnChildAdded",
+  "get-vbar": "GetVBar",
+  "get-canvas": "GetCanvas",
+  "inner-width": "InnerWidth",
+  "rebuild": "Rebuild",
+  "on-mouse-wheeled": "OnMouseWheeled",
+  "on-vscroll": "OnVScroll",
+  "scroll-to-child": "ScrollToChild",
+  "layout-content": "LayoutContent",
+  "clear": "Clear"
+}

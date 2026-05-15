@@ -1,3 +1,5 @@
+import MethodList from "/components/method_list";
+
 # PIXEL.Slider
 
 - **Base panel:** `PIXEL.Button`
@@ -5,11 +7,13 @@
 - **Description:** PIXEL horizontal slider control.
 
 ## Methods
-
-### `PIXEL.Slider:OnValueChanged(fraction)`
-
-Callback fired when slider value changes.
-
-**Parameters**
-
-- `fraction` (`number`) — Current normalized value in the range [0, 1].
+The following methods are available on the `PIXEL.Slider` panel:
+<MethodList methods={[
+	{
+		name: "OnValueChanged",
+		parent: "PIXEL.Slider:",
+		description: "Callback fired when slider value changes.",
+		args: ["number"],
+		href: "/pixel-ui/elements/slider/on-value-changed"
+	}
+]} />

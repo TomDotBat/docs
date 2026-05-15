@@ -1,3 +1,5 @@
+import MethodList from "/components/method_list";
+
 # PIXEL.ScrollPanel
 
 - **Base panel:** `DPanel`
@@ -5,88 +7,82 @@
 - **Description:** PIXEL scroll panel with custom scrollbar.
 
 ## Methods
-
-### `PIXEL.ScrollPanel:AddItem(pnl)`
-
-Adds a child panel into the scroll canvas.
-
-**Parameters**
-
-- `pnl` (`Panel`) — Child panel to add.
-
-### `PIXEL.ScrollPanel:OnChildAdded(child)`
-
-Redirects external child additions into the canvas.
-
-**Parameters**
-
-- `child` (`Panel`) — Newly added child panel.
-
-### `PIXEL.ScrollPanel:GetVBar()`
-
-Returns the vertical scrollbar panel.
-
-**Returns**
-
-- (`PIXEL.Scrollbar`) `vbar` — Vertical scrollbar instance.
-
-### `PIXEL.ScrollPanel:GetCanvas()`
-
-Returns the internal canvas panel.
-
-**Returns**
-
-- (`Panel`) `canvas` — Canvas panel.
-
-### `PIXEL.ScrollPanel:InnerWidth()`
-
-Returns the inner canvas width.
-
-**Returns**
-
-- (`number`) `width` — Canvas width.
-
-### `PIXEL.ScrollPanel:Rebuild()`
-
-Rebuilds canvas bounds from its children.
-
-### `PIXEL.ScrollPanel:OnMouseWheeled(delta)`
-
-Mouse wheel handler for smooth overscroll behavior.
-
-**Parameters**
-
-- `delta` (`number`) — Mouse wheel delta.
-
-### `PIXEL.ScrollPanel:OnVScroll(iOffset)`
-
-Called when the scrollbar offset changes.
-
-**Parameters**
-
-- `iOffset` (`number`) — Scroll offset.
-
-### `PIXEL.ScrollPanel:ScrollToChild(panel)`
-
-Scrolls so a child panel is brought into view.
-
-**Parameters**
-
-- `panel` (`Panel`) — Child panel to center.
-
-### `PIXEL.ScrollPanel:LayoutContent(w, h)`
-
-Extension point for laying out canvas children.
-
-**Parameters**
-
-- `w` (`number`) — Canvas width.
-- `h` (`number`) — Canvas height.
-
-### `PIXEL.ScrollPanel:Clear()`
-
-Clears all canvas children.
-
-**Returns**
-
-- (`any`) `result` — Result from Panel:Clear.
+The following methods are available on the `PIXEL.ScrollPanel` panel:
+<MethodList methods={[
+	{
+		name: "AddItem",
+		parent: "PIXEL.ScrollPanel:",
+		description: "Adds a child panel into the scroll canvas.",
+		args: ["Panel"],
+		href: "/pixel-ui/elements/scroll-panel/add-item"
+	},
+	{
+		name: "OnChildAdded",
+		parent: "PIXEL.ScrollPanel:",
+		description: "Redirects external child additions into the canvas.",
+		args: ["Panel"],
+		href: "/pixel-ui/elements/scroll-panel/on-child-added"
+	},
+	{
+		name: "GetVBar",
+		parent: "PIXEL.ScrollPanel:",
+		description: "Returns the vertical scrollbar panel.",
+		returns: ["PIXEL.Scrollbar"],
+		href: "/pixel-ui/elements/scroll-panel/get-vbar"
+	},
+	{
+		name: "GetCanvas",
+		parent: "PIXEL.ScrollPanel:",
+		description: "Returns the internal canvas panel.",
+		returns: ["Panel"],
+		href: "/pixel-ui/elements/scroll-panel/get-canvas"
+	},
+	{
+		name: "InnerWidth",
+		parent: "PIXEL.ScrollPanel:",
+		description: "Returns the inner canvas width.",
+		returns: ["number"],
+		href: "/pixel-ui/elements/scroll-panel/inner-width"
+	},
+	{
+		name: "Rebuild",
+		parent: "PIXEL.ScrollPanel:",
+		description: "Rebuilds canvas bounds from its children.",
+		href: "/pixel-ui/elements/scroll-panel/rebuild"
+	},
+	{
+		name: "OnMouseWheeled",
+		parent: "PIXEL.ScrollPanel:",
+		description: "Mouse wheel handler for smooth overscroll behavior.",
+		args: ["number"],
+		href: "/pixel-ui/elements/scroll-panel/on-mouse-wheeled"
+	},
+	{
+		name: "OnVScroll",
+		parent: "PIXEL.ScrollPanel:",
+		description: "Called when the scrollbar offset changes.",
+		args: ["number"],
+		href: "/pixel-ui/elements/scroll-panel/on-vscroll"
+	},
+	{
+		name: "ScrollToChild",
+		parent: "PIXEL.ScrollPanel:",
+		description: "Scrolls so a child panel is brought into view.",
+		args: ["Panel"],
+		href: "/pixel-ui/elements/scroll-panel/scroll-to-child"
+	},
+	{
+		name: "LayoutContent",
+		parent: "PIXEL.ScrollPanel:",
+		description: "Extension point for laying out canvas children.",
+		args: ["number", "number"],
+		href: "/pixel-ui/elements/scroll-panel/layout-content"
+	},
+	{
+		name: "Clear",
+		parent: "PIXEL.ScrollPanel:",
+		description: "Clears all canvas children.",
+		returns: ["any"],
+		href: "/pixel-ui/elements/scroll-panel/clear"
+	}
+]} />

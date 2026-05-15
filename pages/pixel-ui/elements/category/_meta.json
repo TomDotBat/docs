@@ -1,0 +1,10 @@
+{
+  "unselect-all": "UnselectAll",
+  "set-title": "SetTitle",
+  "set-contents": "SetContents",
+  "set-expanded": "SetExpanded",
+  "toggle": "Toggle",
+  "on-toggle": "OnToggle",
+  "do-expansion": "DoExpansion",
+  "layout-content": "LayoutContent"
+}

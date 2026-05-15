@@ -1,0 +1,14 @@
+{
+  "set-imgur-id": "SetImgurID",
+  "get-imgur-id": "GetImgurID",
+  "drag-think": "DragThink",
+  "size-think": "SizeThink",
+  "create-sidebar": "CreateSidebar",
+  "add-header-button": "AddHeaderButton",
+  "layout-content": "LayoutContent",
+  "open": "Open",
+  "close": "Close",
+  "on-close": "OnClose",
+  "paint-header": "PaintHeader",
+  "paint-before": "PaintBefore"
+}

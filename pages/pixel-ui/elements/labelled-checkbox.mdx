@@ -1,3 +1,5 @@
+import MethodList from "/components/method_list";
+
 # PIXEL.LabelledCheckbox
 
 - **Base panel:** `Panel`
@@ -5,75 +7,69 @@
 - **Description:** PIXEL checkbox with attached label.
 
 ## Methods
-
-### `PIXEL.LabelledCheckbox:OnToggled(enabled)`
-
-Callback fired when the checkbox toggles.
-
-**Parameters**
-
-- `enabled` (`boolean`) — Current checked state.
-
-### `PIXEL.LabelledCheckbox:SetText(text)`
-
-Sets the label text.
-
-**Parameters**
-
-- `text` (`string`) — Label text.
-
-### `PIXEL.LabelledCheckbox:GetText()`
-
-Gets the label text.
-
-**Returns**
-
-- (`string`) `text` — Current label text.
-
-### `PIXEL.LabelledCheckbox:SetFont(font)`
-
-Sets the label font.
-
-**Parameters**
-
-- `font` (`string`) — Font name.
-
-### `PIXEL.LabelledCheckbox:GetFont()`
-
-Gets the label font.
-
-**Returns**
-
-- (`string`) `font` — Current font name.
-
-### `PIXEL.LabelledCheckbox:SetTextColor(col)`
-
-Sets the label text color.
-
-**Parameters**
-
-- `col` (`Color`) — Text color.
-
-### `PIXEL.LabelledCheckbox:GetTextColor()`
-
-Gets the label text color.
-
-**Returns**
-
-- (`Color`) `col` — Current text color.
-
-### `PIXEL.LabelledCheckbox:SetAutoWrap(enabled)`
-
-Enables or disables automatic label wrapping.
-
-**Parameters**
-
-- `enabled` (`boolean`) — Whether wrapping is enabled.
-
-### `PIXEL.LabelledCheckbox:GetAutoWrap()`
-
-Returns whether automatic label wrapping is enabled.
-
-**Returns**
-
-- (`boolean`) `enabled` — Whether wrapping is enabled.
+The following methods are available on the `PIXEL.LabelledCheckbox` panel:
+<MethodList methods={[
+	{
+		name: "OnToggled",
+		parent: "PIXEL.LabelledCheckbox:",
+		description: "Callback fired when the checkbox toggles.",
+		args: ["boolean"],
+		href: "/pixel-ui/elements/labelled-checkbox/on-toggled"
+	},
+	{
+		name: "SetText",
+		parent: "PIXEL.LabelledCheckbox:",
+		description: "Sets the label text.",
+		args: ["string"],
+		href: "/pixel-ui/elements/labelled-checkbox/set-text"
+	},
+	{
+		name: "GetText",
+		parent: "PIXEL.LabelledCheckbox:",
+		description: "Gets the label text.",
+		returns: ["string"],
+		href: "/pixel-ui/elements/labelled-checkbox/get-text"
+	},
+	{
+		name: "SetFont",
+		parent: "PIXEL.LabelledCheckbox:",
+		description: "Sets the label font.",
+		args: ["string"],
+		href: "/pixel-ui/elements/labelled-checkbox/set-font"
+	},
+	{
+		name: "GetFont",
+		parent: "PIXEL.LabelledCheckbox:",
+		description: "Gets the label font.",
+		returns: ["string"],
+		href: "/pixel-ui/elements/labelled-checkbox/get-font"
+	},
+	{
+		name: "SetTextColor",
+		parent: "PIXEL.LabelledCheckbox:",
+		description: "Sets the label text color.",
+		args: ["Color"],
+		href: "/pixel-ui/elements/labelled-checkbox/set-text-color"
+	},
+	{
+		name: "GetTextColor",
+		parent: "PIXEL.LabelledCheckbox:",
+		description: "Gets the label text color.",
+		returns: ["Color"],
+		href: "/pixel-ui/elements/labelled-checkbox/get-text-color"
+	},
+	{
+		name: "SetAutoWrap",
+		parent: "PIXEL.LabelledCheckbox:",
+		description: "Enables or disables automatic label wrapping.",
+		args: ["boolean"],
+		href: "/pixel-ui/elements/labelled-checkbox/set-auto-wrap"
+	},
+	{
+		name: "GetAutoWrap",
+		parent: "PIXEL.LabelledCheckbox:",
+		description: "Returns whether automatic label wrapping is enabled.",
+		returns: ["boolean"],
+		href: "/pixel-ui/elements/labelled-checkbox/get-auto-wrap"
+	}
+]} />

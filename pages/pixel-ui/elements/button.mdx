@@ -1,3 +1,5 @@
+import MethodList from "/components/method_list";
+
 # PIXEL.Button
 
 - **Base panel:** `Panel`
@@ -5,68 +7,67 @@
 - **Description:** Basic PIXEL button panel with hover/click styling.
 
 ## Methods
-
-### `PIXEL.Button:DoToggle(...)`
-
-Toggles the button state when toggle mode is enabled.
-
-**Parameters**
-
-- `...` (`any`) — Extra arguments forwarded to `OnToggled`.
-
-### `PIXEL.Button:PaintExtra(w, h)`
-
-Extension point painted after the base button background.
-
-**Parameters**
-
-- `w` (`number`) — Panel width.
-- `h` (`number`) — Panel height.
-
-### `PIXEL.Button:IsDown()`
-
-Returns whether the button is currently held down.
-
-**Returns**
-
-- (`boolean`) `isDown` — True while the button is depressed.
-
-### `PIXEL.Button:OnPressed(mouseCode)`
-
-Callback fired when mouse press begins on the button.
-
-**Parameters**
-
-- `mouseCode` (`number`) — Garry's Mod mouse code.
-
-### `PIXEL.Button:OnReleased(mouseCode)`
-
-Callback fired when mouse press is released on the button.
-
-**Parameters**
-
-- `mouseCode` (`number`) — Garry's Mod mouse code.
-
-### `PIXEL.Button:OnToggled(enabled)`
-
-Callback fired when toggle state changes.
-
-**Parameters**
-
-- `enabled` (`boolean`) — New toggle state.
-
-### `PIXEL.Button:DoClick(...)`
-
-Left-click handler for the button.
-
-**Parameters**
-
-- `...` (`any`) — Extra click arguments.
-
-### `PIXEL.Button:DoRightClick()`
-
-Right-click handler for the button.
-
-### `PIXEL.Button:DoMiddleClick()`
-
-Middle-click handler for the button.
+The following methods are available on the `PIXEL.Button` panel:
+<MethodList methods={[
+	{
+		name: "DoToggle",
+		parent: "PIXEL.Button:",
+		description: "Toggles the button state when toggle mode is enabled.",
+		args: ["any"],
+		href: "/pixel-ui/elements/button/do-toggle"
+	},
+	{
+		name: "PaintExtra",
+		parent: "PIXEL.Button:",
+		description: "Extension point painted after the base button background.",
+		args: ["number", "number"],
+		href: "/pixel-ui/elements/button/paint-extra"
+	},
+	{
+		name: "IsDown",
+		parent: "PIXEL.Button:",
+		description: "Returns whether the button is currently held down.",
+		returns: ["boolean"],
+		href: "/pixel-ui/elements/button/is-down"
+	},
+	{
+		name: "OnPressed",
+		parent: "PIXEL.Button:",
+		description: "Callback fired when mouse press begins on the button.",
+		args: ["number"],
+		href: "/pixel-ui/elements/button/on-pressed"
+	},
+	{
+		name: "OnReleased",
+		parent: "PIXEL.Button:",
+		description: "Callback fired when mouse press is released on the button.",
+		args: ["number"],
+		href: "/pixel-ui/elements/button/on-released"
+	},
+	{
+		name: "OnToggled",
+		parent: "PIXEL.Button:",
+		description: "Callback fired when toggle state changes.",
+		args: ["boolean"],
+		href: "/pixel-ui/elements/button/on-toggled"
+	},
+	{
+		name: "DoClick",
+		parent: "PIXEL.Button:",
+		description: "Left-click handler for the button.",
+		args: ["any"],
+		href: "/pixel-ui/elements/button/do-click"
+	},
+	{
+		name: "DoRightClick",
+		parent: "PIXEL.Button:",
+		description: "Right-click handler for the button.",
+		href: "/pixel-ui/elements/button/do-right-click"
+	},
+	{
+		name: "DoMiddleClick",
+		parent: "PIXEL.Button:",
+		description: "Middle-click handler for the button.",
+		href: "/pixel-ui/elements/button/do-middle-click"
+	}
+]} />

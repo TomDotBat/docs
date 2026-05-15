@@ -1,3 +1,5 @@
+import MethodList from "/components/method_list";
+
 # PIXEL.ColorPicker
 
 - **Base panel:** `Panel`
@@ -5,60 +7,60 @@
 - **Description:** PIXEL color picker panel with hue/value controls.
 
 ## Methods
-
-### `PIXEL.ColorPicker:UpdateColor()`
-
-Recomputes the current color from hue/saturation/lightness values.
-
-### `PIXEL.ColorPicker:SetColor(color)`
-
-Sets the picker color and updates control positions.
-
-**Parameters**
-
-- `color` (`Color`) — New color value.
-
-### `PIXEL.ColorPicker:UpdatePositions()`
-
-Updates picker marker positions from the current HSL values.
-
-### `PIXEL.ColorPicker:GetCenter()`
-
-Returns the center point of the picker.
-
-**Returns**
-
-- (`number`) `x` — Center X coordinate.
-- (`number`) `y` — Center Y coordinate.
-
-### `PIXEL.ColorPicker:GetRadius()`
-
-Returns the outer radius of the picker.
-
-**Returns**
-
-- (`number`) `radius` — Picker radius.
-
-### `PIXEL.ColorPicker:GetTriangleRadius()`
-
-Returns the triangle radius used for saturation/lightness selection.
-
-**Returns**
-
-- (`number`) `radius` — Triangle radius.
-
-### `PIXEL.ColorPicker:GetRingThickness()`
-
-Returns the hue ring thickness.
-
-**Returns**
-
-- (`number`) `thickness` — Ring thickness.
-
-### `PIXEL.ColorPicker:GetHueColor()`
-
-Returns the pure hue color for the current hue angle.
-
-**Returns**
-
-- (`Color`) `color` — Hue-only color value.
+The following methods are available on the `PIXEL.ColorPicker` panel:
+<MethodList methods={[
+	{
+		name: "UpdateColor",
+		parent: "PIXEL.ColorPicker:",
+		description: "Recomputes the current color from hue/saturation/lightness values.",
+		href: "/pixel-ui/elements/color-picker/update-color"
+	},
+	{
+		name: "SetColor",
+		parent: "PIXEL.ColorPicker:",
+		description: "Sets the picker color and updates control positions.",
+		args: ["Color"],
+		href: "/pixel-ui/elements/color-picker/set-color"
+	},
+	{
+		name: "UpdatePositions",
+		parent: "PIXEL.ColorPicker:",
+		description: "Updates picker marker positions from the current HSL values.",
+		href: "/pixel-ui/elements/color-picker/update-positions"
+	},
+	{
+		name: "GetCenter",
+		parent: "PIXEL.ColorPicker:",
+		description: "Returns the center point of the picker.",
+		returns: ["number", "number"],
+		href: "/pixel-ui/elements/color-picker/get-center"
+	},
+	{
+		name: "GetRadius",
+		parent: "PIXEL.ColorPicker:",
+		description: "Returns the outer radius of the picker.",
+		returns: ["number"],
+		href: "/pixel-ui/elements/color-picker/get-radius"
+	},
+	{
+		name: "GetTriangleRadius",
+		parent: "PIXEL.ColorPicker:",
+		description: "Returns the triangle radius used for saturation/lightness selection.",
+		returns: ["number"],
+		href: "/pixel-ui/elements/color-picker/get-triangle-radius"
+	},
+	{
+		name: "GetRingThickness",
+		parent: "PIXEL.ColorPicker:",
+		description: "Returns the hue ring thickness.",
+		returns: ["number"],
+		href: "/pixel-ui/elements/color-picker/get-ring-thickness"
+	},
+	{
+		name: "GetHueColor",
+		parent: "PIXEL.ColorPicker:",
+		description: "Returns the pure hue color for the current hue angle.",
+		returns: ["Color"],
+		href: "/pixel-ui/elements/color-picker/get-hue-color"
+	}
+]} />

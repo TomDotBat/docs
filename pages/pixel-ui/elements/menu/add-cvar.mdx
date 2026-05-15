@@ -1,0 +1,17 @@
+# AddCVar
+
+`PIXEL.Menu:AddCVar(strText, convar, on, off, funcFunction)`
+
+Creates and adds a cvar-bound option.
+
+**Parameters**
+
+- `strText` (`string`) — Option label.
+- `convar` (`string`) — Console variable name.
+- `on` (`any`) — Value used for the enabled state.
+- `off` (`any`) — Value used for the disabled state.
+- `funcFunction` (`fun()|nil`) — Optional click callback.
+
+**Returns**
+
+- (`PIXEL.MenuOptionCVar`) `option` — Created cvar option panel.

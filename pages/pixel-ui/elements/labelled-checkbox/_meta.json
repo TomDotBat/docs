@@ -1,0 +1,11 @@
+{
+  "on-toggled": "OnToggled",
+  "set-text": "SetText",
+  "get-text": "GetText",
+  "set-font": "SetFont",
+  "get-font": "GetFont",
+  "set-text-color": "SetTextColor",
+  "get-text-color": "GetTextColor",
+  "set-auto-wrap": "SetAutoWrap",
+  "get-auto-wrap": "GetAutoWrap"
+}

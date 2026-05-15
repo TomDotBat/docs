@@ -1,3 +1,5 @@
+import MethodList from "/components/method_list";
+
 # PIXEL.TextButton
 
 - **Base panel:** `PIXEL.Button`
@@ -5,16 +7,19 @@
 - **Description:** PIXEL button with styled text label.
 
 ## Methods
-
-### `PIXEL.TextButton:SizeToText()`
-
-Resizes the button to fit its current text.
-
-### `PIXEL.TextButton:PaintExtra(w, h)`
-
-Draws the button text over the base PIXEL.Button background.
-
-**Parameters**
-
-- `w` (`number`) — Panel width.
-- `h` (`number`) — Panel height.
+The following methods are available on the `PIXEL.TextButton` panel:
+<MethodList methods={[
+	{
+		name: "SizeToText",
+		parent: "PIXEL.TextButton:",
+		description: "Resizes the button to fit its current text.",
+		href: "/pixel-ui/elements/text-button/size-to-text"
+	},
+	{
+		name: "PaintExtra",
+		parent: "PIXEL.TextButton:",
+		description: "Draws the button text over the base PIXEL.Button background.",
+		args: ["number", "number"],
+		href: "/pixel-ui/elements/text-button/paint-extra"
+	}
+]} />

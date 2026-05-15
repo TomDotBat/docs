@@ -1,0 +1,11 @@
+{
+  "set-imgur-id": "SetImgurID",
+  "get-imgur-id": "GetImgurID",
+  "set-imgur-scale": "SetImgurScale",
+  "get-imgur-scale": "GetImgurScale",
+  "set-imgur-offset": "SetImgurOffset",
+  "get-imgur-offset": "GetImgurOffset",
+  "add-item": "AddItem",
+  "remove-item": "RemoveItem",
+  "select-item": "SelectItem"
+}

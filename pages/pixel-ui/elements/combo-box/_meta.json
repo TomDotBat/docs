@@ -1,0 +1,16 @@
+{
+  "clear": "Clear",
+  "get-option-text": "GetOptionText",
+  "get-option-data": "GetOptionData",
+  "get-option-text-by-data": "GetOptionTextByData",
+  "choose-option": "ChooseOption",
+  "choose-option-id": "ChooseOptionID",
+  "get-selected-id": "GetSelectedID",
+  "get-selected": "GetSelected",
+  "on-select": "OnSelect",
+  "add-choice": "AddChoice",
+  "is-menu-open": "IsMenuOpen",
+  "close-menu": "CloseMenu",
+  "check-con-var-changes": "CheckConVarChanges",
+  "set-value": "SetValue"
+}

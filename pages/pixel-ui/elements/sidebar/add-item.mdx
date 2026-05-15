@@ -1,0 +1,17 @@
+# AddItem
+
+`PIXEL.Sidebar:AddItem(id, name, imageURL, doClick, order)`
+
+Adds a selectable item to the sidebar.
+
+**Parameters**
+
+- `id` (`any`) — Unique item identifier.
+- `name` (`string`) — Item label.
+- `imageURL` (`string|nil`) — Optional icon URL or Imgur ID.
+- `doClick` (`fun(item:Panel)`) — Callback run when selected.
+- `order` (`number|nil`) — Sort order for the item.
+
+**Returns**
+
+- (`Panel`) `button` — Created sidebar button.

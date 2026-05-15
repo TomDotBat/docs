@@ -1,3 +1,5 @@
+import MethodList from "/components/method_list";
+
 # PIXEL.Frame
 
 - **Base panel:** `EditablePanel`
@@ -5,115 +7,91 @@
 - **Description:** PIXEL window frame panel.
 
 ## Methods
-
-### `PIXEL.Frame:SetImgurID(id)`
-
-Sets the frame header icon using an Imgur ID.
-
-**Parameters**
-
-- `id` (`string`) — Imgur image identifier.
-
-### `PIXEL.Frame:GetImgurID()`
-
-Gets the frame header Imgur ID from its image URL.
-
-**Returns**
-
-- (`string|nil`) `id` — Parsed Imgur image identifier.
-
-### `PIXEL.Frame:DragThink(targetPanel, hoverPanel)`
-
-Handles drag cursor state and dragging movement.
-
-**Parameters**
-
-- `targetPanel` (`Panel`) — Target frame being dragged.
-- `hoverPanel` (`Panel|nil`) — Optional hovered panel override.
-
-**Returns**
-
-- (`boolean|nil`) `isDragging` — True when drag handling is active.
-
-### `PIXEL.Frame:SizeThink(targetPanel, hoverPanel)`
-
-Handles resize cursor state and resizing movement.
-
-**Parameters**
-
-- `targetPanel` (`Panel`) — Target frame being resized.
-- `hoverPanel` (`Panel|nil`) — Optional hovered panel override.
-
-**Returns**
-
-- (`boolean|nil`) `isSizing` — True when resize handling is active.
-
-### `PIXEL.Frame:CreateSidebar(defaultItem, imageURL, imageScale, imageYOffset, buttonYOffset)`
-
-Creates a sidebar attached to the frame.
-
-**Parameters**
-
-- `defaultItem` (`any|nil`) — Optional item ID to auto-select.
-- `imageURL` (`string|nil`) — Sidebar logo URL or Imgur ID.
-- `imageScale` (`number|nil`) — Sidebar logo scale.
-- `imageYOffset` (`number|nil`) — Sidebar logo Y offset.
-- `buttonYOffset` (`number|nil`) — Extra top offset for buttons.
-
-**Returns**
-
-- (`PIXEL.Sidebar|nil`) `sidebar` — Created sidebar panel.
-
-### `PIXEL.Frame:AddHeaderButton(elem, size)`
-
-Registers an extra header button.
-
-**Parameters**
-
-- `elem` (`Panel`) — Button panel to place in the header.
-- `size` (`number|nil`) — Relative icon size multiplier.
-
-**Returns**
-
-- (`number`) `index` — Inserted button index.
-
-### `PIXEL.Frame:LayoutContent(w, h)`
-
-Extension point for laying out frame content.
-
-**Parameters**
-
-- `w` (`number`) — Panel width.
-- `h` (`number`) — Panel height.
-
-### `PIXEL.Frame:Open()`
-
-Animates and shows the frame.
-
-### `PIXEL.Frame:Close()`
-
-Animates and closes the frame.
-
-### `PIXEL.Frame:OnClose()`
-
-Callback fired after the frame closes.
-
-### `PIXEL.Frame:PaintHeader(x, y, w, h)`
-
-Paints the frame header region.
-
-**Parameters**
-
-- `x` (`number`) — Header X coordinate.
-- `y` (`number`) — Header Y coordinate.
-- `w` (`number`) — Header width.
-- `h` (`number`) — Header height.
-
-### `PIXEL.Frame:PaintBefore(w, h)`
-
-Extension point painted before base frame rendering.
-
-**Parameters**
-
-- `w` (`number`) — Panel width.
-- `h` (`number`) — Panel height.
+The following methods are available on the `PIXEL.Frame` panel:
+<MethodList methods={[
+	{
+		name: "SetImgurID",
+		parent: "PIXEL.Frame:",
+		description: "Sets the frame header icon using an Imgur ID.",
+		args: ["string"],
+		href: "/pixel-ui/elements/frame/set-imgur-id"
+	},
+	{
+		name: "GetImgurID",
+		parent: "PIXEL.Frame:",
+		description: "Gets the frame header Imgur ID from its image URL.",
+		returns: ["string|nil"],
+		href: "/pixel-ui/elements/frame/get-imgur-id"
+	},
+	{
+		name: "DragThink",
+		parent: "PIXEL.Frame:",
+		description: "Handles drag cursor state and dragging movement.",
+		args: ["Panel", "Panel|nil"],
+		returns: ["boolean|nil"],
+		href: "/pixel-ui/elements/frame/drag-think"
+	},
+	{
+		name: "SizeThink",
+		parent: "PIXEL.Frame:",
+		description: "Handles resize cursor state and resizing movement.",
+		args: ["Panel", "Panel|nil"],
+		returns: ["boolean|nil"],
+		href: "/pixel-ui/elements/frame/size-think"
+	},
+	{
+		name: "CreateSidebar",
+		parent: "PIXEL.Frame:",
+		description: "Creates a sidebar attached to the frame.",
+		args: ["any|nil", "string|nil", "number|nil", "number|nil", "number|nil"],
+		returns: ["PIXEL.Sidebar|nil"],
+		href: "/pixel-ui/elements/frame/create-sidebar"
+	},
+	{
+		name: "AddHeaderButton",
+		parent: "PIXEL.Frame:",
+		description: "Registers an extra header button.",
+		args: ["Panel", "number|nil"],
+		returns: ["number"],
+		href: "/pixel-ui/elements/frame/add-header-button"
+	},
+	{
+		name: "LayoutContent",
+		parent: "PIXEL.Frame:",
+		description: "Extension point for laying out frame content.",
+		args: ["number", "number"],
+		href: "/pixel-ui/elements/frame/layout-content"
+	},
+	{
+		name: "Open",
+		parent: "PIXEL.Frame:",
+		description: "Animates and shows the frame.",
+		href: "/pixel-ui/elements/frame/open"
+	},
+	{
+		name: "Close",
+		parent: "PIXEL.Frame:",
+		description: "Animates and closes the frame.",
+		href: "/pixel-ui/elements/frame/close"
+	},
+	{
+		name: "OnClose",
+		parent: "PIXEL.Frame:",
+		description: "Callback fired after the frame closes.",
+		href: "/pixel-ui/elements/frame/on-close"
+	},
+	{
+		name: "PaintHeader",
+		parent: "PIXEL.Frame:",
+		description: "Paints the frame header region.",
+		args: ["number", "number", "number", "number"],
+		href: "/pixel-ui/elements/frame/paint-header"
+	},
+	{
+		name: "PaintBefore",
+		parent: "PIXEL.Frame:",
+		description: "Extension point painted before base frame rendering.",
+		args: ["number", "number"],
+		href: "/pixel-ui/elements/frame/paint-before"
+	}
+]} />

@@ -1,3 +1,5 @@
+import MethodList from "/components/method_list";
+
 # PIXEL.Category
 
 - **Base panel:** `Panel`
@@ -5,60 +7,60 @@
 - **Description:** PIXEL collapsible category container panel.
 
 ## Methods
-
-### `PIXEL.Category:UnselectAll()`
-
-Clears selected state from child panels that support `SetSelected`.
-
-### `PIXEL.Category:SetTitle(title)`
-
-Sets the category header title text.
-
-**Parameters**
-
-- `title` (`string`) — Header text.
-
-### `PIXEL.Category:SetContents(contents)`
-
-Sets the content panel shown inside the category.
-
-**Parameters**
-
-- `contents` (`Panel`) — Content panel instance.
-
-### `PIXEL.Category:SetExpanded(expanded)`
-
-Sets whether the category should be expanded.
-
-**Parameters**
-
-- `expanded` (`boolean`) — True to expand, false to collapse.
-
-### `PIXEL.Category:Toggle()`
-
-Toggles the expanded/collapsed state.
-
-### `PIXEL.Category:OnToggle(expanded)`
-
-Callback fired when expanded state changes.
-
-**Parameters**
-
-- `expanded` (`boolean`) — New expanded state.
-
-### `PIXEL.Category:DoExpansion(b)`
-
-Forces an expansion state change when needed.
-
-**Parameters**
-
-- `b` (`boolean`) — Desired expanded state.
-
-### `PIXEL.Category:LayoutContent(w, h)`
-
-Extension point for additional category content layout.
-
-**Parameters**
-
-- `w` (`number`) — Panel width.
-- `h` (`number`) — Panel height.
+The following methods are available on the `PIXEL.Category` panel:
+<MethodList methods={[
+	{
+		name: "UnselectAll",
+		parent: "PIXEL.Category:",
+		description: "Clears selected state from child panels that support `SetSelected`.",
+		href: "/pixel-ui/elements/category/unselect-all"
+	},
+	{
+		name: "SetTitle",
+		parent: "PIXEL.Category:",
+		description: "Sets the category header title text.",
+		args: ["string"],
+		href: "/pixel-ui/elements/category/set-title"
+	},
+	{
+		name: "SetContents",
+		parent: "PIXEL.Category:",
+		description: "Sets the content panel shown inside the category.",
+		args: ["Panel"],
+		href: "/pixel-ui/elements/category/set-contents"
+	},
+	{
+		name: "SetExpanded",
+		parent: "PIXEL.Category:",
+		description: "Sets whether the category should be expanded.",
+		args: ["boolean"],
+		href: "/pixel-ui/elements/category/set-expanded"
+	},
+	{
+		name: "Toggle",
+		parent: "PIXEL.Category:",
+		description: "Toggles the expanded/collapsed state.",
+		href: "/pixel-ui/elements/category/toggle"
+	},
+	{
+		name: "OnToggle",
+		parent: "PIXEL.Category:",
+		description: "Callback fired when expanded state changes.",
+		args: ["boolean"],
+		href: "/pixel-ui/elements/category/on-toggle"
+	},
+	{
+		name: "DoExpansion",
+		parent: "PIXEL.Category:",
+		description: "Forces an expansion state change when needed.",
+		args: ["boolean"],
+		href: "/pixel-ui/elements/category/do-expansion"
+	},
+	{
+		name: "LayoutContent",
+		parent: "PIXEL.Category:",
+		description: "Extension point for additional category content layout.",
+		args: ["number", "number"],
+		href: "/pixel-ui/elements/category/layout-content"
+	}
+]} />

@@ -1,0 +1,8 @@
+{
+  "is-text-valid": "IsTextValid",
+  "on-validate": "OnValidate",
+  "set-value": "SetValue",
+  "get-value": "GetValue",
+  "set-placeholder-text": "SetPlaceholderText",
+  "get-placeholder-text": "GetPlaceholderText"
+}

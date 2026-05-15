@@ -1,3 +1,5 @@
+import MethodList from "/components/method_list";
+
 # PIXEL.PropertySheet
 
 - **Base panel:** `Panel`
@@ -5,74 +7,57 @@
 - **Description:** PIXEL property sheet panel with tab strip.
 
 ## Methods
-
-### `PIXEL.PropertySheet:AddSheet(label, panel, material, noStretchX, noStretchY, tooltip)`
-
-Adds a new tab and content panel to the property sheet.
-
-**Parameters**
-
-- `label` (`string`) — Tab label.
-- `panel` (`Panel`) — Content panel.
-- `material` (`any|nil`) — Unused legacy icon argument.
-- `noStretchX` (`boolean|nil`) — When true, panel width is not stretched.
-- `noStretchY` (`boolean|nil`) — When true, panel height is not stretched.
-- `tooltip` (`string|nil`) — Tab tooltip text.
-
-**Returns**
-
-- (`table|nil`) `sheet` — Created sheet descriptor.
-
-### `PIXEL.PropertySheet:SetActiveTab(active)`
-
-Sets the currently active tab.
-
-**Parameters**
-
-- `active` (`PIXEL.Tab`) — Tab to activate.
-
-### `PIXEL.PropertySheet:OnActiveTabChanged(old, new)`
-
-Callback fired when active tab changes.
-
-**Parameters**
-
-- `old` (`PIXEL.Tab`) — Previously active tab.
-- `new` (`PIXEL.Tab`) — Newly active tab.
-
-### `PIXEL.PropertySheet:GetItems()`
-
-Returns all sheet entries.
-
-**Returns**
-
-- (`table`) `items` — Registered sheet descriptors.
-
-### `PIXEL.PropertySheet:SizeToContentWidth()`
-
-Resizes the sheet to fit the widest content panel.
-
-### `PIXEL.PropertySheet:SwitchToName(name)`
-
-Switches to the first tab matching a name.
-
-**Parameters**
-
-- `name` (`string`) — Tab name to activate.
-
-**Returns**
-
-- (`boolean`) `found` — True when a tab was found and activated.
-
-### `PIXEL.PropertySheet:CloseTab(tab, removePanelToo)`
-
-Closes a tab and optionally removes its content panel.
-
-**Parameters**
-
-- `tab` (`PIXEL.Tab`) — Tab to close.
-- `removePanelToo` (`boolean|nil`) — When true, removes the content panel.
-
-**Returns**
-
-- (`Panel|nil`) `panel` — Detached content panel when preserved.
+The following methods are available on the `PIXEL.PropertySheet` panel:
+<MethodList methods={[
+	{
+		name: "AddSheet",
+		parent: "PIXEL.PropertySheet:",
+		description: "Adds a new tab and content panel to the property sheet.",
+		args: ["string", "Panel", "any|nil", "boolean|nil", "boolean|nil", "string|nil"],
+		returns: ["table|nil"],
+		href: "/pixel-ui/elements/property-sheet/add-sheet"
+	},
+	{
+		name: "SetActiveTab",
+		parent: "PIXEL.PropertySheet:",
+		description: "Sets the currently active tab.",
+		args: ["PIXEL.Tab"],
+		href: "/pixel-ui/elements/property-sheet/set-active-tab"
+	},
+	{
+		name: "OnActiveTabChanged",
+		parent: "PIXEL.PropertySheet:",
+		description: "Callback fired when active tab changes.",
+		args: ["PIXEL.Tab", "PIXEL.Tab"],
+		href: "/pixel-ui/elements/property-sheet/on-active-tab-changed"
+	},
+	{
+		name: "GetItems",
+		parent: "PIXEL.PropertySheet:",
+		description: "Returns all sheet entries.",
+		returns: ["table"],
+		href: "/pixel-ui/elements/property-sheet/get-items"
+	},
+	{
+		name: "SizeToContentWidth",
+		parent: "PIXEL.PropertySheet:",
+		description: "Resizes the sheet to fit the widest content panel.",
+		href: "/pixel-ui/elements/property-sheet/size-to-content-width"
+	},
+	{
+		name: "SwitchToName",
+		parent: "PIXEL.PropertySheet:",
+		description: "Switches to the first tab matching a name.",
+		args: ["string"],
+		returns: ["boolean"],
+		href: "/pixel-ui/elements/property-sheet/switch-to-name"
+	},
+	{
+		name: "CloseTab",
+		parent: "PIXEL.PropertySheet:",
+		description: "Closes a tab and optionally removes its content panel.",
+		args: ["PIXEL.Tab", "boolean|nil"],
+		returns: ["Panel|nil"],
+		href: "/pixel-ui/elements/property-sheet/close-tab"
+	}
+]} />

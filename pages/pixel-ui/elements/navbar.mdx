@@ -1,3 +1,5 @@
+import MethodList from "/components/method_list";
+
 # PIXEL.Navbar
 
 - **Base panel:** `Panel`
@@ -5,31 +7,27 @@
 - **Description:** PIXEL navbar container panel.
 
 ## Methods
-
-### `PIXEL.Navbar:AddItem(id, name, doClick, order, color)`
-
-Adds a selectable item to the navbar.
-
-**Parameters**
-
-- `id` (`any`) — Unique item identifier.
-- `name` (`string`) — Item label.
-- `doClick` (`fun(item:Panel)`) — Callback run when selected.
-- `order` (`number|nil`) — Sort order for the item.
-- `color` (`Color|nil`) — Selection color for the item.
-
-### `PIXEL.Navbar:RemoveItem(id)`
-
-Removes an item from the navbar by identifier.
-
-**Parameters**
-
-- `id` (`any`) — Item identifier.
-
-### `PIXEL.Navbar:SelectItem(id)`
-
-Selects an existing navbar item.
-
-**Parameters**
-
-- `id` (`any`) — Item identifier.
+The following methods are available on the `PIXEL.Navbar` panel:
+<MethodList methods={[
+	{
+		name: "AddItem",
+		parent: "PIXEL.Navbar:",
+		description: "Adds a selectable item to the navbar.",
+		args: ["any", "string", "fun(item:Panel)", "number|nil", "Color|nil"],
+		href: "/pixel-ui/elements/navbar/add-item"
+	},
+	{
+		name: "RemoveItem",
+		parent: "PIXEL.Navbar:",
+		description: "Removes an item from the navbar by identifier.",
+		args: ["any"],
+		href: "/pixel-ui/elements/navbar/remove-item"
+	},
+	{
+		name: "SelectItem",
+		parent: "PIXEL.Navbar:",
+		description: "Selects an existing navbar item.",
+		args: ["any"],
+		href: "/pixel-ui/elements/navbar/select-item"
+	}
+]} />

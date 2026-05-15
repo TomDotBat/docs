@@ -1,3 +1,5 @@
+import MethodList from "/components/method_list";
+
 # PIXEL.ValidatedTextEntry
 
 - **Base panel:** `Panel`
@@ -5,57 +7,49 @@
 - **Description:** PIXEL text entry with validation message.
 
 ## Methods
-
-### `PIXEL.ValidatedTextEntry:IsTextValid(text)`
-
-Validates the current text value.
-
-**Parameters**
-
-- `text` (`string`) — Input text to validate.
-
-**Returns**
-
-- (`boolean`) `valid` — Whether the input is valid.
-- (`string?`) `message` — Validation feedback message.
-
-### `PIXEL.ValidatedTextEntry:OnValidate(valid, message)`
-
-Callback fired after validation.
-
-**Parameters**
-
-- `valid` (`boolean`) — Whether the input is valid.
-- `message` (`string|nil`) — Validation feedback message.
-
-### `PIXEL.ValidatedTextEntry:SetValue(text)`
-
-Sets the text entry value.
-
-**Parameters**
-
-- `text` (`string`) — Input text.
-
-### `PIXEL.ValidatedTextEntry:GetValue()`
-
-Gets the text entry value.
-
-**Returns**
-
-- (`string`) `value` — Current input value.
-
-### `PIXEL.ValidatedTextEntry:SetPlaceholderText(text)`
-
-Sets placeholder text for the input.
-
-**Parameters**
-
-- `text` (`string`) — Placeholder text.
-
-### `PIXEL.ValidatedTextEntry:GetPlaceholderText()`
-
-Gets placeholder text for the input.
-
-**Returns**
-
-- (`string`) `text` — Current placeholder text.
+The following methods are available on the `PIXEL.ValidatedTextEntry` panel:
+<MethodList methods={[
+	{
+		name: "IsTextValid",
+		parent: "PIXEL.ValidatedTextEntry:",
+		description: "Validates the current text value.",
+		args: ["string"],
+		returns: ["boolean", "string?"],
+		href: "/pixel-ui/elements/validated-text-entry/is-text-valid"
+	},
+	{
+		name: "OnValidate",
+		parent: "PIXEL.ValidatedTextEntry:",
+		description: "Callback fired after validation.",
+		args: ["boolean", "string|nil"],
+		href: "/pixel-ui/elements/validated-text-entry/on-validate"
+	},
+	{
+		name: "SetValue",
+		parent: "PIXEL.ValidatedTextEntry:",
+		description: "Sets the text entry value.",
+		args: ["string"],
+		href: "/pixel-ui/elements/validated-text-entry/set-value"
+	},
+	{
+		name: "GetValue",
+		parent: "PIXEL.ValidatedTextEntry:",
+		description: "Gets the text entry value.",
+		returns: ["string"],
+		href: "/pixel-ui/elements/validated-text-entry/get-value"
+	},
+	{
+		name: "SetPlaceholderText",
+		parent: "PIXEL.ValidatedTextEntry:",
+		description: "Sets placeholder text for the input.",
+		args: ["string"],
+		href: "/pixel-ui/elements/validated-text-entry/set-placeholder-text"
+	},
+	{
+		name: "GetPlaceholderText",
+		parent: "PIXEL.ValidatedTextEntry:",
+		description: "Gets placeholder text for the input.",
+		returns: ["string"],
+		href: "/pixel-ui/elements/validated-text-entry/get-placeholder-text"
+	}
+]} />

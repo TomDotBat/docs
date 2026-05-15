@@ -1,3 +1,5 @@
+import MethodList from "/components/method_list";
+
 # PIXEL.Sidebar
 
 - **Base panel:** `Panel`
@@ -5,83 +7,70 @@
 - **Description:** PIXEL sidebar container panel.
 
 ## Methods
-
-### `PIXEL.Sidebar:SetImgurID(id)`
-
-Sets the sidebar logo image using an Imgur ID.
-
-**Parameters**
-
-- `id` (`string`) — Imgur image identifier.
-
-### `PIXEL.Sidebar:GetImgurID()`
-
-Gets the sidebar logo Imgur ID from its image URL.
-
-**Returns**
-
-- (`string|nil`) `id` — Parsed Imgur image identifier.
-
-### `PIXEL.Sidebar:SetImgurScale(scale)`
-
-Sets the sidebar logo scale using the deprecated Imgur alias.
-
-**Parameters**
-
-- `scale` (`number`) — Relative image scale.
-
-### `PIXEL.Sidebar:GetImgurScale()`
-
-Gets the sidebar logo scale using the deprecated Imgur alias.
-
-**Returns**
-
-- (`number`) `scale` — Current image scale.
-
-### `PIXEL.Sidebar:SetImgurOffset(offset)`
-
-Sets the sidebar logo Y offset using the deprecated Imgur alias.
-
-**Parameters**
-
-- `offset` (`number`) — Vertical image offset.
-
-### `PIXEL.Sidebar:GetImgurOffset()`
-
-Gets the sidebar logo Y offset using the deprecated Imgur alias.
-
-**Returns**
-
-- (`number`) `offset` — Current vertical image offset.
-
-### `PIXEL.Sidebar:AddItem(id, name, imageURL, doClick, order)`
-
-Adds a selectable item to the sidebar.
-
-**Parameters**
-
-- `id` (`any`) — Unique item identifier.
-- `name` (`string`) — Item label.
-- `imageURL` (`string|nil`) — Optional icon URL or Imgur ID.
-- `doClick` (`fun(item:Panel)`) — Callback run when selected.
-- `order` (`number|nil`) — Sort order for the item.
-
-**Returns**
-
-- (`Panel`) `button` — Created sidebar button.
-
-### `PIXEL.Sidebar:RemoveItem(id)`
-
-Removes a sidebar item by identifier.
-
-**Parameters**
-
-- `id` (`any`) — Item identifier.
-
-### `PIXEL.Sidebar:SelectItem(id)`
-
-Selects an existing sidebar item.
-
-**Parameters**
-
-- `id` (`any`) — Item identifier.
+The following methods are available on the `PIXEL.Sidebar` panel:
+<MethodList methods={[
+	{
+		name: "SetImgurID",
+		parent: "PIXEL.Sidebar:",
+		description: "Sets the sidebar logo image using an Imgur ID.",
+		args: ["string"],
+		href: "/pixel-ui/elements/sidebar/set-imgur-id"
+	},
+	{
+		name: "GetImgurID",
+		parent: "PIXEL.Sidebar:",
+		description: "Gets the sidebar logo Imgur ID from its image URL.",
+		returns: ["string|nil"],
+		href: "/pixel-ui/elements/sidebar/get-imgur-id"
+	},
+	{
+		name: "SetImgurScale",
+		parent: "PIXEL.Sidebar:",
+		description: "Sets the sidebar logo scale using the deprecated Imgur alias.",
+		args: ["number"],
+		href: "/pixel-ui/elements/sidebar/set-imgur-scale"
+	},
+	{
+		name: "GetImgurScale",
+		parent: "PIXEL.Sidebar:",
+		description: "Gets the sidebar logo scale using the deprecated Imgur alias.",
+		returns: ["number"],
+		href: "/pixel-ui/elements/sidebar/get-imgur-scale"
+	},
+	{
+		name: "SetImgurOffset",
+		parent: "PIXEL.Sidebar:",
+		description: "Sets the sidebar logo Y offset using the deprecated Imgur alias.",
+		args: ["number"],
+		href: "/pixel-ui/elements/sidebar/set-imgur-offset"
+	},
+	{
+		name: "GetImgurOffset",
+		parent: "PIXEL.Sidebar:",
+		description: "Gets the sidebar logo Y offset using the deprecated Imgur alias.",
+		returns: ["number"],
+		href: "/pixel-ui/elements/sidebar/get-imgur-offset"
+	},
+	{
+		name: "AddItem",
+		parent: "PIXEL.Sidebar:",
+		description: "Adds a selectable item to the sidebar.",
+		args: ["any", "string", "string|nil", "fun(item:Panel)", "number|nil"],
+		returns: ["Panel"],
+		href: "/pixel-ui/elements/sidebar/add-item"
+	},
+	{
+		name: "RemoveItem",
+		parent: "PIXEL.Sidebar:",
+		description: "Removes a sidebar item by identifier.",
+		args: ["any"],
+		href: "/pixel-ui/elements/sidebar/remove-item"
+	},
+	{
+		name: "SelectItem",
+		parent: "PIXEL.Sidebar:",
+		description: "Selects an existing sidebar item.",
+		args: ["any"],
+		href: "/pixel-ui/elements/sidebar/select-item"
+	}
+]} />

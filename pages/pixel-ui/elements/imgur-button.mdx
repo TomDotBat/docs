@@ -1,3 +1,5 @@
+import MethodList from "/components/method_list";
+
 # PIXEL.ImgurButton
 
 - **Base panel:** `PIXEL.ImageButton`
@@ -5,36 +7,34 @@
 - **Description:** PIXEL image button that loads Imgur assets.
 
 ## Methods
-
-### `PIXEL.ImgurButton:SetImgurID(id)`
-
-Sets the Imgur image identifier.
-
-**Parameters**
-
-- `id` (`string`) — Imgur image identifier.
-
-### `PIXEL.ImgurButton:GetImgurID()`
-
-Gets the Imgur image identifier parsed from the URL.
-
-**Returns**
-
-- (`string|nil`) `id` — Parsed Imgur image identifier.
-
-### `PIXEL.ImgurButton:SetImgurSize(size)`
-
-Sets both image width and height using one size value.
-
-**Parameters**
-
-- `size` (`number`) — Image size in pixels.
-
-### `PIXEL.ImgurButton:GetImgurSize()`
-
-Gets the configured image size.
-
-**Returns**
-
-- (`number`) `width` — Image width.
-- (`number`) `height` — Image height.
+The following methods are available on the `PIXEL.ImgurButton` panel:
+<MethodList methods={[
+	{
+		name: "SetImgurID",
+		parent: "PIXEL.ImgurButton:",
+		description: "Sets the Imgur image identifier.",
+		args: ["string"],
+		href: "/pixel-ui/elements/imgur-button/set-imgur-id"
+	},
+	{
+		name: "GetImgurID",
+		parent: "PIXEL.ImgurButton:",
+		description: "Gets the Imgur image identifier parsed from the URL.",
+		returns: ["string|nil"],
+		href: "/pixel-ui/elements/imgur-button/get-imgur-id"
+	},
+	{
+		name: "SetImgurSize",
+		parent: "PIXEL.ImgurButton:",
+		description: "Sets both image width and height using one size value.",
+		args: ["number"],
+		href: "/pixel-ui/elements/imgur-button/set-imgur-size"
+	},
+	{
+		name: "GetImgurSize",
+		parent: "PIXEL.ImgurButton:",
+		description: "Gets the configured image size.",
+		returns: ["number", "number"],
+		href: "/pixel-ui/elements/imgur-button/get-imgur-size"
+	}
+]} />

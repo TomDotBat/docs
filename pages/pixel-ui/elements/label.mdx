@@ -1,3 +1,5 @@
+import MethodList from "/components/method_list";
+
 # PIXEL.Label
 
 - **Base panel:** `Panel`
@@ -5,20 +7,20 @@
 - **Description:** PIXEL text label panel.
 
 ## Methods
-
-### `PIXEL.Label:SetText(text)`
-
-Sets label text and stores original text for wrapping.
-
-**Parameters**
-
-- `text` (`string`) — Label text.
-
-### `PIXEL.Label:CalculateSize()`
-
-Calculates text dimensions using the current font.
-
-**Returns**
-
-- (`number`) `width` — Text width.
-- (`number`) `height` — Text height.
+The following methods are available on the `PIXEL.Label` panel:
+<MethodList methods={[
+	{
+		name: "SetText",
+		parent: "PIXEL.Label:",
+		description: "Sets label text and stores original text for wrapping.",
+		args: ["string"],
+		href: "/pixel-ui/elements/label/set-text"
+	},
+	{
+		name: "CalculateSize",
+		parent: "PIXEL.Label:",
+		description: "Calculates text dimensions using the current font.",
+		returns: ["number", "number"],
+		href: "/pixel-ui/elements/label/calculate-size"
+	}
+]} />

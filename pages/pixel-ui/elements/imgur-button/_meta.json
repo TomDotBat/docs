@@ -1,0 +1,6 @@
+{
+  "set-imgur-id": "SetImgurID",
+  "get-imgur-id": "GetImgurID",
+  "set-imgur-size": "SetImgurSize",
+  "get-imgur-size": "GetImgurSize"
+}
