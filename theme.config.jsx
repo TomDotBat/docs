@@ -14,11 +14,6 @@ export default {
 		content: "Create an issue →",
 		labels: "feedback"
 	},
-	banner: {
-		dismissible: true,
-		key: "indev",
-		text: "⚠️ This site is under development, some artefacts may be missing or incomplete."
-	},
 	sidebar: {
 		defaultMenuCollapseLevel: 1
 	},
