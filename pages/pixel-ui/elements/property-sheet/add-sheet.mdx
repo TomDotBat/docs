@@ -4,7 +4,7 @@ import ReturnValue from "/components/method/return_value";
 
 # AddSheet
 <Method
-	name="PIXEL.PropertySheet:AddSheet"
+	name="PANEL:AddSheet"
 	realm="client"
 	args={[
 		<Argument type="string" name="label">Tab label.</Argument>,
@@ -15,7 +15,7 @@ import ReturnValue from "/components/method/return_value";
 		<Argument type="string" name="tooltip" defaultValue="nil">Tab tooltip text.</Argument>
 	]}
 	returns={[
-		<ReturnValue type="table|nil" name="sheet">Created sheet descriptor.</ReturnValue>
+		<ReturnValue type="table" name="sheet">Created sheet descriptor.</ReturnValue>
 	]}
 	repositoryUrl="https://github.com/TomDotBat/pixel-ui"
 >

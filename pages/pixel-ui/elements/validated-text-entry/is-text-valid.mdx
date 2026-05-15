@@ -4,14 +4,14 @@ import ReturnValue from "/components/method/return_value";
 
 # IsTextValid
 <Method
-	name="PIXEL.ValidatedTextEntry:IsTextValid"
+	name="PANEL:IsTextValid"
 	realm="client"
 	args={[
 		<Argument type="string" name="text">Input text to validate.</Argument>
 	]}
 	returns={[
 		<ReturnValue type="boolean" name="valid">Whether the input is valid.</ReturnValue>,
-		<ReturnValue type="string?" name="message">Validation feedback message.</ReturnValue>
+		<ReturnValue type="string" name="message">Validation feedback message.</ReturnValue>
 	]}
 	repositoryUrl="https://github.com/TomDotBat/pixel-ui"
 >

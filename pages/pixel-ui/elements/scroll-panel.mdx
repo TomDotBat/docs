@@ -2,7 +2,7 @@ import MethodList from "/components/method_list";
 
 # PIXEL.ScrollPanel
 
-- **Base panel:** `DPanel`
+- **Base panel:** [`DPanel`](https://wiki.facepunch.com/gmod/DPanel)
 - **Source:** [cl_scrollpanel.lua](https://github.com/TomDotBat/pixel-ui/blob/master/lua/pixelui/elements/cl_scrollpanel.lua)
 - **Description:** PIXEL scroll panel with custom scrollbar.
 
@@ -11,76 +11,76 @@ The following methods are available on the `PIXEL.ScrollPanel` panel:
 <MethodList methods={[
 	{
 		name: "AddItem",
-		parent: "PIXEL.ScrollPanel:",
+		parent: "PANEL:",
 		description: "Adds a child panel into the scroll canvas.",
 		args: ["Panel"],
 		href: "/pixel-ui/elements/scroll-panel/add-item"
 	},
 	{
 		name: "OnChildAdded",
-		parent: "PIXEL.ScrollPanel:",
+		parent: "PANEL:",
 		description: "Redirects external child additions into the canvas.",
 		args: ["Panel"],
 		href: "/pixel-ui/elements/scroll-panel/on-child-added"
 	},
 	{
 		name: "GetVBar",
-		parent: "PIXEL.ScrollPanel:",
+		parent: "PANEL:",
 		description: "Returns the vertical scrollbar panel.",
 		returns: ["PIXEL.Scrollbar"],
 		href: "/pixel-ui/elements/scroll-panel/get-vbar"
 	},
 	{
 		name: "GetCanvas",
-		parent: "PIXEL.ScrollPanel:",
+		parent: "PANEL:",
 		description: "Returns the internal canvas panel.",
 		returns: ["Panel"],
 		href: "/pixel-ui/elements/scroll-panel/get-canvas"
 	},
 	{
 		name: "InnerWidth",
-		parent: "PIXEL.ScrollPanel:",
+		parent: "PANEL:",
 		description: "Returns the inner canvas width.",
 		returns: ["number"],
 		href: "/pixel-ui/elements/scroll-panel/inner-width"
 	},
 	{
 		name: "Rebuild",
-		parent: "PIXEL.ScrollPanel:",
+		parent: "PANEL:",
 		description: "Rebuilds canvas bounds from its children.",
 		href: "/pixel-ui/elements/scroll-panel/rebuild"
 	},
 	{
 		name: "OnMouseWheeled",
-		parent: "PIXEL.ScrollPanel:",
+		parent: "PANEL:",
 		description: "Mouse wheel handler for smooth overscroll behavior.",
 		args: ["number"],
 		href: "/pixel-ui/elements/scroll-panel/on-mouse-wheeled"
 	},
 	{
 		name: "OnVScroll",
-		parent: "PIXEL.ScrollPanel:",
+		parent: "PANEL:",
 		description: "Called when the scrollbar offset changes.",
 		args: ["number"],
 		href: "/pixel-ui/elements/scroll-panel/on-vscroll"
 	},
 	{
 		name: "ScrollToChild",
-		parent: "PIXEL.ScrollPanel:",
+		parent: "PANEL:",
 		description: "Scrolls so a child panel is brought into view.",
 		args: ["Panel"],
 		href: "/pixel-ui/elements/scroll-panel/scroll-to-child"
 	},
 	{
 		name: "LayoutContent",
-		parent: "PIXEL.ScrollPanel:",
+		parent: "PANEL:",
 		description: "Extension point for laying out canvas children.",
 		args: ["number", "number"],
 		href: "/pixel-ui/elements/scroll-panel/layout-content"
 	},
 	{
 		name: "Clear",
-		parent: "PIXEL.ScrollPanel:",
+		parent: "PANEL:",
 		description: "Clears all canvas children.",
 		returns: ["any"],
 		href: "/pixel-ui/elements/scroll-panel/clear"

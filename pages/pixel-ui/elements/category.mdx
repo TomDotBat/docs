@@ -2,7 +2,7 @@ import MethodList from "/components/method_list";
 
 # PIXEL.Category
 
-- **Base panel:** `Panel`
+- **Base panel:** [`Panel`](https://wiki.facepunch.com/gmod/Panel)
 - **Source:** [cl_category.lua](https://github.com/TomDotBat/pixel-ui/blob/master/lua/pixelui/elements/cl_category.lua)
 - **Description:** PIXEL collapsible category container panel.
 
@@ -11,54 +11,54 @@ The following methods are available on the `PIXEL.Category` panel:
 <MethodList methods={[
 	{
 		name: "UnselectAll",
-		parent: "PIXEL.Category:",
+		parent: "PANEL:",
 		description: "Clears selected state from child panels that support `SetSelected`.",
 		href: "/pixel-ui/elements/category/unselect-all"
 	},
 	{
 		name: "SetTitle",
-		parent: "PIXEL.Category:",
+		parent: "PANEL:",
 		description: "Sets the category header title text.",
 		args: ["string"],
 		href: "/pixel-ui/elements/category/set-title"
 	},
 	{
 		name: "SetContents",
-		parent: "PIXEL.Category:",
+		parent: "PANEL:",
 		description: "Sets the content panel shown inside the category.",
 		args: ["Panel"],
 		href: "/pixel-ui/elements/category/set-contents"
 	},
 	{
 		name: "SetExpanded",
-		parent: "PIXEL.Category:",
+		parent: "PANEL:",
 		description: "Sets whether the category should be expanded.",
 		args: ["boolean"],
 		href: "/pixel-ui/elements/category/set-expanded"
 	},
 	{
 		name: "Toggle",
-		parent: "PIXEL.Category:",
+		parent: "PANEL:",
 		description: "Toggles the expanded/collapsed state.",
 		href: "/pixel-ui/elements/category/toggle"
 	},
 	{
 		name: "OnToggle",
-		parent: "PIXEL.Category:",
+		parent: "PANEL:",
 		description: "Callback fired when expanded state changes.",
 		args: ["boolean"],
 		href: "/pixel-ui/elements/category/on-toggle"
 	},
 	{
 		name: "DoExpansion",
-		parent: "PIXEL.Category:",
+		parent: "PANEL:",
 		description: "Forces an expansion state change when needed.",
 		args: ["boolean"],
 		href: "/pixel-ui/elements/category/do-expansion"
 	},
 	{
 		name: "LayoutContent",
-		parent: "PIXEL.Category:",
+		parent: "PANEL:",
 		description: "Extension point for additional category content layout.",
 		args: ["number", "number"],
 		href: "/pixel-ui/elements/category/layout-content"

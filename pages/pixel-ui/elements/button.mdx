@@ -2,7 +2,7 @@ import MethodList from "/components/method_list";
 
 # PIXEL.Button
 
-- **Base panel:** `Panel`
+- **Base panel:** [`Panel`](https://wiki.facepunch.com/gmod/Panel)
 - **Source:** [cl_button.lua](https://github.com/TomDotBat/pixel-ui/blob/master/lua/pixelui/elements/cl_button.lua)
 - **Description:** Basic PIXEL button panel with hover/click styling.
 
@@ -11,62 +11,62 @@ The following methods are available on the `PIXEL.Button` panel:
 <MethodList methods={[
 	{
 		name: "DoToggle",
-		parent: "PIXEL.Button:",
+		parent: "PANEL:",
 		description: "Toggles the button state when toggle mode is enabled.",
 		args: ["any"],
 		href: "/pixel-ui/elements/button/do-toggle"
 	},
 	{
 		name: "PaintExtra",
-		parent: "PIXEL.Button:",
+		parent: "PANEL:",
 		description: "Extension point painted after the base button background.",
 		args: ["number", "number"],
 		href: "/pixel-ui/elements/button/paint-extra"
 	},
 	{
 		name: "IsDown",
-		parent: "PIXEL.Button:",
+		parent: "PANEL:",
 		description: "Returns whether the button is currently held down.",
 		returns: ["boolean"],
 		href: "/pixel-ui/elements/button/is-down"
 	},
 	{
 		name: "OnPressed",
-		parent: "PIXEL.Button:",
+		parent: "PANEL:",
 		description: "Callback fired when mouse press begins on the button.",
 		args: ["number"],
 		href: "/pixel-ui/elements/button/on-pressed"
 	},
 	{
 		name: "OnReleased",
-		parent: "PIXEL.Button:",
+		parent: "PANEL:",
 		description: "Callback fired when mouse press is released on the button.",
 		args: ["number"],
 		href: "/pixel-ui/elements/button/on-released"
 	},
 	{
 		name: "OnToggled",
-		parent: "PIXEL.Button:",
+		parent: "PANEL:",
 		description: "Callback fired when toggle state changes.",
 		args: ["boolean"],
 		href: "/pixel-ui/elements/button/on-toggled"
 	},
 	{
 		name: "DoClick",
-		parent: "PIXEL.Button:",
+		parent: "PANEL:",
 		description: "Left-click handler for the button.",
 		args: ["any"],
 		href: "/pixel-ui/elements/button/do-click"
 	},
 	{
 		name: "DoRightClick",
-		parent: "PIXEL.Button:",
+		parent: "PANEL:",
 		description: "Right-click handler for the button.",
 		href: "/pixel-ui/elements/button/do-right-click"
 	},
 	{
 		name: "DoMiddleClick",
-		parent: "PIXEL.Button:",
+		parent: "PANEL:",
 		description: "Middle-click handler for the button.",
 		href: "/pixel-ui/elements/button/do-middle-click"
 	}

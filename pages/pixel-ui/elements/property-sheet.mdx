@@ -2,7 +2,7 @@ import MethodList from "/components/method_list";
 
 # PIXEL.PropertySheet
 
-- **Base panel:** `Panel`
+- **Base panel:** [`Panel`](https://wiki.facepunch.com/gmod/Panel)
 - **Source:** [cl_property_sheet.lua](https://github.com/TomDotBat/pixel-ui/blob/master/lua/pixelui/elements/cl_property_sheet.lua)
 - **Description:** PIXEL property sheet panel with tab strip.
 
@@ -11,42 +11,42 @@ The following methods are available on the `PIXEL.PropertySheet` panel:
 <MethodList methods={[
 	{
 		name: "AddSheet",
-		parent: "PIXEL.PropertySheet:",
+		parent: "PANEL:",
 		description: "Adds a new tab and content panel to the property sheet.",
-		args: ["string", "Panel", "any|nil", "boolean|nil", "boolean|nil", "string|nil"],
-		returns: ["table|nil"],
+		args: ["string", "Panel", "any", "boolean", "boolean", "string"],
+		returns: ["table"],
 		href: "/pixel-ui/elements/property-sheet/add-sheet"
 	},
 	{
 		name: "SetActiveTab",
-		parent: "PIXEL.PropertySheet:",
+		parent: "PANEL:",
 		description: "Sets the currently active tab.",
 		args: ["PIXEL.Tab"],
 		href: "/pixel-ui/elements/property-sheet/set-active-tab"
 	},
 	{
 		name: "OnActiveTabChanged",
-		parent: "PIXEL.PropertySheet:",
+		parent: "PANEL:",
 		description: "Callback fired when active tab changes.",
 		args: ["PIXEL.Tab", "PIXEL.Tab"],
 		href: "/pixel-ui/elements/property-sheet/on-active-tab-changed"
 	},
 	{
 		name: "GetItems",
-		parent: "PIXEL.PropertySheet:",
+		parent: "PANEL:",
 		description: "Returns all sheet entries.",
 		returns: ["table"],
 		href: "/pixel-ui/elements/property-sheet/get-items"
 	},
 	{
 		name: "SizeToContentWidth",
-		parent: "PIXEL.PropertySheet:",
+		parent: "PANEL:",
 		description: "Resizes the sheet to fit the widest content panel.",
 		href: "/pixel-ui/elements/property-sheet/size-to-content-width"
 	},
 	{
 		name: "SwitchToName",
-		parent: "PIXEL.PropertySheet:",
+		parent: "PANEL:",
 		description: "Switches to the first tab matching a name.",
 		args: ["string"],
 		returns: ["boolean"],
@@ -54,10 +54,10 @@ The following methods are available on the `PIXEL.PropertySheet` panel:
 	},
 	{
 		name: "CloseTab",
-		parent: "PIXEL.PropertySheet:",
+		parent: "PANEL:",
 		description: "Closes a tab and optionally removes its content panel.",
-		args: ["PIXEL.Tab", "boolean|nil"],
-		returns: ["Panel|nil"],
+		args: ["PIXEL.Tab", "boolean"],
+		returns: ["Panel"],
 		href: "/pixel-ui/elements/property-sheet/close-tab"
 	}
 ]} />
