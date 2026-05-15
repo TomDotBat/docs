@@ -1,0 +1,26 @@
+import MethodList from "/components/method_list";
+
+# PIXEL.Label
+
+- **Base panel:** [`Panel`](https://wiki.facepunch.com/gmod/Panel)
+- **Source:** [cl_label.lua](https://github.com/TomDotBat/pixel-ui/blob/master/lua/pixelui/elements/cl_label.lua)
+- **Description:** PIXEL text label panel.
+
+## Methods
+The following methods are available on the `PIXEL.Label` panel:
+<MethodList methods={[
+	{
+		name: "SetText",
+		parent: "PANEL:",
+		description: "Sets label text and stores original text for wrapping.",
+		args: ["string"],
+		href: "/pixel-ui/elements/label/set-text"
+	},
+	{
+		name: "CalculateSize",
+		parent: "PANEL:",
+		description: "Calculates text dimensions using the current font.",
+		returns: ["number", "number"],
+		href: "/pixel-ui/elements/label/calculate-size"
+	}
+]} />

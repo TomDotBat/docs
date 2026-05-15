@@ -1,0 +1,21 @@
+import Method from "/components/method";
+import Argument from "/components/method/argument";
+import ReturnValue from "/components/method/return_value";
+
+# AddChoice
+<Method
+	name="PANEL:AddChoice"
+	realm="client"
+	args={[
+		<Argument type="string" name="value">Display text.</Argument>,
+		<Argument type="any" name="data" defaultValue="nil">Optional payload value.</Argument>,
+		<Argument type="boolean" name="select" defaultValue="nil">Whether this choice should be selected immediately.</Argument>,
+		<Argument type="string" name="icon" defaultValue="nil">Optional icon material path/URL.</Argument>
+	]}
+	returns={[
+		<ReturnValue type="number" name="index">Inserted choice index.</ReturnValue>
+	]}
+	repositoryUrl="https://github.com/TomDotBat/pixel-ui"
+>
+	Adds a selectable choice to the combo box.
+</Method>

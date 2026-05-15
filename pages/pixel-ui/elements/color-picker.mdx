@@ -1,0 +1,66 @@
+import MethodList from "/components/method_list";
+
+# PIXEL.ColorPicker
+
+- **Base panel:** [`Panel`](https://wiki.facepunch.com/gmod/Panel)
+- **Source:** [cl_color_picker.lua](https://github.com/TomDotBat/pixel-ui/blob/master/lua/pixelui/elements/cl_color_picker.lua)
+- **Description:** PIXEL color picker panel with hue/value controls.
+
+## Methods
+The following methods are available on the `PIXEL.ColorPicker` panel:
+<MethodList methods={[
+	{
+		name: "UpdateColor",
+		parent: "PANEL:",
+		description: "Recomputes the current color from hue/saturation/lightness values.",
+		href: "/pixel-ui/elements/color-picker/update-color"
+	},
+	{
+		name: "SetColor",
+		parent: "PANEL:",
+		description: "Sets the picker color and updates control positions.",
+		args: ["Color"],
+		href: "/pixel-ui/elements/color-picker/set-color"
+	},
+	{
+		name: "UpdatePositions",
+		parent: "PANEL:",
+		description: "Updates picker marker positions from the current HSL values.",
+		href: "/pixel-ui/elements/color-picker/update-positions"
+	},
+	{
+		name: "GetCenter",
+		parent: "PANEL:",
+		description: "Returns the center point of the picker.",
+		returns: ["number", "number"],
+		href: "/pixel-ui/elements/color-picker/get-center"
+	},
+	{
+		name: "GetRadius",
+		parent: "PANEL:",
+		description: "Returns the outer radius of the picker.",
+		returns: ["number"],
+		href: "/pixel-ui/elements/color-picker/get-radius"
+	},
+	{
+		name: "GetTriangleRadius",
+		parent: "PANEL:",
+		description: "Returns the triangle radius used for saturation/lightness selection.",
+		returns: ["number"],
+		href: "/pixel-ui/elements/color-picker/get-triangle-radius"
+	},
+	{
+		name: "GetRingThickness",
+		parent: "PANEL:",
+		description: "Returns the hue ring thickness.",
+		returns: ["number"],
+		href: "/pixel-ui/elements/color-picker/get-ring-thickness"
+	},
+	{
+		name: "GetHueColor",
+		parent: "PANEL:",
+		description: "Returns the pure hue color for the current hue angle.",
+		returns: ["Color"],
+		href: "/pixel-ui/elements/color-picker/get-hue-color"
+	}
+]} />

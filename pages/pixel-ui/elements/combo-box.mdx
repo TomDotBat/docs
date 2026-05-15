@@ -1,0 +1,111 @@
+import MethodList from "/components/method_list";
+
+# PIXEL.ComboBox
+
+- **Base panel:** [`PIXEL.TextButton`](/pixel-ui/elements/text-button)
+- **Source:** [cl_combo_box.lua](https://github.com/TomDotBat/pixel-ui/blob/master/lua/pixelui/elements/cl_combo_box.lua)
+- **Description:** PIXEL combo box (dropdown) control.
+
+## Methods
+The following methods are available on the `PIXEL.ComboBox` panel:
+<MethodList methods={[
+	{
+		name: "Clear",
+		parent: "PANEL:",
+		description: "Clears all combo box choices and selection state.",
+		href: "/pixel-ui/elements/combo-box/clear"
+	},
+	{
+		name: "GetOptionText",
+		parent: "PANEL:",
+		description: "Returns display text for a choice by index.",
+		args: ["number"],
+		returns: ["string"],
+		href: "/pixel-ui/elements/combo-box/get-option-text"
+	},
+	{
+		name: "GetOptionData",
+		parent: "PANEL:",
+		description: "Returns associated data for a choice by index.",
+		args: ["number"],
+		returns: ["any"],
+		href: "/pixel-ui/elements/combo-box/get-option-data"
+	},
+	{
+		name: "GetOptionTextByData",
+		parent: "PANEL:",
+		description: "Resolves display text for a matching data value.",
+		args: ["any"],
+		returns: ["any"],
+		href: "/pixel-ui/elements/combo-box/get-option-text-by-data"
+	},
+	{
+		name: "ChooseOption",
+		parent: "PANEL:",
+		description: "Selects a choice and updates displayed value.",
+		args: ["string", "number"],
+		href: "/pixel-ui/elements/combo-box/choose-option"
+	},
+	{
+		name: "ChooseOptionID",
+		parent: "PANEL:",
+		description: "Selects a choice by index.",
+		args: ["number"],
+		href: "/pixel-ui/elements/combo-box/choose-option-id"
+	},
+	{
+		name: "GetSelectedID",
+		parent: "PANEL:",
+		description: "Returns the selected choice index.",
+		returns: ["number"],
+		href: "/pixel-ui/elements/combo-box/get-selected-id"
+	},
+	{
+		name: "GetSelected",
+		parent: "PANEL:",
+		description: "Returns the currently selected text and data.",
+		returns: ["string", "any"],
+		href: "/pixel-ui/elements/combo-box/get-selected"
+	},
+	{
+		name: "OnSelect",
+		parent: "PANEL:",
+		description: "Callback fired when a choice is selected.",
+		args: ["number", "string", "any"],
+		href: "/pixel-ui/elements/combo-box/on-select"
+	},
+	{
+		name: "AddChoice",
+		parent: "PANEL:",
+		description: "Adds a selectable choice to the combo box.",
+		args: ["string", "any", "boolean", "string"],
+		returns: ["number"],
+		href: "/pixel-ui/elements/combo-box/add-choice"
+	},
+	{
+		name: "IsMenuOpen",
+		parent: "PANEL:",
+		description: "Returns whether the dropdown menu is currently open.",
+		returns: ["boolean"],
+		href: "/pixel-ui/elements/combo-box/is-menu-open"
+	},
+	{
+		name: "CloseMenu",
+		parent: "PANEL:",
+		description: "Closes and removes the dropdown menu if open.",
+		href: "/pixel-ui/elements/combo-box/close-menu"
+	},
+	{
+		name: "CheckConVarChanges",
+		parent: "PANEL:",
+		description: "Synchronizes displayed value from the bound console variable.",
+		href: "/pixel-ui/elements/combo-box/check-con-var-changes"
+	},
+	{
+		name: "SetValue",
+		parent: "PANEL:",
+		description: "Sets the currently displayed combo box text.",
+		args: ["string"],
+		href: "/pixel-ui/elements/combo-box/set-value"
+	}
+]} />

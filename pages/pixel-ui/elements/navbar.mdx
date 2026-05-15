@@ -1,0 +1,33 @@
+import MethodList from "/components/method_list";
+
+# PIXEL.Navbar
+
+- **Base panel:** [`Panel`](https://wiki.facepunch.com/gmod/Panel)
+- **Source:** [cl_navbar.lua](https://github.com/TomDotBat/pixel-ui/blob/master/lua/pixelui/elements/cl_navbar.lua)
+- **Description:** PIXEL navbar container panel.
+
+## Methods
+The following methods are available on the `PIXEL.Navbar` panel:
+<MethodList methods={[
+	{
+		name: "AddItem",
+		parent: "PANEL:",
+		description: "Adds a selectable item to the navbar.",
+		args: ["any", "string", "fun(item:Panel)", "number", "Color"],
+		href: "/pixel-ui/elements/navbar/add-item"
+	},
+	{
+		name: "RemoveItem",
+		parent: "PANEL:",
+		description: "Removes an item from the navbar by identifier.",
+		args: ["any"],
+		href: "/pixel-ui/elements/navbar/remove-item"
+	},
+	{
+		name: "SelectItem",
+		parent: "PANEL:",
+		description: "Selects an existing navbar item.",
+		args: ["any"],
+		href: "/pixel-ui/elements/navbar/select-item"
+	}
+]} />

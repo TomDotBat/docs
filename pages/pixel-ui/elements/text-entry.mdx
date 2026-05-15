@@ -1,0 +1,203 @@
+import MethodList from "/components/method_list";
+
+# PIXEL.TextEntry
+
+- **Base panel:** [`Panel`](https://wiki.facepunch.com/gmod/Panel)
+- **Source:** [cl_text_entry.lua](https://github.com/TomDotBat/pixel-ui/blob/master/lua/pixelui/elements/cl_text_entry.lua)
+- **Description:** PIXEL styled text entry container with integrated label.
+
+## Methods
+The following methods are available on the `PIXEL.TextEntry` panel:
+<MethodList methods={[
+	{
+		name: "IsEnabled",
+		parent: "PANEL:",
+		description: "Returns whether text input is enabled.",
+		returns: ["boolean"],
+		href: "/pixel-ui/elements/text-entry/is-enabled"
+	},
+	{
+		name: "SetEnabled",
+		parent: "PANEL:",
+		description: "Enables or disables text input.",
+		args: ["boolean"],
+		href: "/pixel-ui/elements/text-entry/set-enabled"
+	},
+	{
+		name: "GetValue",
+		parent: "PANEL:",
+		description: "Returns current text value.",
+		returns: ["string"],
+		href: "/pixel-ui/elements/text-entry/get-value"
+	},
+	{
+		name: "SetValue",
+		parent: "PANEL:",
+		description: "Sets current text value.",
+		args: ["string"],
+		href: "/pixel-ui/elements/text-entry/set-value"
+	},
+	{
+		name: "IsMultiline",
+		parent: "PANEL:",
+		description: "Returns whether multiline input is enabled.",
+		returns: ["boolean"],
+		href: "/pixel-ui/elements/text-entry/is-multiline"
+	},
+	{
+		name: "SetMultiline",
+		parent: "PANEL:",
+		description: "Enables or disables multiline input.",
+		args: ["boolean"],
+		href: "/pixel-ui/elements/text-entry/set-multiline"
+	},
+	{
+		name: "IsEditing",
+		parent: "PANEL:",
+		description: "Returns whether this entry currently has keyboard focus.",
+		returns: ["boolean"],
+		href: "/pixel-ui/elements/text-entry/is-editing"
+	},
+	{
+		name: "GetEnterAllowed",
+		parent: "PANEL:",
+		description: "Returns whether Enter submits single-line input.",
+		returns: ["boolean"],
+		href: "/pixel-ui/elements/text-entry/get-enter-allowed"
+	},
+	{
+		name: "SetEnterAllowed",
+		parent: "PANEL:",
+		description: "Sets whether Enter submits single-line input.",
+		args: ["boolean"],
+		href: "/pixel-ui/elements/text-entry/set-enter-allowed"
+	},
+	{
+		name: "GetUpdateOnType",
+		parent: "PANEL:",
+		description: "Returns whether value updates fire while typing.",
+		returns: ["boolean"],
+		href: "/pixel-ui/elements/text-entry/get-update-on-type"
+	},
+	{
+		name: "SetUpdateOnType",
+		parent: "PANEL:",
+		description: "Enables or disables update-on-type behavior.",
+		args: ["boolean"],
+		href: "/pixel-ui/elements/text-entry/set-update-on-type"
+	},
+	{
+		name: "GetNumeric",
+		parent: "PANEL:",
+		description: "Returns whether numeric-only input mode is enabled.",
+		returns: ["boolean"],
+		href: "/pixel-ui/elements/text-entry/get-numeric"
+	},
+	{
+		name: "SetNumeric",
+		parent: "PANEL:",
+		description: "Enables or disables numeric-only input mode.",
+		args: ["boolean"],
+		href: "/pixel-ui/elements/text-entry/set-numeric"
+	},
+	{
+		name: "GetHistoryEnabled",
+		parent: "PANEL:",
+		description: "Returns whether history navigation is enabled.",
+		returns: ["boolean"],
+		href: "/pixel-ui/elements/text-entry/get-history-enabled"
+	},
+	{
+		name: "SetHistoryEnabled",
+		parent: "PANEL:",
+		description: "Enables or disables history navigation.",
+		args: ["boolean"],
+		href: "/pixel-ui/elements/text-entry/set-history-enabled"
+	},
+	{
+		name: "GetTabbingDisabled",
+		parent: "PANEL:",
+		description: "Returns whether tabbing is disabled.",
+		returns: ["boolean"],
+		href: "/pixel-ui/elements/text-entry/get-tabbing-disabled"
+	},
+	{
+		name: "SetTabbingDisabled",
+		parent: "PANEL:",
+		description: "Enables or disables tabbing behavior.",
+		args: ["boolean"],
+		href: "/pixel-ui/elements/text-entry/set-tabbing-disabled"
+	},
+	{
+		name: "GetPlaceholderText",
+		parent: "PANEL:",
+		description: "Returns placeholder text.",
+		returns: ["string"],
+		href: "/pixel-ui/elements/text-entry/get-placeholder-text"
+	},
+	{
+		name: "SetPlaceholderText",
+		parent: "PANEL:",
+		description: "Sets placeholder text.",
+		args: ["string"],
+		href: "/pixel-ui/elements/text-entry/set-placeholder-text"
+	},
+	{
+		name: "GetFont",
+		parent: "PANEL:",
+		description: "Returns active text font.",
+		returns: ["string"],
+		href: "/pixel-ui/elements/text-entry/get-font"
+	},
+	{
+		name: "SetFont",
+		parent: "PANEL:",
+		description: "Sets active text font.",
+		args: ["string"],
+		href: "/pixel-ui/elements/text-entry/set-font"
+	},
+	{
+		name: "GetInt",
+		parent: "PANEL:",
+		description: "Returns current value rounded to nearest integer.",
+		returns: ["number"],
+		href: "/pixel-ui/elements/text-entry/get-int"
+	},
+	{
+		name: "GetFloat",
+		parent: "PANEL:",
+		description: "Returns current value parsed as a float.",
+		returns: ["number"],
+		href: "/pixel-ui/elements/text-entry/get-float"
+	},
+	{
+		name: "SetEditable",
+		parent: "PANEL:",
+		description: "Sets whether editing is allowed.",
+		args: ["boolean"],
+		href: "/pixel-ui/elements/text-entry/set-editable"
+	},
+	{
+		name: "AllowInput",
+		parent: "PANEL:",
+		description: "Callback used to filter raw character input.",
+		args: ["string"],
+		returns: ["boolean"],
+		href: "/pixel-ui/elements/text-entry/allow-input"
+	},
+	{
+		name: "GetAutoComplete",
+		parent: "PANEL:",
+		description: "Callback used to provide autocomplete suggestions.",
+		args: ["string"],
+		returns: ["string[]"],
+		href: "/pixel-ui/elements/text-entry/get-auto-complete"
+	},
+	{
+		name: "OnKeyCode",
+		parent: "PANEL:",
+		description: "Callback fired when a key code is received.",
+		args: ["number"],
+		href: "/pixel-ui/elements/text-entry/on-key-code"
+	}
+]} />

@@ -1,0 +1,14 @@
+import Method from "/components/method";
+import ReturnValue from "/components/method/return_value";
+
+# GetHueColor
+<Method
+	name="PANEL:GetHueColor"
+	realm="client"
+	returns={[
+		<ReturnValue type="Color" name="color">Hue-only color value.</ReturnValue>
+	]}
+	repositoryUrl="https://github.com/TomDotBat/pixel-ui"
+>
+	Returns the pure hue color for the current hue angle.
+</Method>

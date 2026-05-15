@@ -1,0 +1,97 @@
+import MethodList from "/components/method_list";
+
+# PIXEL.Frame
+
+- **Base panel:** [`EditablePanel`](https://wiki.facepunch.com/gmod/EditablePanel)
+- **Source:** [cl_frame.lua](https://github.com/TomDotBat/pixel-ui/blob/master/lua/pixelui/elements/cl_frame.lua)
+- **Description:** PIXEL window frame panel.
+
+## Methods
+The following methods are available on the `PIXEL.Frame` panel:
+<MethodList methods={[
+	{
+		name: "SetImgurID",
+		parent: "PANEL:",
+		description: "Sets the frame header icon using an Imgur ID.",
+		args: ["string"],
+		href: "/pixel-ui/elements/frame/set-imgur-id"
+	},
+	{
+		name: "GetImgurID",
+		parent: "PANEL:",
+		description: "Gets the frame header Imgur ID from its image URL.",
+		returns: ["string"],
+		href: "/pixel-ui/elements/frame/get-imgur-id"
+	},
+	{
+		name: "DragThink",
+		parent: "PANEL:",
+		description: "Handles drag cursor state and dragging movement.",
+		args: ["Panel", "Panel"],
+		returns: ["boolean"],
+		href: "/pixel-ui/elements/frame/drag-think"
+	},
+	{
+		name: "SizeThink",
+		parent: "PANEL:",
+		description: "Handles resize cursor state and resizing movement.",
+		args: ["Panel", "Panel"],
+		returns: ["boolean"],
+		href: "/pixel-ui/elements/frame/size-think"
+	},
+	{
+		name: "CreateSidebar",
+		parent: "PANEL:",
+		description: "Creates a sidebar attached to the frame.",
+		args: ["any", "string", "number", "number", "number"],
+		returns: ["PIXEL.Sidebar"],
+		href: "/pixel-ui/elements/frame/create-sidebar"
+	},
+	{
+		name: "AddHeaderButton",
+		parent: "PANEL:",
+		description: "Registers an extra header button.",
+		args: ["Panel", "number"],
+		returns: ["number"],
+		href: "/pixel-ui/elements/frame/add-header-button"
+	},
+	{
+		name: "LayoutContent",
+		parent: "PANEL:",
+		description: "Extension point for laying out frame content.",
+		args: ["number", "number"],
+		href: "/pixel-ui/elements/frame/layout-content"
+	},
+	{
+		name: "Open",
+		parent: "PANEL:",
+		description: "Animates and shows the frame.",
+		href: "/pixel-ui/elements/frame/open"
+	},
+	{
+		name: "Close",
+		parent: "PANEL:",
+		description: "Animates and closes the frame.",
+		href: "/pixel-ui/elements/frame/close"
+	},
+	{
+		name: "OnClose",
+		parent: "PANEL:",
+		description: "Callback fired after the frame closes.",
+		href: "/pixel-ui/elements/frame/on-close"
+	},
+	{
+		name: "PaintHeader",
+		parent: "PANEL:",
+		description: "Paints the frame header region.",
+		args: ["number", "number", "number", "number"],
+		href: "/pixel-ui/elements/frame/paint-header"
+	},
+	{
+		name: "PaintBefore",
+		parent: "PANEL:",
+		description: "Extension point painted before base frame rendering.",
+		args: ["number", "number"],
+		href: "/pixel-ui/elements/frame/paint-before"
+	}
+]} />

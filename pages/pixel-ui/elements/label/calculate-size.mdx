@@ -1,0 +1,15 @@
+import Method from "/components/method";
+import ReturnValue from "/components/method/return_value";
+
+# CalculateSize
+<Method
+	name="PANEL:CalculateSize"
+	realm="client"
+	returns={[
+		<ReturnValue type="number" name="width">Text width.</ReturnValue>,
+		<ReturnValue type="number" name="height">Text height.</ReturnValue>
+	]}
+	repositoryUrl="https://github.com/TomDotBat/pixel-ui"
+>
+	Calculates text dimensions using the current font.
+</Method>

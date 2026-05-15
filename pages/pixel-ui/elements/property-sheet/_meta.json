@@ -1,0 +1,9 @@
+{
+  "add-sheet": "AddSheet",
+  "set-active-tab": "SetActiveTab",
+  "on-active-tab-changed": "OnActiveTabChanged",
+  "get-items": "GetItems",
+  "size-to-content-width": "SizeToContentWidth",
+  "switch-to-name": "SwitchToName",
+  "close-tab": "CloseTab"
+}

@@ -1,0 +1,14 @@
+import Method from "/components/method";
+import ReturnValue from "/components/method/return_value";
+
+# IsDown
+<Method
+	name="PANEL:IsDown"
+	realm="client"
+	returns={[
+		<ReturnValue type="boolean" name="isDown">True while the button is depressed.</ReturnValue>
+	]}
+	repositoryUrl="https://github.com/TomDotBat/pixel-ui"
+>
+	Returns whether the button is currently held down.
+</Method>

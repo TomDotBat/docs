@@ -1,0 +1,15 @@
+import Method from "/components/method";
+import ReturnValue from "/components/method/return_value";
+
+# GetImgurSize
+<Method
+	name="PANEL:GetImgurSize"
+	realm="client"
+	returns={[
+		<ReturnValue type="number" name="width">Image width.</ReturnValue>,
+		<ReturnValue type="number" name="height">Image height.</ReturnValue>
+	]}
+	repositoryUrl="https://github.com/TomDotBat/pixel-ui"
+>
+	Gets the configured image size.
+</Method>

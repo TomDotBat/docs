@@ -1,0 +1,25 @@
+import MethodList from "/components/method_list";
+
+# PIXEL.TextButton
+
+- **Base panel:** [`PIXEL.Button`](/pixel-ui/elements/button)
+- **Source:** [cl_text_button.lua](https://github.com/TomDotBat/pixel-ui/blob/master/lua/pixelui/elements/cl_text_button.lua)
+- **Description:** PIXEL button with styled text label.
+
+## Methods
+The following methods are available on the `PIXEL.TextButton` panel:
+<MethodList methods={[
+	{
+		name: "SizeToText",
+		parent: "PANEL:",
+		description: "Resizes the button to fit its current text.",
+		href: "/pixel-ui/elements/text-button/size-to-text"
+	},
+	{
+		name: "PaintExtra",
+		parent: "PANEL:",
+		description: "Draws the button text over the base PIXEL.Button background.",
+		args: ["number", "number"],
+		href: "/pixel-ui/elements/text-button/paint-extra"
+	}
+]} />

@@ -1,0 +1,10 @@
+{
+  "update-color": "UpdateColor",
+  "set-color": "SetColor",
+  "update-positions": "UpdatePositions",
+  "get-center": "GetCenter",
+  "get-radius": "GetRadius",
+  "get-triangle-radius": "GetTriangleRadius",
+  "get-ring-thickness": "GetRingThickness",
+  "get-hue-color": "GetHueColor"
+}

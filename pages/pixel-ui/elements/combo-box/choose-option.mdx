@@ -1,0 +1,15 @@
+import Method from "/components/method";
+import Argument from "/components/method/argument";
+
+# ChooseOption
+<Method
+	name="PANEL:ChooseOption"
+	realm="client"
+	args={[
+		<Argument type="string" name="value">Selected display text.</Argument>,
+		<Argument type="number" name="index">Selected choice index.</Argument>
+	]}
+	repositoryUrl="https://github.com/TomDotBat/pixel-ui"
+>
+	Selects a choice and updates displayed value.
+</Method>

@@ -1,0 +1,18 @@
+import Method from "/components/method";
+import Argument from "/components/method/argument";
+import ReturnValue from "/components/method/return_value";
+
+# GetOptionText
+<Method
+	name="PANEL:GetOptionText"
+	realm="client"
+	args={[
+		<Argument type="number" name="id">Choice index.</Argument>
+	]}
+	returns={[
+		<ReturnValue type="string" name="text">Choice label.</ReturnValue>
+	]}
+	repositoryUrl="https://github.com/TomDotBat/pixel-ui"
+>
+	Returns display text for a choice by index.
+</Method>

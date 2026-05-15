@@ -1,0 +1,18 @@
+{
+  "add-panel": "AddPanel",
+  "add-option": "AddOption",
+  "add-cvar": "AddCVar",
+  "add-spacer": "AddSpacer",
+  "add-sub-menu": "AddSubMenu",
+  "hide": "Hide",
+  "open-sub-menu": "OpenSubMenu",
+  "close-sub-menu": "CloseSubMenu",
+  "child-count": "ChildCount",
+  "get-child": "GetChild",
+  "layout-content": "LayoutContent",
+  "open": "Open",
+  "option-selected-internal": "OptionSelectedInternal",
+  "option-selected": "OptionSelected",
+  "clear-highlights": "ClearHighlights",
+  "highlight-item": "HighlightItem"
+}

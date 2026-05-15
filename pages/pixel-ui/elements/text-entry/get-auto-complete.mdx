@@ -1,0 +1,18 @@
+import Method from "/components/method";
+import Argument from "/components/method/argument";
+import ReturnValue from "/components/method/return_value";
+
+# GetAutoComplete
+<Method
+	name="PANEL:GetAutoComplete"
+	realm="client"
+	args={[
+		<Argument type="string" name="txt">Current text value.</Argument>
+	]}
+	returns={[
+		<ReturnValue type="string[]" name="suggestions">Suggested completions.</ReturnValue>
+	]}
+	repositoryUrl="https://github.com/TomDotBat/pixel-ui"
+>
+	Callback used to provide autocomplete suggestions.
+</Method>

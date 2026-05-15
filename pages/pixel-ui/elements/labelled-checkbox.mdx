@@ -1,0 +1,75 @@
+import MethodList from "/components/method_list";
+
+# PIXEL.LabelledCheckbox
+
+- **Base panel:** [`Panel`](https://wiki.facepunch.com/gmod/Panel)
+- **Source:** [cl_labelled_checkbox.lua](https://github.com/TomDotBat/pixel-ui/blob/master/lua/pixelui/elements/cl_labelled_checkbox.lua)
+- **Description:** PIXEL checkbox with attached label.
+
+## Methods
+The following methods are available on the `PIXEL.LabelledCheckbox` panel:
+<MethodList methods={[
+	{
+		name: "OnToggled",
+		parent: "PANEL:",
+		description: "Callback fired when the checkbox toggles.",
+		args: ["boolean"],
+		href: "/pixel-ui/elements/labelled-checkbox/on-toggled"
+	},
+	{
+		name: "SetText",
+		parent: "PANEL:",
+		description: "Sets the label text.",
+		args: ["string"],
+		href: "/pixel-ui/elements/labelled-checkbox/set-text"
+	},
+	{
+		name: "GetText",
+		parent: "PANEL:",
+		description: "Gets the label text.",
+		returns: ["string"],
+		href: "/pixel-ui/elements/labelled-checkbox/get-text"
+	},
+	{
+		name: "SetFont",
+		parent: "PANEL:",
+		description: "Sets the label font.",
+		args: ["string"],
+		href: "/pixel-ui/elements/labelled-checkbox/set-font"
+	},
+	{
+		name: "GetFont",
+		parent: "PANEL:",
+		description: "Gets the label font.",
+		returns: ["string"],
+		href: "/pixel-ui/elements/labelled-checkbox/get-font"
+	},
+	{
+		name: "SetTextColor",
+		parent: "PANEL:",
+		description: "Sets the label text color.",
+		args: ["Color"],
+		href: "/pixel-ui/elements/labelled-checkbox/set-text-color"
+	},
+	{
+		name: "GetTextColor",
+		parent: "PANEL:",
+		description: "Gets the label text color.",
+		returns: ["Color"],
+		href: "/pixel-ui/elements/labelled-checkbox/get-text-color"
+	},
+	{
+		name: "SetAutoWrap",
+		parent: "PANEL:",
+		description: "Enables or disables automatic label wrapping.",
+		args: ["boolean"],
+		href: "/pixel-ui/elements/labelled-checkbox/set-auto-wrap"
+	},
+	{
+		name: "GetAutoWrap",
+		parent: "PANEL:",
+		description: "Returns whether automatic label wrapping is enabled.",
+		returns: ["boolean"],
+		href: "/pixel-ui/elements/labelled-checkbox/get-auto-wrap"
+	}
+]} />

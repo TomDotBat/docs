@@ -1,0 +1,19 @@
+import Method from "/components/method";
+import Argument from "/components/method/argument";
+import ReturnValue from "/components/method/return_value";
+
+# AddOption
+<Method
+	name="PANEL:AddOption"
+	realm="client"
+	args={[
+		<Argument type="string" name="strText">Option label.</Argument>,
+		<Argument type="fun()" name="funcFunction" defaultValue="nil">Callback run when clicked.</Argument>
+	]}
+	returns={[
+		<ReturnValue type="PIXEL.MenuOption" name="option">Created option panel.</ReturnValue>
+	]}
+	repositoryUrl="https://github.com/TomDotBat/pixel-ui"
+>
+	Creates and adds a standard clickable option.
+</Method>

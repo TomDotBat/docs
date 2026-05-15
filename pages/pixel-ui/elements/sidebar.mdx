@@ -1,0 +1,76 @@
+import MethodList from "/components/method_list";
+
+# PIXEL.Sidebar
+
+- **Base panel:** [`Panel`](https://wiki.facepunch.com/gmod/Panel)
+- **Source:** [cl_sidebar.lua](https://github.com/TomDotBat/pixel-ui/blob/master/lua/pixelui/elements/cl_sidebar.lua)
+- **Description:** PIXEL sidebar container panel.
+
+## Methods
+The following methods are available on the `PIXEL.Sidebar` panel:
+<MethodList methods={[
+	{
+		name: "SetImgurID",
+		parent: "PANEL:",
+		description: "Sets the sidebar logo image using an Imgur ID.",
+		args: ["string"],
+		href: "/pixel-ui/elements/sidebar/set-imgur-id"
+	},
+	{
+		name: "GetImgurID",
+		parent: "PANEL:",
+		description: "Gets the sidebar logo Imgur ID from its image URL.",
+		returns: ["string"],
+		href: "/pixel-ui/elements/sidebar/get-imgur-id"
+	},
+	{
+		name: "SetImgurScale",
+		parent: "PANEL:",
+		description: "Sets the sidebar logo scale using the deprecated Imgur alias.",
+		args: ["number"],
+		href: "/pixel-ui/elements/sidebar/set-imgur-scale"
+	},
+	{
+		name: "GetImgurScale",
+		parent: "PANEL:",
+		description: "Gets the sidebar logo scale using the deprecated Imgur alias.",
+		returns: ["number"],
+		href: "/pixel-ui/elements/sidebar/get-imgur-scale"
+	},
+	{
+		name: "SetImgurOffset",
+		parent: "PANEL:",
+		description: "Sets the sidebar logo Y offset using the deprecated Imgur alias.",
+		args: ["number"],
+		href: "/pixel-ui/elements/sidebar/set-imgur-offset"
+	},
+	{
+		name: "GetImgurOffset",
+		parent: "PANEL:",
+		description: "Gets the sidebar logo Y offset using the deprecated Imgur alias.",
+		returns: ["number"],
+		href: "/pixel-ui/elements/sidebar/get-imgur-offset"
+	},
+	{
+		name: "AddItem",
+		parent: "PANEL:",
+		description: "Adds a selectable item to the sidebar.",
+		args: ["any", "string", "string", "fun(item:Panel)", "number"],
+		returns: ["Panel"],
+		href: "/pixel-ui/elements/sidebar/add-item"
+	},
+	{
+		name: "RemoveItem",
+		parent: "PANEL:",
+		description: "Removes a sidebar item by identifier.",
+		args: ["any"],
+		href: "/pixel-ui/elements/sidebar/remove-item"
+	},
+	{
+		name: "SelectItem",
+		parent: "PANEL:",
+		description: "Selects an existing sidebar item.",
+		args: ["any"],
+		href: "/pixel-ui/elements/sidebar/select-item"
+	}
+]} />

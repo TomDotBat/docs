@@ -1,0 +1,14 @@
+import Method from "/components/method";
+import ReturnValue from "/components/method/return_value";
+
+# GetValue
+<Method
+	name="PANEL:GetValue"
+	realm="client"
+	returns={[
+		<ReturnValue type="string" name="value">Current input value.</ReturnValue>
+	]}
+	repositoryUrl="https://github.com/TomDotBat/pixel-ui"
+>
+	Gets the text entry value.
+</Method>

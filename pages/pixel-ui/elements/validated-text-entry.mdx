@@ -1,0 +1,55 @@
+import MethodList from "/components/method_list";
+
+# PIXEL.ValidatedTextEntry
+
+- **Base panel:** [`Panel`](https://wiki.facepunch.com/gmod/Panel)
+- **Source:** [cl_validated_text_entry.lua](https://github.com/TomDotBat/pixel-ui/blob/master/lua/pixelui/elements/cl_validated_text_entry.lua)
+- **Description:** PIXEL text entry with validation message.
+
+## Methods
+The following methods are available on the `PIXEL.ValidatedTextEntry` panel:
+<MethodList methods={[
+	{
+		name: "IsTextValid",
+		parent: "PANEL:",
+		description: "Validates the current text value.",
+		args: ["string"],
+		returns: ["boolean", "string"],
+		href: "/pixel-ui/elements/validated-text-entry/is-text-valid"
+	},
+	{
+		name: "OnValidate",
+		parent: "PANEL:",
+		description: "Callback fired after validation.",
+		args: ["boolean", "string"],
+		href: "/pixel-ui/elements/validated-text-entry/on-validate"
+	},
+	{
+		name: "SetValue",
+		parent: "PANEL:",
+		description: "Sets the text entry value.",
+		args: ["string"],
+		href: "/pixel-ui/elements/validated-text-entry/set-value"
+	},
+	{
+		name: "GetValue",
+		parent: "PANEL:",
+		description: "Gets the text entry value.",
+		returns: ["string"],
+		href: "/pixel-ui/elements/validated-text-entry/get-value"
+	},
+	{
+		name: "SetPlaceholderText",
+		parent: "PANEL:",
+		description: "Sets placeholder text for the input.",
+		args: ["string"],
+		href: "/pixel-ui/elements/validated-text-entry/set-placeholder-text"
+	},
+	{
+		name: "GetPlaceholderText",
+		parent: "PANEL:",
+		description: "Gets placeholder text for the input.",
+		returns: ["string"],
+		href: "/pixel-ui/elements/validated-text-entry/get-placeholder-text"
+	}
+]} />

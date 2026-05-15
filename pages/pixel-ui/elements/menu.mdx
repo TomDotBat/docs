@@ -1,0 +1,127 @@
+import MethodList from "/components/method_list";
+
+# PIXEL.Menu
+
+- **Base panel:** [`PIXEL.ScrollPanel`](/pixel-ui/elements/scroll-panel)
+- **Source:** [cl_menu.lua](https://github.com/TomDotBat/pixel-ui/blob/master/lua/pixelui/elements/cl_menu.lua)
+- **Description:** PIXEL context menu panel.
+
+## Methods
+The following methods are available on the `PIXEL.Menu` panel:
+<MethodList methods={[
+	{
+		name: "AddPanel",
+		parent: "PANEL:",
+		description: "Adds an existing panel to the menu canvas.",
+		args: ["Panel"],
+		href: "/pixel-ui/elements/menu/add-panel"
+	},
+	{
+		name: "AddOption",
+		parent: "PANEL:",
+		description: "Creates and adds a standard clickable option.",
+		args: ["string", "fun()"],
+		returns: ["PIXEL.MenuOption"],
+		href: "/pixel-ui/elements/menu/add-option"
+	},
+	{
+		name: "AddCVar",
+		parent: "PANEL:",
+		description: "Creates and adds a cvar-bound option.",
+		args: ["string", "string", "any", "any", "fun()"],
+		returns: ["PIXEL.MenuOptionCVar"],
+		href: "/pixel-ui/elements/menu/add-cvar"
+	},
+	{
+		name: "AddSpacer",
+		parent: "PANEL:",
+		description: "Adds a spacer panel between menu options.",
+		args: ["string", "fun"],
+		returns: ["Panel"],
+		href: "/pixel-ui/elements/menu/add-spacer"
+	},
+	{
+		name: "AddSubMenu",
+		parent: "PANEL:",
+		description: "Creates a submenu option and returns the submenu panel.",
+		args: ["string", "fun()"],
+		returns: ["PIXEL.Menu", "PIXEL.MenuOption"],
+		href: "/pixel-ui/elements/menu/add-sub-menu"
+	},
+	{
+		name: "Hide",
+		parent: "PANEL:",
+		description: "Hides this menu and any open submenu.",
+		href: "/pixel-ui/elements/menu/hide"
+	},
+	{
+		name: "OpenSubMenu",
+		parent: "PANEL:",
+		description: "Opens a submenu anchored to a menu item.",
+		args: ["Panel", "PIXEL.Menu"],
+		href: "/pixel-ui/elements/menu/open-sub-menu"
+	},
+	{
+		name: "CloseSubMenu",
+		parent: "PANEL:",
+		description: "Closes the provided submenu.",
+		args: ["PIXEL.Menu"],
+		href: "/pixel-ui/elements/menu/close-sub-menu"
+	},
+	{
+		name: "ChildCount",
+		parent: "PANEL:",
+		description: "Returns the number of menu children.",
+		returns: ["number"],
+		href: "/pixel-ui/elements/menu/child-count"
+	},
+	{
+		name: "GetChild",
+		parent: "PANEL:",
+		description: "Returns a child panel by 1-based index.",
+		args: ["number"],
+		returns: ["Panel"],
+		href: "/pixel-ui/elements/menu/get-child"
+	},
+	{
+		name: "LayoutContent",
+		parent: "PANEL:",
+		description: "Lays out menu children and clamps menu height.",
+		args: ["number", "number"],
+		href: "/pixel-ui/elements/menu/layout-content"
+	},
+	{
+		name: "Open",
+		parent: "PANEL:",
+		description: "Opens the menu at screen coordinates.",
+		args: ["number", "number", "boolean", "Panel"],
+		href: "/pixel-ui/elements/menu/open"
+	},
+	{
+		name: "OptionSelectedInternal",
+		parent: "PANEL:",
+		description: "Internal selection handler for option panels.",
+		args: ["PIXEL.MenuOption"],
+		href: "/pixel-ui/elements/menu/option-selected-internal"
+	},
+	{
+		name: "OptionSelected",
+		parent: "PANEL:",
+		description: "Called when an option is selected.",
+		args: ["PIXEL.MenuOption", "string"],
+		href: "/pixel-ui/elements/menu/option-selected"
+	},
+	{
+		name: "ClearHighlights",
+		parent: "PANEL:",
+		description: "Clears highlight state from all options.",
+		href: "/pixel-ui/elements/menu/clear-highlights"
+	},
+	{
+		name: "HighlightItem",
+		parent: "PANEL:",
+		description: "Highlights a specific menu item.",
+		args: ["Panel"],
+		href: "/pixel-ui/elements/menu/highlight-item"
+	}
+]} />

@@ -1,0 +1,22 @@
+{
+  "validated-text-entry": "ValidatedTextEntry",
+  "text-entry": "TextEntry",
+  "text-button": "TextButton",
+  "slider": "Slider",
+  "sidebar": "Sidebar",
+  "scroll-panel": "ScrollPanel",
+  "property-sheet": "PropertySheet",
+  "navbar": "Navbar",
+  "menu-option-cvar": "MenuOptionCVar",
+  "menu": "Menu",
+  "labelled-checkbox": "LabelledCheckbox",
+  "label": "Label",
+  "imgur-button": "ImgurButton",
+  "frame": "Frame",
+  "combo-box": "ComboBox",
+  "color-picker": "ColorPicker",
+  "checkbox": "Checkbox",
+  "category": "Category",
+  "button": "Button",
+  "avatar": "Avatar"
+}

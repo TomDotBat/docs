@@ -1,0 +1,20 @@
+import Method from "/components/method";
+import Argument from "/components/method/argument";
+import ReturnValue from "/components/method/return_value";
+
+# AddSubMenu
+<Method
+	name="PANEL:AddSubMenu"
+	realm="client"
+	args={[
+		<Argument type="string" name="strText">Option label.</Argument>,
+		<Argument type="fun()" name="funcFunction" defaultValue="nil">Optional click callback.</Argument>
+	]}
+	returns={[
+		<ReturnValue type="PIXEL.Menu" name="subMenu">Created submenu.</ReturnValue>,
+		<ReturnValue type="PIXEL.MenuOption" name="option">Parent option panel.</ReturnValue>
+	]}
+	repositoryUrl="https://github.com/TomDotBat/pixel-ui"
+>
+	Creates a submenu option and returns the submenu panel.
+</Method>

@@ -1,0 +1,14 @@
+import Method from "/components/method";
+import ReturnValue from "/components/method/return_value";
+
+# GetInt
+<Method
+	name="PANEL:GetInt"
+	realm="client"
+	returns={[
+		<ReturnValue type="number" name="value">Parsed integer value.</ReturnValue>
+	]}
+	repositoryUrl="https://github.com/TomDotBat/pixel-ui"
+>
+	Returns current value rounded to nearest integer.
+</Method>

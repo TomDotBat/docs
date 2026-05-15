@@ -1,0 +1,19 @@
+import Method from "/components/method";
+import Argument from "/components/method/argument";
+import ReturnValue from "/components/method/return_value";
+
+# DragThink
+<Method
+	name="PANEL:DragThink"
+	realm="client"
+	args={[
+		<Argument type="Panel" name="targetPanel">Target frame being dragged.</Argument>,
+		<Argument type="Panel" name="hoverPanel" defaultValue="nil">Optional hovered panel override.</Argument>
+	]}
+	returns={[
+		<ReturnValue type="boolean" name="isDragging">True when drag handling is active.</ReturnValue>
+	]}
+	repositoryUrl="https://github.com/TomDotBat/pixel-ui"
+>
+	Handles drag cursor state and dragging movement.
+</Method>

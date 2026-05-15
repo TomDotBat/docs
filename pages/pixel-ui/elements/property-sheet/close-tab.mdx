@@ -1,0 +1,19 @@
+import Method from "/components/method";
+import Argument from "/components/method/argument";
+import ReturnValue from "/components/method/return_value";
+
+# CloseTab
+<Method
+	name="PANEL:CloseTab"
+	realm="client"
+	args={[
+		<Argument type="PIXEL.Tab" name="tab">Tab to close.</Argument>,
+		<Argument type="boolean" name="removePanelToo" defaultValue="nil">When true, removes the content panel.</Argument>
+	]}
+	returns={[
+		<ReturnValue type="Panel" name="panel">Detached content panel when preserved.</ReturnValue>
+	]}
+	repositoryUrl="https://github.com/TomDotBat/pixel-ui"
+>
+	Closes a tab and optionally removes its content panel.
+</Method>

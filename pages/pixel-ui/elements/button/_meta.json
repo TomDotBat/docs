@@ -1,0 +1,11 @@
+{
+  "do-toggle": "DoToggle",
+  "paint-extra": "PaintExtra",
+  "is-down": "IsDown",
+  "on-pressed": "OnPressed",
+  "on-released": "OnReleased",
+  "on-toggled": "OnToggled",
+  "do-click": "DoClick",
+  "do-right-click": "DoRightClick",
+  "do-middle-click": "DoMiddleClick"
+}

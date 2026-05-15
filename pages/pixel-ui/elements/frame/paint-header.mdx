@@ -1,0 +1,17 @@
+import Method from "/components/method";
+import Argument from "/components/method/argument";
+
+# PaintHeader
+<Method
+	name="PANEL:PaintHeader"
+	realm="client"
+	args={[
+		<Argument type="number" name="x">Header X coordinate.</Argument>,
+		<Argument type="number" name="y">Header Y coordinate.</Argument>,
+		<Argument type="number" name="w">Header width.</Argument>,
+		<Argument type="number" name="h">Header height.</Argument>
+	]}
+	repositoryUrl="https://github.com/TomDotBat/pixel-ui"
+>
+	Paints the frame header region.
+</Method>

@@ -1,0 +1,14 @@
+import Method from "/components/method";
+import ReturnValue from "/components/method/return_value";
+
+# GetItems
+<Method
+	name="PANEL:GetItems"
+	realm="client"
+	returns={[
+		<ReturnValue type="table" name="items">Registered sheet descriptors.</ReturnValue>
+	]}
+	repositoryUrl="https://github.com/TomDotBat/pixel-ui"
+>
+	Returns all sheet entries.
+</Method>
