@@ -1,9 +1,14 @@
+import Method from "/components/method";
+import ReturnValue from "/components/method/return_value";
+
 # ChildCount
-
-`PIXEL.Menu:ChildCount()`
-
-Returns the number of menu children.
-
-**Returns**
-
-- (`number`) `count` — Child panel count.
+<Method
+	name="PIXEL.Menu:ChildCount"
+	realm="client"
+	returns={[
+		<ReturnValue type="number" name="count">Child panel count.</ReturnValue>
+	]}
+	repositoryUrl="https://github.com/TomDotBat/pixel-ui"
+>
+	Returns the number of menu children.
+</Method>

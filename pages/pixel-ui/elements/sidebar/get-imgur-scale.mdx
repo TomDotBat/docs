@@ -1,9 +1,14 @@
+import Method from "/components/method";
+import ReturnValue from "/components/method/return_value";
+
 # GetImgurScale
-
-`PIXEL.Sidebar:GetImgurScale()`
-
-Gets the sidebar logo scale using the deprecated Imgur alias.
-
-**Returns**
-
-- (`number`) `scale` — Current image scale.
+<Method
+	name="PIXEL.Sidebar:GetImgurScale"
+	realm="client"
+	returns={[
+		<ReturnValue type="number" name="scale">Current image scale.</ReturnValue>
+	]}
+	repositoryUrl="https://github.com/TomDotBat/pixel-ui"
+>
+	Gets the sidebar logo scale using the deprecated Imgur alias.
+</Method>

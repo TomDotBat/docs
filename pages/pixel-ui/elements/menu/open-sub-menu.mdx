@@ -1,10 +1,15 @@
+import Method from "/components/method";
+import Argument from "/components/method/argument";
+
 # OpenSubMenu
-
-`PIXEL.Menu:OpenSubMenu(item, menu)`
-
-Opens a submenu anchored to a menu item.
-
-**Parameters**
-
-- `item` (`Panel`) — Parent menu option.
-- `menu` (`PIXEL.Menu|nil`) — Submenu to open.
+<Method
+	name="PIXEL.Menu:OpenSubMenu"
+	realm="client"
+	args={[
+		<Argument type="Panel" name="item">Parent menu option.</Argument>,
+		<Argument type="PIXEL.Menu" name="menu" defaultValue="nil">Submenu to open.</Argument>
+	]}
+	repositoryUrl="https://github.com/TomDotBat/pixel-ui"
+>
+	Opens a submenu anchored to a menu item.
+</Method>

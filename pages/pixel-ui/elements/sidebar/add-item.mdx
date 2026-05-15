@@ -1,17 +1,22 @@
+import Method from "/components/method";
+import Argument from "/components/method/argument";
+import ReturnValue from "/components/method/return_value";
+
 # AddItem
-
-`PIXEL.Sidebar:AddItem(id, name, imageURL, doClick, order)`
-
-Adds a selectable item to the sidebar.
-
-**Parameters**
-
-- `id` (`any`) — Unique item identifier.
-- `name` (`string`) — Item label.
-- `imageURL` (`string|nil`) — Optional icon URL or Imgur ID.
-- `doClick` (`fun(item:Panel)`) — Callback run when selected.
-- `order` (`number|nil`) — Sort order for the item.
-
-**Returns**
-
-- (`Panel`) `button` — Created sidebar button.
+<Method
+	name="PIXEL.Sidebar:AddItem"
+	realm="client"
+	args={[
+		<Argument type="any" name="id">Unique item identifier.</Argument>,
+		<Argument type="string" name="name">Item label.</Argument>,
+		<Argument type="string" name="imageURL" defaultValue="nil">Optional icon URL or Imgur ID.</Argument>,
+		<Argument type="fun(item:Panel)" name="doClick">Callback run when selected.</Argument>,
+		<Argument type="number" name="order" defaultValue="nil">Sort order for the item.</Argument>
+	]}
+	returns={[
+		<ReturnValue type="Panel" name="button">Created sidebar button.</ReturnValue>
+	]}
+	repositoryUrl="https://github.com/TomDotBat/pixel-ui"
+>
+	Adds a selectable item to the sidebar.
+</Method>

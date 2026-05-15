@@ -1,9 +1,14 @@
+import Method from "/components/method";
+import ReturnValue from "/components/method/return_value";
+
 # GetTextColor
-
-`PIXEL.LabelledCheckbox:GetTextColor()`
-
-Gets the label text color.
-
-**Returns**
-
-- (`Color`) `col` — Current text color.
+<Method
+	name="PIXEL.LabelledCheckbox:GetTextColor"
+	realm="client"
+	returns={[
+		<ReturnValue type="Color" name="col">Current text color.</ReturnValue>
+	]}
+	repositoryUrl="https://github.com/TomDotBat/pixel-ui"
+>
+	Gets the label text color.
+</Method>

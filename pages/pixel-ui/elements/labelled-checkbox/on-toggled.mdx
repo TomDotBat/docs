@@ -1,9 +1,14 @@
+import Method from "/components/method";
+import Argument from "/components/method/argument";
+
 # OnToggled
-
-`PIXEL.LabelledCheckbox:OnToggled(enabled)`
-
-Callback fired when the checkbox toggles.
-
-**Parameters**
-
-- `enabled` (`boolean`) — Current checked state.
+<Method
+	name="PIXEL.LabelledCheckbox:OnToggled"
+	realm="client"
+	args={[
+		<Argument type="boolean" name="enabled">Current checked state.</Argument>
+	]}
+	repositoryUrl="https://github.com/TomDotBat/pixel-ui"
+>
+	Callback fired when the checkbox toggles.
+</Method>

@@ -1,9 +1,14 @@
+import Method from "/components/method";
+import ReturnValue from "/components/method/return_value";
+
 # GetFont
-
-`PIXEL.LabelledCheckbox:GetFont()`
-
-Gets the label font.
-
-**Returns**
-
-- (`string`) `font` — Current font name.
+<Method
+	name="PIXEL.LabelledCheckbox:GetFont"
+	realm="client"
+	returns={[
+		<ReturnValue type="string" name="font">Current font name.</ReturnValue>
+	]}
+	repositoryUrl="https://github.com/TomDotBat/pixel-ui"
+>
+	Gets the label font.
+</Method>

@@ -1,9 +1,14 @@
+import Method from "/components/method";
+import ReturnValue from "/components/method/return_value";
+
 # GetHistoryEnabled
-
-`PIXEL.TextEntry:GetHistoryEnabled()`
-
-Returns whether history navigation is enabled.
-
-**Returns**
-
-- (`boolean`) `enabled` — True when history is enabled.
+<Method
+	name="PIXEL.TextEntry:GetHistoryEnabled"
+	realm="client"
+	returns={[
+		<ReturnValue type="boolean" name="enabled">True when history is enabled.</ReturnValue>
+	]}
+	repositoryUrl="https://github.com/TomDotBat/pixel-ui"
+>
+	Returns whether history navigation is enabled.
+</Method>

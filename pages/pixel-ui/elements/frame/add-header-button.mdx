@@ -1,14 +1,19 @@
+import Method from "/components/method";
+import Argument from "/components/method/argument";
+import ReturnValue from "/components/method/return_value";
+
 # AddHeaderButton
-
-`PIXEL.Frame:AddHeaderButton(elem, size)`
-
-Registers an extra header button.
-
-**Parameters**
-
-- `elem` (`Panel`) — Button panel to place in the header.
-- `size` (`number|nil`) — Relative icon size multiplier.
-
-**Returns**
-
-- (`number`) `index` — Inserted button index.
+<Method
+	name="PIXEL.Frame:AddHeaderButton"
+	realm="client"
+	args={[
+		<Argument type="Panel" name="elem">Button panel to place in the header.</Argument>,
+		<Argument type="number" name="size" defaultValue="nil">Relative icon size multiplier.</Argument>
+	]}
+	returns={[
+		<ReturnValue type="number" name="index">Inserted button index.</ReturnValue>
+	]}
+	repositoryUrl="https://github.com/TomDotBat/pixel-ui"
+>
+	Registers an extra header button.
+</Method>

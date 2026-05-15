@@ -1,9 +1,14 @@
+import Method from "/components/method";
+import ReturnValue from "/components/method/return_value";
+
 # GetAutoWrap
-
-`PIXEL.LabelledCheckbox:GetAutoWrap()`
-
-Returns whether automatic label wrapping is enabled.
-
-**Returns**
-
-- (`boolean`) `enabled` — Whether wrapping is enabled.
+<Method
+	name="PIXEL.LabelledCheckbox:GetAutoWrap"
+	realm="client"
+	returns={[
+		<ReturnValue type="boolean" name="enabled">Whether wrapping is enabled.</ReturnValue>
+	]}
+	repositoryUrl="https://github.com/TomDotBat/pixel-ui"
+>
+	Returns whether automatic label wrapping is enabled.
+</Method>

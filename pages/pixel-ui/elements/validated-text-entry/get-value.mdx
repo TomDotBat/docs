@@ -1,9 +1,14 @@
+import Method from "/components/method";
+import ReturnValue from "/components/method/return_value";
+
 # GetValue
-
-`PIXEL.ValidatedTextEntry:GetValue()`
-
-Gets the text entry value.
-
-**Returns**
-
-- (`string`) `value` — Current input value.
+<Method
+	name="PIXEL.ValidatedTextEntry:GetValue"
+	realm="client"
+	returns={[
+		<ReturnValue type="string" name="value">Current input value.</ReturnValue>
+	]}
+	repositoryUrl="https://github.com/TomDotBat/pixel-ui"
+>
+	Gets the text entry value.
+</Method>

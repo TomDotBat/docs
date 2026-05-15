@@ -1,9 +1,14 @@
+import Method from "/components/method";
+import ReturnValue from "/components/method/return_value";
+
 # GetTriangleRadius
-
-`PIXEL.ColorPicker:GetTriangleRadius()`
-
-Returns the triangle radius used for saturation/lightness selection.
-
-**Returns**
-
-- (`number`) `radius` — Triangle radius.
+<Method
+	name="PIXEL.ColorPicker:GetTriangleRadius"
+	realm="client"
+	returns={[
+		<ReturnValue type="number" name="radius">Triangle radius.</ReturnValue>
+	]}
+	repositoryUrl="https://github.com/TomDotBat/pixel-ui"
+>
+	Returns the triangle radius used for saturation/lightness selection.
+</Method>

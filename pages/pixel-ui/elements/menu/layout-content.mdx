@@ -1,10 +1,15 @@
+import Method from "/components/method";
+import Argument from "/components/method/argument";
+
 # LayoutContent
-
-`PIXEL.Menu:LayoutContent(w, h)`
-
-Lays out menu children and clamps menu height.
-
-**Parameters**
-
-- `w` (`number`) — Panel width.
-- `h` (`number`) — Panel height.
+<Method
+	name="PIXEL.Menu:LayoutContent"
+	realm="client"
+	args={[
+		<Argument type="number" name="w">Panel width.</Argument>,
+		<Argument type="number" name="h">Panel height.</Argument>
+	]}
+	repositoryUrl="https://github.com/TomDotBat/pixel-ui"
+>
+	Lays out menu children and clamps menu height.
+</Method>

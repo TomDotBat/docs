@@ -1,9 +1,14 @@
+import Method from "/components/method";
+import ReturnValue from "/components/method/return_value";
+
 # GetVBar
-
-`PIXEL.ScrollPanel:GetVBar()`
-
-Returns the vertical scrollbar panel.
-
-**Returns**
-
-- (`PIXEL.Scrollbar`) `vbar` — Vertical scrollbar instance.
+<Method
+	name="PIXEL.ScrollPanel:GetVBar"
+	realm="client"
+	returns={[
+		<ReturnValue type="PIXEL.Scrollbar" name="vbar">Vertical scrollbar instance.</ReturnValue>
+	]}
+	repositoryUrl="https://github.com/TomDotBat/pixel-ui"
+>
+	Returns the vertical scrollbar panel.
+</Method>

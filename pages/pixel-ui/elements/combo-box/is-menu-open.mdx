@@ -1,9 +1,14 @@
+import Method from "/components/method";
+import ReturnValue from "/components/method/return_value";
+
 # IsMenuOpen
-
-`PIXEL.ComboBox:IsMenuOpen()`
-
-Returns whether the dropdown menu is currently open.
-
-**Returns**
-
-- (`boolean`) `isOpen` — True when menu panel is visible.
+<Method
+	name="PIXEL.ComboBox:IsMenuOpen"
+	realm="client"
+	returns={[
+		<ReturnValue type="boolean" name="isOpen">True when menu panel is visible.</ReturnValue>
+	]}
+	repositoryUrl="https://github.com/TomDotBat/pixel-ui"
+>
+	Returns whether the dropdown menu is currently open.
+</Method>

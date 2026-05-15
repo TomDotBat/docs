@@ -1,9 +1,14 @@
+import Method from "/components/method";
+import Argument from "/components/method/argument";
+
 # SetTabbingDisabled
-
-`PIXEL.TextEntry:SetTabbingDisabled(disabled)`
-
-Enables or disables tabbing behavior.
-
-**Parameters**
-
-- `disabled` (`boolean`) — True to disable tabbing.
+<Method
+	name="PIXEL.TextEntry:SetTabbingDisabled"
+	realm="client"
+	args={[
+		<Argument type="boolean" name="disabled">True to disable tabbing.</Argument>
+	]}
+	repositoryUrl="https://github.com/TomDotBat/pixel-ui"
+>
+	Enables or disables tabbing behavior.
+</Method>

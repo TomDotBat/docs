@@ -1,9 +1,14 @@
+import Method from "/components/method";
+import ReturnValue from "/components/method/return_value";
+
 # GetValue
-
-`PIXEL.TextEntry:GetValue()`
-
-Returns current text value.
-
-**Returns**
-
-- (`string`) `value` — Current entry text.
+<Method
+	name="PIXEL.TextEntry:GetValue"
+	realm="client"
+	returns={[
+		<ReturnValue type="string" name="value">Current entry text.</ReturnValue>
+	]}
+	repositoryUrl="https://github.com/TomDotBat/pixel-ui"
+>
+	Returns current text value.
+</Method>

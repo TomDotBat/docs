@@ -1,9 +1,14 @@
+import Method from "/components/method";
+import Argument from "/components/method/argument";
+
 # SelectItem
-
-`PIXEL.Navbar:SelectItem(id)`
-
-Selects an existing navbar item.
-
-**Parameters**
-
-- `id` (`any`) — Item identifier.
+<Method
+	name="PIXEL.Navbar:SelectItem"
+	realm="client"
+	args={[
+		<Argument type="any" name="id">Item identifier.</Argument>
+	]}
+	repositoryUrl="https://github.com/TomDotBat/pixel-ui"
+>
+	Selects an existing navbar item.
+</Method>

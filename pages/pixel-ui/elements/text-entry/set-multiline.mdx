@@ -1,9 +1,14 @@
+import Method from "/components/method";
+import Argument from "/components/method/argument";
+
 # SetMultiline
-
-`PIXEL.TextEntry:SetMultiline(isMultiline)`
-
-Enables or disables multiline input.
-
-**Parameters**
-
-- `isMultiline` (`boolean`) — True to enable multiline mode.
+<Method
+	name="PIXEL.TextEntry:SetMultiline"
+	realm="client"
+	args={[
+		<Argument type="boolean" name="isMultiline">True to enable multiline mode.</Argument>
+	]}
+	repositoryUrl="https://github.com/TomDotBat/pixel-ui"
+>
+	Enables or disables multiline input.
+</Method>

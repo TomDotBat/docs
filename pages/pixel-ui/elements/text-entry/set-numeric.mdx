@@ -1,9 +1,14 @@
+import Method from "/components/method";
+import Argument from "/components/method/argument";
+
 # SetNumeric
-
-`PIXEL.TextEntry:SetNumeric(enabled)`
-
-Enables or disables numeric-only input mode.
-
-**Parameters**
-
-- `enabled` (`boolean`) — True to restrict input to numeric characters.
+<Method
+	name="PIXEL.TextEntry:SetNumeric"
+	realm="client"
+	args={[
+		<Argument type="boolean" name="enabled">True to restrict input to numeric characters.</Argument>
+	]}
+	repositoryUrl="https://github.com/TomDotBat/pixel-ui"
+>
+	Enables or disables numeric-only input mode.
+</Method>

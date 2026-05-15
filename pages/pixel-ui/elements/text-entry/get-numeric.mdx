@@ -1,9 +1,14 @@
+import Method from "/components/method";
+import ReturnValue from "/components/method/return_value";
+
 # GetNumeric
-
-`PIXEL.TextEntry:GetNumeric()`
-
-Returns whether numeric-only input mode is enabled.
-
-**Returns**
-
-- (`boolean`) `enabled` — True when numeric filtering is enabled.
+<Method
+	name="PIXEL.TextEntry:GetNumeric"
+	realm="client"
+	returns={[
+		<ReturnValue type="boolean" name="enabled">True when numeric filtering is enabled.</ReturnValue>
+	]}
+	repositoryUrl="https://github.com/TomDotBat/pixel-ui"
+>
+	Returns whether numeric-only input mode is enabled.
+</Method>

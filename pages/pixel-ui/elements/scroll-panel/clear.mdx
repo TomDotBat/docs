@@ -1,9 +1,14 @@
+import Method from "/components/method";
+import ReturnValue from "/components/method/return_value";
+
 # Clear
-
-`PIXEL.ScrollPanel:Clear()`
-
-Clears all canvas children.
-
-**Returns**
-
-- (`any`) `result` — Result from Panel:Clear.
+<Method
+	name="PIXEL.ScrollPanel:Clear"
+	realm="client"
+	returns={[
+		<ReturnValue type="any" name="result">Result from Panel:Clear.</ReturnValue>
+	]}
+	repositoryUrl="https://github.com/TomDotBat/pixel-ui"
+>
+	Clears all canvas children.
+</Method>

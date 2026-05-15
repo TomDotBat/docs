@@ -1,13 +1,18 @@
+import Method from "/components/method";
+import Argument from "/components/method/argument";
+import ReturnValue from "/components/method/return_value";
+
 # GetOptionTextByData
-
-`PIXEL.ComboBox:GetOptionTextByData(data)`
-
-Resolves display text for a matching data value.
-
-**Parameters**
-
-- `data` (`any`) — Data value to match.
-
-**Returns**
-
-- (`any`) `text` — Matching option text or original data value.
+<Method
+	name="PIXEL.ComboBox:GetOptionTextByData"
+	realm="client"
+	args={[
+		<Argument type="any" name="data">Data value to match.</Argument>
+	]}
+	returns={[
+		<ReturnValue type="any" name="text">Matching option text or original data value.</ReturnValue>
+	]}
+	repositoryUrl="https://github.com/TomDotBat/pixel-ui"
+>
+	Resolves display text for a matching data value.
+</Method>

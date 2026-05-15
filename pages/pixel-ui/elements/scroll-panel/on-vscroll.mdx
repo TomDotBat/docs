@@ -1,9 +1,14 @@
+import Method from "/components/method";
+import Argument from "/components/method/argument";
+
 # OnVScroll
-
-`PIXEL.ScrollPanel:OnVScroll(iOffset)`
-
-Called when the scrollbar offset changes.
-
-**Parameters**
-
-- `iOffset` (`number`) — Scroll offset.
+<Method
+	name="PIXEL.ScrollPanel:OnVScroll"
+	realm="client"
+	args={[
+		<Argument type="number" name="iOffset">Scroll offset.</Argument>
+	]}
+	repositoryUrl="https://github.com/TomDotBat/pixel-ui"
+>
+	Called when the scrollbar offset changes.
+</Method>

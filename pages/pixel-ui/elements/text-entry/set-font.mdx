@@ -1,9 +1,14 @@
+import Method from "/components/method";
+import Argument from "/components/method/argument";
+
 # SetFont
-
-`PIXEL.TextEntry:SetFont(font)`
-
-Sets active text font.
-
-**Parameters**
-
-- `font` (`string`) — Font name.
+<Method
+	name="PIXEL.TextEntry:SetFont"
+	realm="client"
+	args={[
+		<Argument type="string" name="font">Font name.</Argument>
+	]}
+	repositoryUrl="https://github.com/TomDotBat/pixel-ui"
+>
+	Sets active text font.
+</Method>

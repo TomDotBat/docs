@@ -1,9 +1,14 @@
+import Method from "/components/method";
+import Argument from "/components/method/argument";
+
 # DoExpansion
-
-`PIXEL.Category:DoExpansion(b)`
-
-Forces an expansion state change when needed.
-
-**Parameters**
-
-- `b` (`boolean`) — Desired expanded state.
+<Method
+	name="PIXEL.Category:DoExpansion"
+	realm="client"
+	args={[
+		<Argument type="boolean" name="b">Desired expanded state.</Argument>
+	]}
+	repositoryUrl="https://github.com/TomDotBat/pixel-ui"
+>
+	Forces an expansion state change when needed.
+</Method>

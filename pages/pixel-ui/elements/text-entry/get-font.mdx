@@ -1,9 +1,14 @@
+import Method from "/components/method";
+import ReturnValue from "/components/method/return_value";
+
 # GetFont
-
-`PIXEL.TextEntry:GetFont()`
-
-Returns active text font.
-
-**Returns**
-
-- (`string`) `font` — Font name.
+<Method
+	name="PIXEL.TextEntry:GetFont"
+	realm="client"
+	returns={[
+		<ReturnValue type="string" name="font">Font name.</ReturnValue>
+	]}
+	repositoryUrl="https://github.com/TomDotBat/pixel-ui"
+>
+	Returns active text font.
+</Method>

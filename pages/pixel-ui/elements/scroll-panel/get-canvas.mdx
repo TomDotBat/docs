@@ -1,9 +1,14 @@
+import Method from "/components/method";
+import ReturnValue from "/components/method/return_value";
+
 # GetCanvas
-
-`PIXEL.ScrollPanel:GetCanvas()`
-
-Returns the internal canvas panel.
-
-**Returns**
-
-- (`Panel`) `canvas` — Canvas panel.
+<Method
+	name="PIXEL.ScrollPanel:GetCanvas"
+	realm="client"
+	returns={[
+		<ReturnValue type="Panel" name="canvas">Canvas panel.</ReturnValue>
+	]}
+	repositoryUrl="https://github.com/TomDotBat/pixel-ui"
+>
+	Returns the internal canvas panel.
+</Method>

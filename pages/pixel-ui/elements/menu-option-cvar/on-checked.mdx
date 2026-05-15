@@ -1,9 +1,14 @@
+import Method from "/components/method";
+import Argument from "/components/method/argument";
+
 # OnChecked
-
-`PIXEL.MenuOptionCVar:OnChecked(checked)`
-
-Updates the bound convar when checked state changes.
-
-**Parameters**
-
-- `checked` (`boolean`) — New checked state.
+<Method
+	name="PIXEL.MenuOptionCVar:OnChecked"
+	realm="client"
+	args={[
+		<Argument type="boolean" name="checked">New checked state.</Argument>
+	]}
+	repositoryUrl="https://github.com/TomDotBat/pixel-ui"
+>
+	Updates the bound convar when checked state changes.
+</Method>

@@ -1,9 +1,14 @@
+import Method from "/components/method";
+import Argument from "/components/method/argument";
+
 # SetAutoWrap
-
-`PIXEL.LabelledCheckbox:SetAutoWrap(enabled)`
-
-Enables or disables automatic label wrapping.
-
-**Parameters**
-
-- `enabled` (`boolean`) — Whether wrapping is enabled.
+<Method
+	name="PIXEL.LabelledCheckbox:SetAutoWrap"
+	realm="client"
+	args={[
+		<Argument type="boolean" name="enabled">Whether wrapping is enabled.</Argument>
+	]}
+	repositoryUrl="https://github.com/TomDotBat/pixel-ui"
+>
+	Enables or disables automatic label wrapping.
+</Method>

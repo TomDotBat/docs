@@ -1,10 +1,15 @@
+import Method from "/components/method";
+import Argument from "/components/method/argument";
+
 # OnValidate
-
-`PIXEL.ValidatedTextEntry:OnValidate(valid, message)`
-
-Callback fired after validation.
-
-**Parameters**
-
-- `valid` (`boolean`) — Whether the input is valid.
-- `message` (`string|nil`) — Validation feedback message.
+<Method
+	name="PIXEL.ValidatedTextEntry:OnValidate"
+	realm="client"
+	args={[
+		<Argument type="boolean" name="valid">Whether the input is valid.</Argument>,
+		<Argument type="string" name="message" defaultValue="nil">Validation feedback message.</Argument>
+	]}
+	repositoryUrl="https://github.com/TomDotBat/pixel-ui"
+>
+	Callback fired after validation.
+</Method>

@@ -1,9 +1,14 @@
+import Method from "/components/method";
+import Argument from "/components/method/argument";
+
 # SetImgurOffset
-
-`PIXEL.Sidebar:SetImgurOffset(offset)`
-
-Sets the sidebar logo Y offset using the deprecated Imgur alias.
-
-**Parameters**
-
-- `offset` (`number`) — Vertical image offset.
+<Method
+	name="PIXEL.Sidebar:SetImgurOffset"
+	realm="client"
+	args={[
+		<Argument type="number" name="offset">Vertical image offset.</Argument>
+	]}
+	repositoryUrl="https://github.com/TomDotBat/pixel-ui"
+>
+	Sets the sidebar logo Y offset using the deprecated Imgur alias.
+</Method>

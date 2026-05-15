@@ -1,10 +1,15 @@
+import Method from "/components/method";
+import Argument from "/components/method/argument";
+
 # OnActiveTabChanged
-
-`PIXEL.PropertySheet:OnActiveTabChanged(old, new)`
-
-Callback fired when active tab changes.
-
-**Parameters**
-
-- `old` (`PIXEL.Tab`) — Previously active tab.
-- `new` (`PIXEL.Tab`) — Newly active tab.
+<Method
+	name="PIXEL.PropertySheet:OnActiveTabChanged"
+	realm="client"
+	args={[
+		<Argument type="PIXEL.Tab" name="old">Previously active tab.</Argument>,
+		<Argument type="PIXEL.Tab" name="new">Newly active tab.</Argument>
+	]}
+	repositoryUrl="https://github.com/TomDotBat/pixel-ui"
+>
+	Callback fired when active tab changes.
+</Method>

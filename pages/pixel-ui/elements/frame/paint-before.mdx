@@ -1,10 +1,15 @@
+import Method from "/components/method";
+import Argument from "/components/method/argument";
+
 # PaintBefore
-
-`PIXEL.Frame:PaintBefore(w, h)`
-
-Extension point painted before base frame rendering.
-
-**Parameters**
-
-- `w` (`number`) — Panel width.
-- `h` (`number`) — Panel height.
+<Method
+	name="PIXEL.Frame:PaintBefore"
+	realm="client"
+	args={[
+		<Argument type="number" name="w">Panel width.</Argument>,
+		<Argument type="number" name="h">Panel height.</Argument>
+	]}
+	repositoryUrl="https://github.com/TomDotBat/pixel-ui"
+>
+	Extension point painted before base frame rendering.
+</Method>

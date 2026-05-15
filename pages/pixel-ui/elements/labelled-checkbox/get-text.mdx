@@ -1,9 +1,14 @@
+import Method from "/components/method";
+import ReturnValue from "/components/method/return_value";
+
 # GetText
-
-`PIXEL.LabelledCheckbox:GetText()`
-
-Gets the label text.
-
-**Returns**
-
-- (`string`) `text` — Current label text.
+<Method
+	name="PIXEL.LabelledCheckbox:GetText"
+	realm="client"
+	returns={[
+		<ReturnValue type="string" name="text">Current label text.</ReturnValue>
+	]}
+	repositoryUrl="https://github.com/TomDotBat/pixel-ui"
+>
+	Gets the label text.
+</Method>

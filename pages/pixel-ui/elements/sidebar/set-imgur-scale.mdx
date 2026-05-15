@@ -1,9 +1,14 @@
+import Method from "/components/method";
+import Argument from "/components/method/argument";
+
 # SetImgurScale
-
-`PIXEL.Sidebar:SetImgurScale(scale)`
-
-Sets the sidebar logo scale using the deprecated Imgur alias.
-
-**Parameters**
-
-- `scale` (`number`) — Relative image scale.
+<Method
+	name="PIXEL.Sidebar:SetImgurScale"
+	realm="client"
+	args={[
+		<Argument type="number" name="scale">Relative image scale.</Argument>
+	]}
+	repositoryUrl="https://github.com/TomDotBat/pixel-ui"
+>
+	Sets the sidebar logo scale using the deprecated Imgur alias.
+</Method>

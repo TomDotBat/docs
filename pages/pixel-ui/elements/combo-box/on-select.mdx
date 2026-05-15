@@ -1,11 +1,16 @@
+import Method from "/components/method";
+import Argument from "/components/method/argument";
+
 # OnSelect
-
-`PIXEL.ComboBox:OnSelect(index, value, data)`
-
-Callback fired when a choice is selected.
-
-**Parameters**
-
-- `index` (`number`) — Selected index.
-- `value` (`string`) — Selected display text.
-- `data` (`any`) — Selected payload.
+<Method
+	name="PIXEL.ComboBox:OnSelect"
+	realm="client"
+	args={[
+		<Argument type="number" name="index">Selected index.</Argument>,
+		<Argument type="string" name="value">Selected display text.</Argument>,
+		<Argument type="any" name="data">Selected payload.</Argument>
+	]}
+	repositoryUrl="https://github.com/TomDotBat/pixel-ui"
+>
+	Callback fired when a choice is selected.
+</Method>

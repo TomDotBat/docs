@@ -1,9 +1,14 @@
+import Method from "/components/method";
+import ReturnValue from "/components/method/return_value";
+
 # GetPlaceholderText
-
-`PIXEL.TextEntry:GetPlaceholderText()`
-
-Returns placeholder text.
-
-**Returns**
-
-- (`string`) `text` — Placeholder text.
+<Method
+	name="PIXEL.TextEntry:GetPlaceholderText"
+	realm="client"
+	returns={[
+		<ReturnValue type="string" name="text">Placeholder text.</ReturnValue>
+	]}
+	repositoryUrl="https://github.com/TomDotBat/pixel-ui"
+>
+	Returns placeholder text.
+</Method>

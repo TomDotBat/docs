@@ -1,9 +1,14 @@
+import Method from "/components/method";
+import Argument from "/components/method/argument";
+
 # SetEnterAllowed
-
-`PIXEL.TextEntry:SetEnterAllowed(allow)`
-
-Sets whether Enter submits single-line input.
-
-**Parameters**
-
-- `allow` (`boolean`) — True to allow Enter handling.
+<Method
+	name="PIXEL.TextEntry:SetEnterAllowed"
+	realm="client"
+	args={[
+		<Argument type="boolean" name="allow">True to allow Enter handling.</Argument>
+	]}
+	repositoryUrl="https://github.com/TomDotBat/pixel-ui"
+>
+	Sets whether Enter submits single-line input.
+</Method>

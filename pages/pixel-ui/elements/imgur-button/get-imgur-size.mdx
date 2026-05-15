@@ -1,10 +1,15 @@
+import Method from "/components/method";
+import ReturnValue from "/components/method/return_value";
+
 # GetImgurSize
-
-`PIXEL.ImgurButton:GetImgurSize()`
-
-Gets the configured image size.
-
-**Returns**
-
-- (`number`) `width` — Image width.
-- (`number`) `height` — Image height.
+<Method
+	name="PIXEL.ImgurButton:GetImgurSize"
+	realm="client"
+	returns={[
+		<ReturnValue type="number" name="width">Image width.</ReturnValue>,
+		<ReturnValue type="number" name="height">Image height.</ReturnValue>
+	]}
+	repositoryUrl="https://github.com/TomDotBat/pixel-ui"
+>
+	Gets the configured image size.
+</Method>

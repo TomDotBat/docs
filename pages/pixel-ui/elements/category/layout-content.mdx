@@ -1,10 +1,15 @@
+import Method from "/components/method";
+import Argument from "/components/method/argument";
+
 # LayoutContent
-
-`PIXEL.Category:LayoutContent(w, h)`
-
-Extension point for additional category content layout.
-
-**Parameters**
-
-- `w` (`number`) — Panel width.
-- `h` (`number`) — Panel height.
+<Method
+	name="PIXEL.Category:LayoutContent"
+	realm="client"
+	args={[
+		<Argument type="number" name="w">Panel width.</Argument>,
+		<Argument type="number" name="h">Panel height.</Argument>
+	]}
+	repositoryUrl="https://github.com/TomDotBat/pixel-ui"
+>
+	Extension point for additional category content layout.
+</Method>

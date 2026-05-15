@@ -1,9 +1,14 @@
+import Method from "/components/method";
+import ReturnValue from "/components/method/return_value";
+
 # GetImgurOffset
-
-`PIXEL.Sidebar:GetImgurOffset()`
-
-Gets the sidebar logo Y offset using the deprecated Imgur alias.
-
-**Returns**
-
-- (`number`) `offset` — Current vertical image offset.
+<Method
+	name="PIXEL.Sidebar:GetImgurOffset"
+	realm="client"
+	returns={[
+		<ReturnValue type="number" name="offset">Current vertical image offset.</ReturnValue>
+	]}
+	repositoryUrl="https://github.com/TomDotBat/pixel-ui"
+>
+	Gets the sidebar logo Y offset using the deprecated Imgur alias.
+</Method>

@@ -1,10 +1,15 @@
+import Method from "/components/method";
+import Argument from "/components/method/argument";
+
 # ChooseOption
-
-`PIXEL.ComboBox:ChooseOption(value, index)`
-
-Selects a choice and updates displayed value.
-
-**Parameters**
-
-- `value` (`string`) — Selected display text.
-- `index` (`number`) — Selected choice index.
+<Method
+	name="PIXEL.ComboBox:ChooseOption"
+	realm="client"
+	args={[
+		<Argument type="string" name="value">Selected display text.</Argument>,
+		<Argument type="number" name="index">Selected choice index.</Argument>
+	]}
+	repositoryUrl="https://github.com/TomDotBat/pixel-ui"
+>
+	Selects a choice and updates displayed value.
+</Method>

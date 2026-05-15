@@ -1,9 +1,14 @@
+import Method from "/components/method";
+import ReturnValue from "/components/method/return_value";
+
 # IsEditing
-
-`PIXEL.TextEntry:IsEditing()`
-
-Returns whether this entry currently has keyboard focus.
-
-**Returns**
-
-- (`boolean`) `isEditing` — True when focused for typing.
+<Method
+	name="PIXEL.TextEntry:IsEditing"
+	realm="client"
+	returns={[
+		<ReturnValue type="boolean" name="isEditing">True when focused for typing.</ReturnValue>
+	]}
+	repositoryUrl="https://github.com/TomDotBat/pixel-ui"
+>
+	Returns whether this entry currently has keyboard focus.
+</Method>

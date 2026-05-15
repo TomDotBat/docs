@@ -1,13 +1,18 @@
+import Method from "/components/method";
+import Argument from "/components/method/argument";
+import ReturnValue from "/components/method/return_value";
+
 # SwitchToName
-
-`PIXEL.PropertySheet:SwitchToName(name)`
-
-Switches to the first tab matching a name.
-
-**Parameters**
-
-- `name` (`string`) — Tab name to activate.
-
-**Returns**
-
-- (`boolean`) `found` — True when a tab was found and activated.
+<Method
+	name="PIXEL.PropertySheet:SwitchToName"
+	realm="client"
+	args={[
+		<Argument type="string" name="name">Tab name to activate.</Argument>
+	]}
+	returns={[
+		<ReturnValue type="boolean" name="found">True when a tab was found and activated.</ReturnValue>
+	]}
+	repositoryUrl="https://github.com/TomDotBat/pixel-ui"
+>
+	Switches to the first tab matching a name.
+</Method>

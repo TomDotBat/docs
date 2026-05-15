@@ -1,13 +1,18 @@
+import Method from "/components/method";
+import Argument from "/components/method/argument";
+import ReturnValue from "/components/method/return_value";
+
 # GetOptionData
-
-`PIXEL.ComboBox:GetOptionData(id)`
-
-Returns associated data for a choice by index.
-
-**Parameters**
-
-- `id` (`number`) — Choice index.
-
-**Returns**
-
-- (`any`) `data` — Choice payload.
+<Method
+	name="PIXEL.ComboBox:GetOptionData"
+	realm="client"
+	args={[
+		<Argument type="number" name="id">Choice index.</Argument>
+	]}
+	returns={[
+		<ReturnValue type="any" name="data">Choice payload.</ReturnValue>
+	]}
+	repositoryUrl="https://github.com/TomDotBat/pixel-ui"
+>
+	Returns associated data for a choice by index.
+</Method>

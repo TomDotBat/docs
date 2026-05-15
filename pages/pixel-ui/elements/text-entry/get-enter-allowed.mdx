@@ -1,9 +1,14 @@
+import Method from "/components/method";
+import ReturnValue from "/components/method/return_value";
+
 # GetEnterAllowed
-
-`PIXEL.TextEntry:GetEnterAllowed()`
-
-Returns whether Enter submits single-line input.
-
-**Returns**
-
-- (`boolean`) `allow` — True when Enter is allowed.
+<Method
+	name="PIXEL.TextEntry:GetEnterAllowed"
+	realm="client"
+	returns={[
+		<ReturnValue type="boolean" name="allow">True when Enter is allowed.</ReturnValue>
+	]}
+	repositoryUrl="https://github.com/TomDotBat/pixel-ui"
+>
+	Returns whether Enter submits single-line input.
+</Method>

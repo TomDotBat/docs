@@ -1,16 +1,21 @@
+import Method from "/components/method";
+import Argument from "/components/method/argument";
+import ReturnValue from "/components/method/return_value";
+
 # AddChoice
-
-`PIXEL.ComboBox:AddChoice(value, data, select, icon)`
-
-Adds a selectable choice to the combo box.
-
-**Parameters**
-
-- `value` (`string`) — Display text.
-- `data` (`any|nil`) — Optional payload value.
-- `select` (`boolean|nil`) — Whether this choice should be selected immediately.
-- `icon` (`string|nil`) — Optional icon material path/URL.
-
-**Returns**
-
-- (`number`) `index` — Inserted choice index.
+<Method
+	name="PIXEL.ComboBox:AddChoice"
+	realm="client"
+	args={[
+		<Argument type="string" name="value">Display text.</Argument>,
+		<Argument type="any" name="data" defaultValue="nil">Optional payload value.</Argument>,
+		<Argument type="boolean" name="select" defaultValue="nil">Whether this choice should be selected immediately.</Argument>,
+		<Argument type="string" name="icon" defaultValue="nil">Optional icon material path/URL.</Argument>
+	]}
+	returns={[
+		<ReturnValue type="number" name="index">Inserted choice index.</ReturnValue>
+	]}
+	repositoryUrl="https://github.com/TomDotBat/pixel-ui"
+>
+	Adds a selectable choice to the combo box.
+</Method>

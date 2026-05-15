@@ -1,14 +1,19 @@
+import Method from "/components/method";
+import Argument from "/components/method/argument";
+import ReturnValue from "/components/method/return_value";
+
 # IsTextValid
-
-`PIXEL.ValidatedTextEntry:IsTextValid(text)`
-
-Validates the current text value.
-
-**Parameters**
-
-- `text` (`string`) — Input text to validate.
-
-**Returns**
-
-- (`boolean`) `valid` — Whether the input is valid.
-- (`string?`) `message` — Validation feedback message.
+<Method
+	name="PIXEL.ValidatedTextEntry:IsTextValid"
+	realm="client"
+	args={[
+		<Argument type="string" name="text">Input text to validate.</Argument>
+	]}
+	returns={[
+		<ReturnValue type="boolean" name="valid">Whether the input is valid.</ReturnValue>,
+		<ReturnValue type="string?" name="message">Validation feedback message.</ReturnValue>
+	]}
+	repositoryUrl="https://github.com/TomDotBat/pixel-ui"
+>
+	Validates the current text value.
+</Method>

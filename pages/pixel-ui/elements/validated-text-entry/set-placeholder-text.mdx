@@ -1,9 +1,14 @@
+import Method from "/components/method";
+import Argument from "/components/method/argument";
+
 # SetPlaceholderText
-
-`PIXEL.ValidatedTextEntry:SetPlaceholderText(text)`
-
-Sets placeholder text for the input.
-
-**Parameters**
-
-- `text` (`string`) — Placeholder text.
+<Method
+	name="PIXEL.ValidatedTextEntry:SetPlaceholderText"
+	realm="client"
+	args={[
+		<Argument type="string" name="text">Placeholder text.</Argument>
+	]}
+	repositoryUrl="https://github.com/TomDotBat/pixel-ui"
+>
+	Sets placeholder text for the input.
+</Method>

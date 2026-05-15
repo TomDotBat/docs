@@ -1,9 +1,14 @@
+import Method from "/components/method";
+import Argument from "/components/method/argument";
+
 # SetImgurID
-
-`PIXEL.ImgurButton:SetImgurID(id)`
-
-Sets the Imgur image identifier.
-
-**Parameters**
-
-- `id` (`string`) — Imgur image identifier.
+<Method
+	name="PIXEL.ImgurButton:SetImgurID"
+	realm="client"
+	args={[
+		<Argument type="string" name="id">Imgur image identifier.</Argument>
+	]}
+	repositoryUrl="https://github.com/TomDotBat/pixel-ui"
+>
+	Sets the Imgur image identifier.
+</Method>
