@@ -1,0 +1,64 @@
+# PIXEL.Category
+
+- **Base panel:** `Panel`
+- **Source:** [cl_category.lua](https://github.com/TomDotBat/pixel-ui/blob/master/lua/pixelui/elements/cl_category.lua)
+- **Description:** PIXEL collapsible category container panel.
+
+## Methods
+
+### `PIXEL.Category:UnselectAll()`
+
+Clears selected state from child panels that support `SetSelected`.
+
+### `PIXEL.Category:SetTitle(title)`
+
+Sets the category header title text.
+
+**Parameters**
+
+- `title` (`string`) — Header text.
+
+### `PIXEL.Category:SetContents(contents)`
+
+Sets the content panel shown inside the category.
+
+**Parameters**
+
+- `contents` (`Panel`) — Content panel instance.
+
+### `PIXEL.Category:SetExpanded(expanded)`
+
+Sets whether the category should be expanded.
+
+**Parameters**
+
+- `expanded` (`boolean`) — True to expand, false to collapse.
+
+### `PIXEL.Category:Toggle()`
+
+Toggles the expanded/collapsed state.
+
+### `PIXEL.Category:OnToggle(expanded)`
+
+Callback fired when expanded state changes.
+
+**Parameters**
+
+- `expanded` (`boolean`) — New expanded state.
+
+### `PIXEL.Category:DoExpansion(b)`
+
+Forces an expansion state change when needed.
+
+**Parameters**
+
+- `b` (`boolean`) — Desired expanded state.
+
+### `PIXEL.Category:LayoutContent(w, h)`
+
+Extension point for additional category content layout.
+
+**Parameters**
+
+- `w` (`number`) — Panel width.
+- `h` (`number`) — Panel height.

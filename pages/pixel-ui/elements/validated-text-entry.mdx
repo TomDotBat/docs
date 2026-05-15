@@ -1,0 +1,61 @@
+# PIXEL.ValidatedTextEntry
+
+- **Base panel:** `Panel`
+- **Source:** [cl_validated_text_entry.lua](https://github.com/TomDotBat/pixel-ui/blob/master/lua/pixelui/elements/cl_validated_text_entry.lua)
+- **Description:** PIXEL text entry with validation message.
+
+## Methods
+
+### `PIXEL.ValidatedTextEntry:IsTextValid(text)`
+
+Validates the current text value.
+
+**Parameters**
+
+- `text` (`string`) — Input text to validate.
+
+**Returns**
+
+- (`boolean`) `valid` — Whether the input is valid.
+- (`string?`) `message` — Validation feedback message.
+
+### `PIXEL.ValidatedTextEntry:OnValidate(valid, message)`
+
+Callback fired after validation.
+
+**Parameters**
+
+- `valid` (`boolean`) — Whether the input is valid.
+- `message` (`string|nil`) — Validation feedback message.
+
+### `PIXEL.ValidatedTextEntry:SetValue(text)`
+
+Sets the text entry value.
+
+**Parameters**
+
+- `text` (`string`) — Input text.
+
+### `PIXEL.ValidatedTextEntry:GetValue()`
+
+Gets the text entry value.
+
+**Returns**
+
+- (`string`) `value` — Current input value.
+
+### `PIXEL.ValidatedTextEntry:SetPlaceholderText(text)`
+
+Sets placeholder text for the input.
+
+**Parameters**
+
+- `text` (`string`) — Placeholder text.
+
+### `PIXEL.ValidatedTextEntry:GetPlaceholderText()`
+
+Gets placeholder text for the input.
+
+**Returns**
+
+- (`string`) `text` — Current placeholder text.

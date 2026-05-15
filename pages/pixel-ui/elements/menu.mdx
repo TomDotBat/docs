@@ -1,0 +1,161 @@
+# PIXEL.Menu
+
+- **Base panel:** `PIXEL.ScrollPanel`
+- **Source:** [cl_menu.lua](https://github.com/TomDotBat/pixel-ui/blob/master/lua/pixelui/elements/cl_menu.lua)
+- **Description:** PIXEL context menu panel.
+
+## Methods
+
+### `PIXEL.Menu:AddPanel(pnl)`
+
+Adds an existing panel to the menu canvas.
+
+**Parameters**
+
+- `pnl` (`Panel`) — Panel instance to insert.
+
+### `PIXEL.Menu:AddOption(strText, funcFunction)`
+
+Creates and adds a standard clickable option.
+
+**Parameters**
+
+- `strText` (`string`) — Option label.
+- `funcFunction` (`fun()|nil`) — Callback run when clicked.
+
+**Returns**
+
+- (`PIXEL.MenuOption`) `option` — Created option panel.
+
+### `PIXEL.Menu:AddCVar(strText, convar, on, off, funcFunction)`
+
+Creates and adds a cvar-bound option.
+
+**Parameters**
+
+- `strText` (`string`) — Option label.
+- `convar` (`string`) — Console variable name.
+- `on` (`any`) — Value used for the enabled state.
+- `off` (`any`) — Value used for the disabled state.
+- `funcFunction` (`fun()|nil`) — Optional click callback.
+
+**Returns**
+
+- (`PIXEL.MenuOptionCVar`) `option` — Created cvar option panel.
+
+### `PIXEL.Menu:AddSpacer(text, func)`
+
+Adds a spacer panel between menu options.
+
+**Parameters**
+
+- `text` (`string|nil`) — Unused legacy parameter.
+- `func` (`fun|nil`) — Unused legacy parameter.
+
+**Returns**
+
+- (`Panel`) `spacer` — Created spacer panel.
+
+### `PIXEL.Menu:AddSubMenu(strText, funcFunction)`
+
+Creates a submenu option and returns the submenu panel.
+
+**Parameters**
+
+- `strText` (`string`) — Option label.
+- `funcFunction` (`fun()|nil`) — Optional click callback.
+
+**Returns**
+
+- (`PIXEL.Menu`) `subMenu` — Created submenu.
+- (`PIXEL.MenuOption`) `option` — Parent option panel.
+
+### `PIXEL.Menu:Hide()`
+
+Hides this menu and any open submenu.
+
+### `PIXEL.Menu:OpenSubMenu(item, menu)`
+
+Opens a submenu anchored to a menu item.
+
+**Parameters**
+
+- `item` (`Panel`) — Parent menu option.
+- `menu` (`PIXEL.Menu|nil`) — Submenu to open.
+
+### `PIXEL.Menu:CloseSubMenu(menu)`
+
+Closes the provided submenu.
+
+**Parameters**
+
+- `menu` (`PIXEL.Menu`) — Submenu to close.
+
+### `PIXEL.Menu:ChildCount()`
+
+Returns the number of menu children.
+
+**Returns**
+
+- (`number`) `count` — Child panel count.
+
+### `PIXEL.Menu:GetChild(num)`
+
+Returns a child panel by 1-based index.
+
+**Parameters**
+
+- `num` (`number`) — Child index.
+
+**Returns**
+
+- (`Panel|nil`) `child` — Child panel.
+
+### `PIXEL.Menu:LayoutContent(w, h)`
+
+Lays out menu children and clamps menu height.
+
+**Parameters**
+
+- `w` (`number`) — Panel width.
+- `h` (`number`) — Panel height.
+
+### `PIXEL.Menu:Open(x, y, skipanimation, ownerpanel)`
+
+Opens the menu at screen coordinates.
+
+**Parameters**
+
+- `x` (`number|nil`) — Screen X coordinate.
+- `y` (`number|nil`) — Screen Y coordinate.
+- `skipanimation` (`boolean|nil`) — Unused legacy parameter.
+- `ownerpanel` (`Panel|nil`) — Optional panel the menu is attached to.
+
+### `PIXEL.Menu:OptionSelectedInternal(option)`
+
+Internal selection handler for option panels.
+
+**Parameters**
+
+- `option` (`PIXEL.MenuOption`) — Selected option.
+
+### `PIXEL.Menu:OptionSelected(option, text)`
+
+Called when an option is selected.
+
+**Parameters**
+
+- `option` (`PIXEL.MenuOption`) — Selected option.
+- `text` (`string`) — Selected option text.
+
+### `PIXEL.Menu:ClearHighlights()`
+
+Clears highlight state from all options.
+
+### `PIXEL.Menu:HighlightItem(item)`
+
+Highlights a specific menu item.
+
+**Parameters**
+
+- `item` (`Panel`) — Item panel to highlight.

@@ -1,0 +1,64 @@
+# PIXEL.ColorPicker
+
+- **Base panel:** `Panel`
+- **Source:** [cl_color_picker.lua](https://github.com/TomDotBat/pixel-ui/blob/master/lua/pixelui/elements/cl_color_picker.lua)
+- **Description:** PIXEL color picker panel with hue/value controls.
+
+## Methods
+
+### `PIXEL.ColorPicker:UpdateColor()`
+
+Recomputes the current color from hue/saturation/lightness values.
+
+### `PIXEL.ColorPicker:SetColor(color)`
+
+Sets the picker color and updates control positions.
+
+**Parameters**
+
+- `color` (`Color`) — New color value.
+
+### `PIXEL.ColorPicker:UpdatePositions()`
+
+Updates picker marker positions from the current HSL values.
+
+### `PIXEL.ColorPicker:GetCenter()`
+
+Returns the center point of the picker.
+
+**Returns**
+
+- (`number`) `x` — Center X coordinate.
+- (`number`) `y` — Center Y coordinate.
+
+### `PIXEL.ColorPicker:GetRadius()`
+
+Returns the outer radius of the picker.
+
+**Returns**
+
+- (`number`) `radius` — Picker radius.
+
+### `PIXEL.ColorPicker:GetTriangleRadius()`
+
+Returns the triangle radius used for saturation/lightness selection.
+
+**Returns**
+
+- (`number`) `radius` — Triangle radius.
+
+### `PIXEL.ColorPicker:GetRingThickness()`
+
+Returns the hue ring thickness.
+
+**Returns**
+
+- (`number`) `thickness` — Ring thickness.
+
+### `PIXEL.ColorPicker:GetHueColor()`
+
+Returns the pure hue color for the current hue angle.
+
+**Returns**
+
+- (`Color`) `color` — Hue-only color value.

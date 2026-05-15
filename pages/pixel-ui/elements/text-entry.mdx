@@ -1,0 +1,239 @@
+# PIXEL.TextEntry
+
+- **Base panel:** `Panel`
+- **Source:** [cl_text_entry.lua](https://github.com/TomDotBat/pixel-ui/blob/master/lua/pixelui/elements/cl_text_entry.lua)
+- **Description:** PIXEL styled text entry container with integrated label.
+
+## Methods
+
+### `PIXEL.TextEntry:IsEnabled()`
+
+Returns whether text input is enabled.
+
+**Returns**
+
+- (`boolean`) `enabled` — True when the entry accepts input.
+
+### `PIXEL.TextEntry:SetEnabled(enabled)`
+
+Enables or disables text input.
+
+**Parameters**
+
+- `enabled` (`boolean`) — True to enable input.
+
+### `PIXEL.TextEntry:GetValue()`
+
+Returns current text value.
+
+**Returns**
+
+- (`string`) `value` — Current entry text.
+
+### `PIXEL.TextEntry:SetValue(value)`
+
+Sets current text value.
+
+**Parameters**
+
+- `value` (`string`) — New entry text.
+
+### `PIXEL.TextEntry:IsMultiline()`
+
+Returns whether multiline input is enabled.
+
+**Returns**
+
+- (`boolean`) `isMultiline` — True when multiline mode is enabled.
+
+### `PIXEL.TextEntry:SetMultiline(isMultiline)`
+
+Enables or disables multiline input.
+
+**Parameters**
+
+- `isMultiline` (`boolean`) — True to enable multiline mode.
+
+### `PIXEL.TextEntry:IsEditing()`
+
+Returns whether this entry currently has keyboard focus.
+
+**Returns**
+
+- (`boolean`) `isEditing` — True when focused for typing.
+
+### `PIXEL.TextEntry:GetEnterAllowed()`
+
+Returns whether Enter submits single-line input.
+
+**Returns**
+
+- (`boolean`) `allow` — True when Enter is allowed.
+
+### `PIXEL.TextEntry:SetEnterAllowed(allow)`
+
+Sets whether Enter submits single-line input.
+
+**Parameters**
+
+- `allow` (`boolean`) — True to allow Enter handling.
+
+### `PIXEL.TextEntry:GetUpdateOnType()`
+
+Returns whether value updates fire while typing.
+
+**Returns**
+
+- (`boolean`) `enabled` — True when update-on-type is enabled.
+
+### `PIXEL.TextEntry:SetUpdateOnType(enabled)`
+
+Enables or disables update-on-type behavior.
+
+**Parameters**
+
+- `enabled` (`boolean`) — True to update on each text change.
+
+### `PIXEL.TextEntry:GetNumeric()`
+
+Returns whether numeric-only input mode is enabled.
+
+**Returns**
+
+- (`boolean`) `enabled` — True when numeric filtering is enabled.
+
+### `PIXEL.TextEntry:SetNumeric(enabled)`
+
+Enables or disables numeric-only input mode.
+
+**Parameters**
+
+- `enabled` (`boolean`) — True to restrict input to numeric characters.
+
+### `PIXEL.TextEntry:GetHistoryEnabled()`
+
+Returns whether history navigation is enabled.
+
+**Returns**
+
+- (`boolean`) `enabled` — True when history is enabled.
+
+### `PIXEL.TextEntry:SetHistoryEnabled(enabled)`
+
+Enables or disables history navigation.
+
+**Parameters**
+
+- `enabled` (`boolean`) — True to enable history.
+
+### `PIXEL.TextEntry:GetTabbingDisabled()`
+
+Returns whether tabbing is disabled.
+
+**Returns**
+
+- (`boolean`) `disabled` — True when tabbing is disabled.
+
+### `PIXEL.TextEntry:SetTabbingDisabled(disabled)`
+
+Enables or disables tabbing behavior.
+
+**Parameters**
+
+- `disabled` (`boolean`) — True to disable tabbing.
+
+### `PIXEL.TextEntry:GetPlaceholderText()`
+
+Returns placeholder text.
+
+**Returns**
+
+- (`string`) `text` — Placeholder text.
+
+### `PIXEL.TextEntry:SetPlaceholderText(text)`
+
+Sets placeholder text.
+
+**Parameters**
+
+- `text` (`string`) — Placeholder text.
+
+### `PIXEL.TextEntry:GetFont()`
+
+Returns active text font.
+
+**Returns**
+
+- (`string`) `font` — Font name.
+
+### `PIXEL.TextEntry:SetFont(font)`
+
+Sets active text font.
+
+**Parameters**
+
+- `font` (`string`) — Font name.
+
+### `PIXEL.TextEntry:GetInt()`
+
+Returns current value rounded to nearest integer.
+
+**Returns**
+
+- (`number|nil`) `value` — Parsed integer value.
+
+### `PIXEL.TextEntry:GetFloat()`
+
+Returns current value parsed as a float.
+
+**Returns**
+
+- (`number|nil`) `value` — Parsed float value.
+
+### `PIXEL.TextEntry:IsEditing()`
+
+Returns whether this entry currently has keyboard focus.
+
+**Returns**
+
+- (`boolean`) `isEditing` — True when focused for typing.
+
+### `PIXEL.TextEntry:SetEditable(enabled)`
+
+Sets whether editing is allowed.
+
+**Parameters**
+
+- `enabled` (`boolean`) — True to allow editing.
+
+### `PIXEL.TextEntry:AllowInput(value)`
+
+Callback used to filter raw character input.
+
+**Parameters**
+
+- `value` (`string`) — Input character.
+
+**Returns**
+
+- (`boolean|nil`) `blocked` — Return true to block this character.
+
+### `PIXEL.TextEntry:GetAutoComplete(txt)`
+
+Callback used to provide autocomplete suggestions.
+
+**Parameters**
+
+- `txt` (`string`) — Current text value.
+
+**Returns**
+
+- (`string[]|nil`) `suggestions` — Suggested completions.
+
+### `PIXEL.TextEntry:OnKeyCode(code)`
+
+Callback fired when a key code is received.
+
+**Parameters**
+
+- `code` (`number`) — Garry's Mod key code.

@@ -1,0 +1,78 @@
+# PIXEL.PropertySheet
+
+- **Base panel:** `Panel`
+- **Source:** [cl_property_sheet.lua](https://github.com/TomDotBat/pixel-ui/blob/master/lua/pixelui/elements/cl_property_sheet.lua)
+- **Description:** PIXEL property sheet panel with tab strip.
+
+## Methods
+
+### `PIXEL.PropertySheet:AddSheet(label, panel, material, noStretchX, noStretchY, tooltip)`
+
+Adds a new tab and content panel to the property sheet.
+
+**Parameters**
+
+- `label` (`string`) — Tab label.
+- `panel` (`Panel`) — Content panel.
+- `material` (`any|nil`) — Unused legacy icon argument.
+- `noStretchX` (`boolean|nil`) — When true, panel width is not stretched.
+- `noStretchY` (`boolean|nil`) — When true, panel height is not stretched.
+- `tooltip` (`string|nil`) — Tab tooltip text.
+
+**Returns**
+
+- (`table|nil`) `sheet` — Created sheet descriptor.
+
+### `PIXEL.PropertySheet:SetActiveTab(active)`
+
+Sets the currently active tab.
+
+**Parameters**
+
+- `active` (`PIXEL.Tab`) — Tab to activate.
+
+### `PIXEL.PropertySheet:OnActiveTabChanged(old, new)`
+
+Callback fired when active tab changes.
+
+**Parameters**
+
+- `old` (`PIXEL.Tab`) — Previously active tab.
+- `new` (`PIXEL.Tab`) — Newly active tab.
+
+### `PIXEL.PropertySheet:GetItems()`
+
+Returns all sheet entries.
+
+**Returns**
+
+- (`table`) `items` — Registered sheet descriptors.
+
+### `PIXEL.PropertySheet:SizeToContentWidth()`
+
+Resizes the sheet to fit the widest content panel.
+
+### `PIXEL.PropertySheet:SwitchToName(name)`
+
+Switches to the first tab matching a name.
+
+**Parameters**
+
+- `name` (`string`) — Tab name to activate.
+
+**Returns**
+
+- (`boolean`) `found` — True when a tab was found and activated.
+
+### `PIXEL.PropertySheet:CloseTab(tab, removePanelToo)`
+
+Closes a tab and optionally removes its content panel.
+
+**Parameters**
+
+- `tab` (`PIXEL.Tab`) — Tab to close.
+- `removePanelToo` (`boolean|nil`) — When true, removes the content panel.
+
+**Returns**
+
+- (`Panel|nil`) `panel` — Detached content panel when preserved.

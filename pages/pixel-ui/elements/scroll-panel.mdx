@@ -1,0 +1,92 @@
+# PIXEL.ScrollPanel
+
+- **Base panel:** `DPanel`
+- **Source:** [cl_scrollpanel.lua](https://github.com/TomDotBat/pixel-ui/blob/master/lua/pixelui/elements/cl_scrollpanel.lua)
+- **Description:** PIXEL scroll panel with custom scrollbar.
+
+## Methods
+
+### `PIXEL.ScrollPanel:AddItem(pnl)`
+
+Adds a child panel into the scroll canvas.
+
+**Parameters**
+
+- `pnl` (`Panel`) — Child panel to add.
+
+### `PIXEL.ScrollPanel:OnChildAdded(child)`
+
+Redirects external child additions into the canvas.
+
+**Parameters**
+
+- `child` (`Panel`) — Newly added child panel.
+
+### `PIXEL.ScrollPanel:GetVBar()`
+
+Returns the vertical scrollbar panel.
+
+**Returns**
+
+- (`PIXEL.Scrollbar`) `vbar` — Vertical scrollbar instance.
+
+### `PIXEL.ScrollPanel:GetCanvas()`
+
+Returns the internal canvas panel.
+
+**Returns**
+
+- (`Panel`) `canvas` — Canvas panel.
+
+### `PIXEL.ScrollPanel:InnerWidth()`
+
+Returns the inner canvas width.
+
+**Returns**
+
+- (`number`) `width` — Canvas width.
+
+### `PIXEL.ScrollPanel:Rebuild()`
+
+Rebuilds canvas bounds from its children.
+
+### `PIXEL.ScrollPanel:OnMouseWheeled(delta)`
+
+Mouse wheel handler for smooth overscroll behavior.
+
+**Parameters**
+
+- `delta` (`number`) — Mouse wheel delta.
+
+### `PIXEL.ScrollPanel:OnVScroll(iOffset)`
+
+Called when the scrollbar offset changes.
+
+**Parameters**
+
+- `iOffset` (`number`) — Scroll offset.
+
+### `PIXEL.ScrollPanel:ScrollToChild(panel)`
+
+Scrolls so a child panel is brought into view.
+
+**Parameters**
+
+- `panel` (`Panel`) — Child panel to center.
+
+### `PIXEL.ScrollPanel:LayoutContent(w, h)`
+
+Extension point for laying out canvas children.
+
+**Parameters**
+
+- `w` (`number`) — Canvas width.
+- `h` (`number`) — Canvas height.
+
+### `PIXEL.ScrollPanel:Clear()`
+
+Clears all canvas children.
+
+**Returns**
+
+- (`any`) `result` — Result from Panel:Clear.

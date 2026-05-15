@@ -1,0 +1,130 @@
+# PIXEL.ComboBox
+
+- **Base panel:** `PIXEL.TextButton`
+- **Source:** [cl_combo_box.lua](https://github.com/TomDotBat/pixel-ui/blob/master/lua/pixelui/elements/cl_combo_box.lua)
+- **Description:** PIXEL combo box (dropdown) control.
+
+## Methods
+
+### `PIXEL.ComboBox:Clear()`
+
+Clears all combo box choices and selection state.
+
+### `PIXEL.ComboBox:GetOptionText(id)`
+
+Returns display text for a choice by index.
+
+**Parameters**
+
+- `id` (`number`) — Choice index.
+
+**Returns**
+
+- (`string|nil`) `text` — Choice label.
+
+### `PIXEL.ComboBox:GetOptionData(id)`
+
+Returns associated data for a choice by index.
+
+**Parameters**
+
+- `id` (`number`) — Choice index.
+
+**Returns**
+
+- (`any`) `data` — Choice payload.
+
+### `PIXEL.ComboBox:GetOptionTextByData(data)`
+
+Resolves display text for a matching data value.
+
+**Parameters**
+
+- `data` (`any`) — Data value to match.
+
+**Returns**
+
+- (`any`) `text` — Matching option text or original data value.
+
+### `PIXEL.ComboBox:ChooseOption(value, index)`
+
+Selects a choice and updates displayed value.
+
+**Parameters**
+
+- `value` (`string`) — Selected display text.
+- `index` (`number`) — Selected choice index.
+
+### `PIXEL.ComboBox:ChooseOptionID(index)`
+
+Selects a choice by index.
+
+**Parameters**
+
+- `index` (`number`) — Choice index.
+
+### `PIXEL.ComboBox:GetSelectedID()`
+
+Returns the selected choice index.
+
+**Returns**
+
+- (`number|nil`) `index` — Selected index.
+
+### `PIXEL.ComboBox:GetSelected()`
+
+Returns the currently selected text and data.
+
+**Returns**
+
+- (`string|nil`) `text` — Selected display text.
+- (`any`) `data` — Selected payload.
+
+### `PIXEL.ComboBox:OnSelect(index, value, data)`
+
+Callback fired when a choice is selected.
+
+**Parameters**
+
+- `index` (`number`) — Selected index.
+- `value` (`string`) — Selected display text.
+- `data` (`any`) — Selected payload.
+
+### `PIXEL.ComboBox:AddChoice(value, data, select, icon)`
+
+Adds a selectable choice to the combo box.
+
+**Parameters**
+
+- `value` (`string`) — Display text.
+- `data` (`any|nil`) — Optional payload value.
+- `select` (`boolean|nil`) — Whether this choice should be selected immediately.
+- `icon` (`string|nil`) — Optional icon material path/URL.
+
+**Returns**
+
+- (`number`) `index` — Inserted choice index.
+
+### `PIXEL.ComboBox:IsMenuOpen()`
+
+Returns whether the dropdown menu is currently open.
+
+**Returns**
+
+- (`boolean`) `isOpen` — True when menu panel is visible.
+
+### `PIXEL.ComboBox:CloseMenu()`
+
+Closes and removes the dropdown menu if open.
+
+### `PIXEL.ComboBox:CheckConVarChanges()`
+
+Synchronizes displayed value from the bound console variable.
+
+### `PIXEL.ComboBox:SetValue(strValue)`
+
+Sets the currently displayed combo box text.
+
+**Parameters**
+
+- `strValue` (`string`) — Display text.

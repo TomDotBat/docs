@@ -1,0 +1,40 @@
+# PIXEL.ImgurButton
+
+- **Base panel:** `PIXEL.ImageButton`
+- **Source:** [cl_imgur_button.lua](https://github.com/TomDotBat/pixel-ui/blob/master/lua/pixelui/elements/cl_imgur_button.lua)
+- **Description:** PIXEL image button that loads Imgur assets.
+
+## Methods
+
+### `PIXEL.ImgurButton:SetImgurID(id)`
+
+Sets the Imgur image identifier.
+
+**Parameters**
+
+- `id` (`string`) — Imgur image identifier.
+
+### `PIXEL.ImgurButton:GetImgurID()`
+
+Gets the Imgur image identifier parsed from the URL.
+
+**Returns**
+
+- (`string|nil`) `id` — Parsed Imgur image identifier.
+
+### `PIXEL.ImgurButton:SetImgurSize(size)`
+
+Sets both image width and height using one size value.
+
+**Parameters**
+
+- `size` (`number`) — Image size in pixels.
+
+### `PIXEL.ImgurButton:GetImgurSize()`
+
+Gets the configured image size.
+
+**Returns**
+
+- (`number`) `width` — Image width.
+- (`number`) `height` — Image height.

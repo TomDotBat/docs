@@ -1,0 +1,87 @@
+# PIXEL.Sidebar
+
+- **Base panel:** `Panel`
+- **Source:** [cl_sidebar.lua](https://github.com/TomDotBat/pixel-ui/blob/master/lua/pixelui/elements/cl_sidebar.lua)
+- **Description:** PIXEL sidebar container panel.
+
+## Methods
+
+### `PIXEL.Sidebar:SetImgurID(id)`
+
+Sets the sidebar logo image using an Imgur ID.
+
+**Parameters**
+
+- `id` (`string`) — Imgur image identifier.
+
+### `PIXEL.Sidebar:GetImgurID()`
+
+Gets the sidebar logo Imgur ID from its image URL.
+
+**Returns**
+
+- (`string|nil`) `id` — Parsed Imgur image identifier.
+
+### `PIXEL.Sidebar:SetImgurScale(scale)`
+
+Sets the sidebar logo scale using the deprecated Imgur alias.
+
+**Parameters**
+
+- `scale` (`number`) — Relative image scale.
+
+### `PIXEL.Sidebar:GetImgurScale()`
+
+Gets the sidebar logo scale using the deprecated Imgur alias.
+
+**Returns**
+
+- (`number`) `scale` — Current image scale.
+
+### `PIXEL.Sidebar:SetImgurOffset(offset)`
+
+Sets the sidebar logo Y offset using the deprecated Imgur alias.
+
+**Parameters**
+
+- `offset` (`number`) — Vertical image offset.
+
+### `PIXEL.Sidebar:GetImgurOffset()`
+
+Gets the sidebar logo Y offset using the deprecated Imgur alias.
+
+**Returns**
+
+- (`number`) `offset` — Current vertical image offset.
+
+### `PIXEL.Sidebar:AddItem(id, name, imageURL, doClick, order)`
+
+Adds a selectable item to the sidebar.
+
+**Parameters**
+
+- `id` (`any`) — Unique item identifier.
+- `name` (`string`) — Item label.
+- `imageURL` (`string|nil`) — Optional icon URL or Imgur ID.
+- `doClick` (`fun(item:Panel)`) — Callback run when selected.
+- `order` (`number|nil`) — Sort order for the item.
+
+**Returns**
+
+- (`Panel`) `button` — Created sidebar button.
+
+### `PIXEL.Sidebar:RemoveItem(id)`
+
+Removes a sidebar item by identifier.
+
+**Parameters**
+
+- `id` (`any`) — Item identifier.
+
+### `PIXEL.Sidebar:SelectItem(id)`
+
+Selects an existing sidebar item.
+
+**Parameters**
+
+- `id` (`any`) — Item identifier.

@@ -1,0 +1,119 @@
+# PIXEL.Frame
+
+- **Base panel:** `EditablePanel`
+- **Source:** [cl_frame.lua](https://github.com/TomDotBat/pixel-ui/blob/master/lua/pixelui/elements/cl_frame.lua)
+- **Description:** PIXEL window frame panel.
+
+## Methods
+
+### `PIXEL.Frame:SetImgurID(id)`
+
+Sets the frame header icon using an Imgur ID.
+
+**Parameters**
+
+- `id` (`string`) — Imgur image identifier.
+
+### `PIXEL.Frame:GetImgurID()`
+
+Gets the frame header Imgur ID from its image URL.
+
+**Returns**
+
+- (`string|nil`) `id` — Parsed Imgur image identifier.
+
+### `PIXEL.Frame:DragThink(targetPanel, hoverPanel)`
+
+Handles drag cursor state and dragging movement.
+
+**Parameters**
+
+- `targetPanel` (`Panel`) — Target frame being dragged.
+- `hoverPanel` (`Panel|nil`) — Optional hovered panel override.
+
+**Returns**
+
+- (`boolean|nil`) `isDragging` — True when drag handling is active.
+
+### `PIXEL.Frame:SizeThink(targetPanel, hoverPanel)`
+
+Handles resize cursor state and resizing movement.
+
+**Parameters**
+
+- `targetPanel` (`Panel`) — Target frame being resized.
+- `hoverPanel` (`Panel|nil`) — Optional hovered panel override.
+
+**Returns**
+
+- (`boolean|nil`) `isSizing` — True when resize handling is active.
+
+### `PIXEL.Frame:CreateSidebar(defaultItem, imageURL, imageScale, imageYOffset, buttonYOffset)`
+
+Creates a sidebar attached to the frame.
+
+**Parameters**
+
+- `defaultItem` (`any|nil`) — Optional item ID to auto-select.
+- `imageURL` (`string|nil`) — Sidebar logo URL or Imgur ID.
+- `imageScale` (`number|nil`) — Sidebar logo scale.
+- `imageYOffset` (`number|nil`) — Sidebar logo Y offset.
+- `buttonYOffset` (`number|nil`) — Extra top offset for buttons.
+
+**Returns**
+
+- (`PIXEL.Sidebar|nil`) `sidebar` — Created sidebar panel.
+
+### `PIXEL.Frame:AddHeaderButton(elem, size)`
+
+Registers an extra header button.
+
+**Parameters**
+
+- `elem` (`Panel`) — Button panel to place in the header.
+- `size` (`number|nil`) — Relative icon size multiplier.
+
+**Returns**
+
+- (`number`) `index` — Inserted button index.
+
+### `PIXEL.Frame:LayoutContent(w, h)`
+
+Extension point for laying out frame content.
+
+**Parameters**
+
+- `w` (`number`) — Panel width.
+- `h` (`number`) — Panel height.
+
+### `PIXEL.Frame:Open()`
+
+Animates and shows the frame.
+
+### `PIXEL.Frame:Close()`
+
+Animates and closes the frame.
+
+### `PIXEL.Frame:OnClose()`
+
+Callback fired after the frame closes.
+
+### `PIXEL.Frame:PaintHeader(x, y, w, h)`
+
+Paints the frame header region.
+
+**Parameters**
+
+- `x` (`number`) — Header X coordinate.
+- `y` (`number`) — Header Y coordinate.
+- `w` (`number`) — Header width.
+- `h` (`number`) — Header height.
+
+### `PIXEL.Frame:PaintBefore(w, h)`
+
+Extension point painted before base frame rendering.
+
+**Parameters**
+
+- `w` (`number`) — Panel width.
+- `h` (`number`) — Panel height.

@@ -1,0 +1,72 @@
+# PIXEL.Button
+
+- **Base panel:** `Panel`
+- **Source:** [cl_button.lua](https://github.com/TomDotBat/pixel-ui/blob/master/lua/pixelui/elements/cl_button.lua)
+- **Description:** Basic PIXEL button panel with hover/click styling.
+
+## Methods
+
+### `PIXEL.Button:DoToggle(...)`
+
+Toggles the button state when toggle mode is enabled.
+
+**Parameters**
+
+- `...` (`any`) — Extra arguments forwarded to `OnToggled`.
+
+### `PIXEL.Button:PaintExtra(w, h)`
+
+Extension point painted after the base button background.
+
+**Parameters**
+
+- `w` (`number`) — Panel width.
+- `h` (`number`) — Panel height.
+
+### `PIXEL.Button:IsDown()`
+
+Returns whether the button is currently held down.
+
+**Returns**
+
+- (`boolean`) `isDown` — True while the button is depressed.
+
+### `PIXEL.Button:OnPressed(mouseCode)`
+
+Callback fired when mouse press begins on the button.
+
+**Parameters**
+
+- `mouseCode` (`number`) — Garry's Mod mouse code.
+
+### `PIXEL.Button:OnReleased(mouseCode)`
+
+Callback fired when mouse press is released on the button.
+
+**Parameters**
+
+- `mouseCode` (`number`) — Garry's Mod mouse code.
+
+### `PIXEL.Button:OnToggled(enabled)`
+
+Callback fired when toggle state changes.
+
+**Parameters**
+
+- `enabled` (`boolean`) — New toggle state.
+
+### `PIXEL.Button:DoClick(...)`
+
+Left-click handler for the button.
+
+**Parameters**
+
+- `...` (`any`) — Extra click arguments.
+
+### `PIXEL.Button:DoRightClick()`
+
+Right-click handler for the button.
+
+### `PIXEL.Button:DoMiddleClick()`
+
+Middle-click handler for the button.
